@@ -22,6 +22,13 @@ public class Health : MonoBehaviour
         }*/
     }
 
+    private IEnumerator VisualIndicator(Color color)
+    {
+        GetComponent<SpriteRenderer>().color = color;
+        yield return new WaitForSeconds(.15f);
+        GetComponent<SpriteRenderer>().color = Color.white;
+    }
+
     public void Damage(int amount)
     {
         if (amount < 0)
@@ -30,6 +37,7 @@ public class Health : MonoBehaviour
         }
 
         this.health -= amount;
+        StartCoroutine(VisualIndicator(Color.red));
 
         if (health <= 0)
         {
@@ -43,7 +51,7 @@ public class Health : MonoBehaviour
         {
             throw new System.ArgumentOutOfRangeException("Cannot have a negative healing");
         }
-
+        StartCoroutine(VisualIndicator(Color.green));
         if (health + amount > MAX_HEALTH)
         {
             this.health = MAX_HEALTH;
