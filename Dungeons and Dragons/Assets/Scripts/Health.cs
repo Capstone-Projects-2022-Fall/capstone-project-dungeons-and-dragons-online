@@ -12,14 +12,23 @@ public class Health : MonoBehaviour
     void Update()
     {
         // Testing Onlys
-       /* if (Input.GetKeyDown(KeyCode.O))
-        {
-            Damage(10);
-        }
+        if (Input.GetKeyDown(KeyCode.O))
+         {
+             Damage(10);
+            // healthBar.SetSize();
+            
+         }
         if (Input.GetKeyDown(KeyCode.H))
         {
             Heal(10);
-        }*/
+        }
+    }
+
+    private IEnumerator VisualIndicator(Color color)
+    {
+        GetComponent<SpriteRenderer>().color = color;
+        yield return new WaitForSeconds(.15f);
+        GetComponent<SpriteRenderer>().color = Color.white;
     }
 
     public void Damage(int amount)
@@ -30,6 +39,8 @@ public class Health : MonoBehaviour
         }
 
         this.health -= amount;
+  
+        StartCoroutine(VisualIndicator(Color.red));
 
         if (health <= 0)
         {
@@ -43,7 +54,7 @@ public class Health : MonoBehaviour
         {
             throw new System.ArgumentOutOfRangeException("Cannot have a negative healing");
         }
-
+        StartCoroutine(VisualIndicator(Color.green));
         if (health + amount > MAX_HEALTH)
         {
             this.health = MAX_HEALTH;

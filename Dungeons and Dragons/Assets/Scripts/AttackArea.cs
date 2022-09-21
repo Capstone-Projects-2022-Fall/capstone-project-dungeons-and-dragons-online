@@ -5,6 +5,8 @@ using UnityEngine;
 public class AttackArea : MonoBehaviour
 {
     private int damage = 10;
+    private HealthBar healthBar;
+    private Health health;
 
     private void OnTriggerEnter2D(Collider2D collider)
     {

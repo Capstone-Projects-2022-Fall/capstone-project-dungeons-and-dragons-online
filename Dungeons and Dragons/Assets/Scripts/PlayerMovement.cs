@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        healthBar.SetSize(.4f);
+        healthBar.SetSize(1f);
 
     }
 
@@ -41,5 +41,21 @@ public class PlayerMovement : MonoBehaviour
     void Move()
     {
         rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
+        checkFlipping();
+    }
+
+    void checkFlipping()
+    {
+        // Going left
+        if (moveDirection.x < 0)
+        {
+            transform.localScale = new Vector3(3f, transform.localScale.y);
+        }
+
+        // Going right
+        if (moveDirection.x > 0)
+        {
+            transform.localScale = new Vector3(-3f, transform.localScale.y);
+        }
     }
 }
