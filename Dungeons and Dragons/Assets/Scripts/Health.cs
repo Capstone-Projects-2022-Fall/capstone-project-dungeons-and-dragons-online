@@ -12,14 +12,16 @@ public class Health : MonoBehaviour
     void Update()
     {
         // Testing Onlys
-       /* if (Input.GetKeyDown(KeyCode.O))
-        {
-            Damage(10);
-        }
+        if (Input.GetKeyDown(KeyCode.O))
+         {
+             Damage(10);
+            // healthBar.SetSize();
+            
+         }
         if (Input.GetKeyDown(KeyCode.H))
         {
             Heal(10);
-        }*/
+        }
     }
 
     private IEnumerator VisualIndicator(Color color)
@@ -37,6 +39,7 @@ public class Health : MonoBehaviour
         }
 
         this.health -= amount;
+  
         StartCoroutine(VisualIndicator(Color.red));
 
         if (health <= 0)
