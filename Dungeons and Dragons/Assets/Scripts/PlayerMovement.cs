@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        healthBar.SetSize(1f);
+        healthBar.SetSize(1.21f);
 
     }
 

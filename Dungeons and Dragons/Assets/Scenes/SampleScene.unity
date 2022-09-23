@@ -134,9 +134,9 @@ GameObject:
   - component: {fileID: 106750608}
   - component: {fileID: 106750607}
   - component: {fileID: 106750606}
-  - component: {fileID: 106750609}
   - component: {fileID: 106750610}
   - component: {fileID: 106750611}
+  - component: {fileID: 106750612}
   m_Layer: 0
   m_Name: E2
   m_TagString: Untagged
@@ -219,26 +219,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 106750604}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.68, y: -3.24, z: 0}
+  m_LocalPosition: {x: 6.02, y: 1.08, z: 0}
   m_LocalScale: {x: 4.1913, y: 4.1066365, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &106750609
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 106750604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca640263b77863e47a041fb0f691f9eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
 --- !u!61 &106750610
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -274,9 +261,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 106750604}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 364bfbe8268fd674b8140b124e03187f, type: 3}
+  m_Script: {fileID: 11500000, guid: f072e277f55a5ec4f9dcd36419b5eb83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &106750612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106750604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c646deba0797a564a8fc92812b0ae13a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!1 &494686338
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,8 +302,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 494686338}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.26565495, y: 0.00055265427, z: 0.05895707}
-  m_LocalScale: {x: 10.137613, y: 1.4368669, z: 1}
+  m_LocalPosition: {x: -0.2566, y: -0.004, z: 0.05895707}
+  m_LocalScale: {x: 10.168049, y: 1.6333263, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1143012513}
@@ -848,8 +848,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 704760956}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.4, y: -0.13087423, z: 0.020207353}
-  m_LocalScale: {x: 8, y: 1, z: 1}
+  m_LocalPosition: {x: 2.4, y: -0.1217, z: 0.020207353}
+  m_LocalScale: {x: 8, y: 0.9395149, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1943534310}
@@ -918,6 +918,7 @@ GameObject:
   - component: {fileID: 715618269}
   - component: {fileID: 715618268}
   - component: {fileID: 715618270}
+  - component: {fileID: 715618271}
   m_Layer: 0
   m_Name: health_potion
   m_TagString: Untagged
@@ -1018,6 +1019,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.75, y: 6.18}
   m_EdgeRadius: 0
+--- !u!114 &715618271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715618267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7b8629e5abaa2f479273cb806bc52b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &819060163
 GameObject:
   m_ObjectHideFlags: 0
@@ -1043,8 +1056,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 819060163}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.24815497, y: 0.008452654, z: 0.05895707}
-  m_LocalScale: {x: 9.6843, y: 0.98328286, z: 1}
+  m_LocalPosition: {x: -0.24815497, y: -0.0162, z: 0.05895707}
+  m_LocalScale: {x: 9.6843, y: 1.0673536, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1143012513}
@@ -1092,7 +1105,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: c2a8845bc43283e4dbfd010ef16a1a34, type: 3}
-  m_Color: {r: 0.4528302, g: 0.33535066, b: 0.33535066, a: 1}
+  m_Color: {r: 0.13207549, g: 0.09531863, b: 0.09531863, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1315,6 +1328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  healthBar: {fileID: 1143012515}
 --- !u!61 &1170014919
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1352,9 +1366,10 @@ GameObject:
   - component: {fileID: 1461263848}
   - component: {fileID: 1461263847}
   - component: {fileID: 1461263849}
-  - component: {fileID: 1461263851}
   - component: {fileID: 1461263852}
-  - component: {fileID: 1461263853}
+  - component: {fileID: 1461263854}
+  - component: {fileID: 1461263855}
+  - component: {fileID: 1461263856}
   m_Layer: 0
   m_Name: E1
   m_TagString: Untagged
@@ -1422,8 +1437,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1461263846}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.3748, y: 1.5482, z: 0}
-  m_LocalScale: {x: -3.453183, y: 4.3248296, z: 0.94697}
+  m_LocalPosition: {x: -2.07, y: 2.28, z: 0}
+  m_LocalScale: {x: -3.33612, y: 4.084369, z: 0.94697}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1444,7 +1459,33 @@ MonoBehaviour:
   player: {fileID: 1170014912}
   speed: 1
   distancBetween: 4
---- !u!114 &1461263851
+--- !u!61 &1461263852
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461263846}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.013244025, y: -0.003080532}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.27, y: 0.23}
+    newSize: {x: 0.32, y: 0.33}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.2606275, y: 0.15625978}
+  m_EdgeRadius: 0
+--- !u!114 &1461263854
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1453,11 +1494,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1461263846}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca640263b77863e47a041fb0f691f9eb, type: 3}
+  m_Script: {fileID: 11500000, guid: c646deba0797a564a8fc92812b0ae13a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
---- !u!61 &1461263852
+--- !u!114 &1461263855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461263846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f072e277f55a5ec4f9dcd36419b5eb83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1461263856
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1470,7 +1523,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.006139621, y: -0.011390682}
+  m_Offset: {x: -0.005920373, y: -0.007737227}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1481,20 +1534,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.21932283, y: 0.1765596}
+  m_Size: {x: 0.16816957, y: 0.09459838}
   m_EdgeRadius: 0
---- !u!114 &1461263853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1461263846}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 364bfbe8268fd674b8140b124e03187f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1943534309
 GameObject:
   m_ObjectHideFlags: 0
