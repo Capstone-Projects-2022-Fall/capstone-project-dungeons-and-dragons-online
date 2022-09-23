@@ -7,12 +7,13 @@ public class Health : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] private int health = 100;
     private int MAX_HEALTH = 100;
+    [SerializeField] private HealthBar healthBar;
 
     // Update is called once per frame
     void Update()
     {
         // Testing Onlys
-        if (Input.GetKeyDown(KeyCode.O))
+       /* if (Input.GetKeyDown(KeyCode.O))
          {
              Damage(10);
             // healthBar.SetSize();
@@ -21,7 +22,7 @@ public class Health : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.H))
         {
             Heal(10);
-        }
+        }*/
     }
 
     private IEnumerator VisualIndicator(Color color)
@@ -39,6 +40,8 @@ public class Health : MonoBehaviour
         }
 
         this.health -= amount;
+        //Debug.Log((float)(this.health * 0.01 * 1.21f));
+        healthBar.SetSize((float)(this.health * 0.01 * 1.21f));
   
         StartCoroutine(VisualIndicator(Color.red));
 
@@ -62,6 +65,7 @@ public class Health : MonoBehaviour
         else
         {
             this.health += amount;
+            healthBar.SetSize((float)(this.health * 0.01 * 1.21f));
         }
     }
 
