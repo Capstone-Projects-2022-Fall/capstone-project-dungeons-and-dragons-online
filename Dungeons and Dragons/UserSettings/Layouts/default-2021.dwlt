@@ -52,6 +52,7 @@ MonoBehaviour:
   m_TopViewHeight: 30
   m_UseBottomView: 1
   m_BottomViewHeight: 20
+
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -67,6 +68,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+
     x: 0
     y: 0
     width: 1265.3334
@@ -90,6 +92,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+
     y: 594.6667
     width: 1265.3334
     height: 20
@@ -677,7 +680,12 @@ MonoBehaviour:
   m_Size:
     m_Target: 8.310223
     speed: 2
+<<<<<<< HEAD
     m_Value: 0.7946676
+=======
+    m_Value: 8.300884
+
+>>>>>>> f4414aa2425d34a0216153cc55fa38d8c63bd3b1
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -722,6 +730,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+
     x: 226.66667
     y: 80
     width: 694.6667
