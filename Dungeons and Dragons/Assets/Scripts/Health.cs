@@ -46,11 +46,12 @@ public class Health : MonoBehaviour
     /// <summary>
     /// Calculate the damage
     /// </summary>
+    /// <includesource>
+    /// ArgumentOutOfRangeException
+    /// </includesource>
     public void Damage(int amount)
     {
-        /// <summary>
-        /// the damage is negative number will cause an error
-        /// </summary>
+        // throw new System.ArgumentOutOfRangeException("Cannot have a negative damage");
         if (amount < 0)
         {
             throw new System.ArgumentOutOfRangeException("Cannot have a negative damage");
@@ -62,9 +63,6 @@ public class Health : MonoBehaviour
   
         StartCoroutine(VisualIndicator(Color.red));
 
-        /// <summary>
-        /// If amount of health is less than 0 then the player will be destoried
-        /// </summary>
         if (health <= 0)
         {
             Die();
@@ -75,18 +73,12 @@ public class Health : MonoBehaviour
     /// </summary>
     public void Heal(int amount)
     {
-        /// <summary>
-        /// the damage is negative number will cause an error
-        /// </summary>
         if (amount < 0)
         {
             throw new System.ArgumentOutOfRangeException("Cannot have a negative healing");
         }
         StartCoroutine(VisualIndicator(Color.green));
 
-        /// <summary>
-        /// If the replenishment exceeds the maximum health value, it stays at the maximum health
-        /// </summary>
         if (health + amount > MAX_HEALTH)
         {
             this.health = MAX_HEALTH;

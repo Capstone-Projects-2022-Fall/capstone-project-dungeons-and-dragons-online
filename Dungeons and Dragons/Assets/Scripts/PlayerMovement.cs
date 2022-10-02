@@ -72,12 +72,6 @@ public class PlayerMovement : MonoBehaviour
 
     /// <summary>
     /// Relcated the direction of the character
-    /// <c>
-    ///         if (moveDirection.x < 0)
-    ///    {
-    ///        transform.localScale = new Vector3(3f, transform.localScale.y);
-    ///    }
-    /// </c>
     /// </summary>
     void checkFlipping()
     {
@@ -86,9 +80,6 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = new Vector3(3f, transform.localScale.y);
         }
 
-        /// <summary>
-        /// Moving to the right and localScale.x will be set to negative
-        /// </summary>
         if (moveDirection.x > 0)
         {
             transform.localScale = new Vector3(-3f, transform.localScale.y);

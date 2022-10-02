@@ -60,18 +60,12 @@ public class EnemyMovement : MonoBehaviour
     void checkFlipping(Vector2 direction)
     {
         // Going left
-        /// <summary>
-        /// Moving to the left and localScale.x will be set to postive
-        /// </summary>
         if (direction.x < 0)
         {
             transform.localScale = new Vector3(3f, transform.localScale.y);
         }
 
         // Going right
-        /// <summary>
-        /// Moving to the right and localScale.x will be set to negative
-        /// </summary>
         if (direction.x > 0)
         {
             transform.localScale = new Vector3(-3f, transform.localScale.y);

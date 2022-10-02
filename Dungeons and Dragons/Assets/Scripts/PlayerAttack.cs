@@ -40,17 +40,13 @@ public class PlayerAttack : MonoBehaviour
     void Update()
     {
 
-        /// <summary>
-        /// Key J for normal attack the attack status will become ture
-        /// </summary>
+        // Key J for normal attack the attack status will become ture
         if (Input.GetKeyDown(KeyCode.J))
         {
             Attack();
         }
 
-        /// <summary>
-        /// Attack status is true then will call the attackArea class to start attacking
-        /// </summary>
+        // Attack status is true then will call the attackArea class to start attacking
         if (attacking)
         {
             timer += Time.deltaTime * 2;

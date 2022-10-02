@@ -39,11 +39,12 @@ public class EnemyHealth : MonoBehaviour
     /// <summary>
     /// Calculate the damage
     /// </summary>
+    /// <includesource>
+    /// ArgumentOutOfRangeException
+    /// </includesource>
     public void Damage(int amount)
     {
-        /// <summary>
-        /// the damage is negative number will cause an error
-        /// </summary>
+        // the damage is negative number will cause an error
         if (amount < 0)
         {
             throw new System.ArgumentOutOfRangeException("Cannot have a negative damage");
@@ -53,9 +54,7 @@ public class EnemyHealth : MonoBehaviour
 
         StartCoroutine(VisualIndicator(Color.red));
 
-        /// <summary>
-        /// If amount of health is less than 0 then the player will be destoried
-        /// </summary>
+        // If amount of health is less than 0 then the player will be destoried
         if (health <= 0)
         {
             Die();

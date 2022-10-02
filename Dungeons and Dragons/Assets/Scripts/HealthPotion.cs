@@ -14,9 +14,7 @@ public class HealthPotion : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        /// <summary>
-        /// If the target has PlayerHealth compnent then is triggered
-        /// </summary>
+        // If the target has PlayerHealth compnent then is triggered
         if (collider.GetComponent<Health>() != null)
         {
             Health health = collider.GetComponent<Health>();
