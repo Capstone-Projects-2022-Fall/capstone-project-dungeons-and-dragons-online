@@ -1,0 +1,1 @@
+var breadcrumbs=[['-1',"",""],['2',"Assembly-CSharp-Editor Reference","topic_00000000000000AD.html"],['4',"\u003cdefault\u003e Namespace","topic_00000000000000AF.html"],['10',"PhotonAnimatorViewEditor Class","topic_000000000000009F.html"],['11',"Methods","topic_000000000000009F_methods--.html"]];

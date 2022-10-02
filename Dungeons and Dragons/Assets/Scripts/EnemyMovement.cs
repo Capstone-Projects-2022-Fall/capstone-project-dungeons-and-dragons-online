@@ -2,12 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Enemy movement handler
+/// </summary>
 public class EnemyMovement : MonoBehaviour
 {
+    /// <summary>
+    /// Get the chasing object
+    /// </summary>
     public GameObject player;
+
+    /// <summary>
+    /// the speed of the enemy
+    /// </summary>
     public float speed;
+
+    /// <summary>
+    /// the chasing distance detector 
+    /// </summary>
     public float distancBetween;
 
+    /// <summary>
+    /// the distance between the enemy and player
+    /// </summary>
     private float distance;
 
     // Start is called before the first frame update
@@ -17,6 +34,9 @@ public class EnemyMovement : MonoBehaviour
     }
 
     // Update is called once per frame
+    /// <summary>
+    /// Getting the distance between enemy and player object
+    /// </summary>
     void Update()
     {
         // Getting the distance between enemy and player object
@@ -34,6 +54,9 @@ public class EnemyMovement : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Relcated the direction of the enemy
+    /// </summary>
     void checkFlipping(Vector2 direction)
     {
         // Going left

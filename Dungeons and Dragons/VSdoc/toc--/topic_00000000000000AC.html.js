@@ -1,0 +1,1 @@
+var breadcrumbs=[['-1',"",""],['2',"Assembly-CSharp-Editor Reference","topic_00000000000000AD.html"],['188',"ExitGames.UtilityScripts Namespace","topic_00000000000000A8.html"],['192',"PunTeamsInspector Class","topic_00000000000000AB.html"],['193',"Methods","topic_00000000000000AB_methods--.html"],['194',"OnInspectorGUI Method","topic_00000000000000AC.html"]];

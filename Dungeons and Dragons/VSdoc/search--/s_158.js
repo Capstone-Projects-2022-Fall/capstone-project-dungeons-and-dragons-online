@@ -1,0 +1,1 @@
+search_result['158']=["topic_0000000000000074.html","HasChat Field","True if the ChatClient of the Photon Chat API is available. If so, the editor may (e.g.) show additional options in settings."];

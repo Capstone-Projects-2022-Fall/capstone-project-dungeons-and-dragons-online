@@ -1,0 +1,1 @@
+search_result['3']=["topic_0000000000000001.html","AccountService Class","Creates a instance of the Account Service to register Photon Cloud accounts."];
