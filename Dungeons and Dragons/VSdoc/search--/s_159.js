@@ -1,0 +1,1 @@
+search_result['159']=["topic_0000000000000075.html","HasVoice Field","True if the VoiceClient of the Photon Voice API is available. If so, the editor may (e.g.) show additional options in settings."];

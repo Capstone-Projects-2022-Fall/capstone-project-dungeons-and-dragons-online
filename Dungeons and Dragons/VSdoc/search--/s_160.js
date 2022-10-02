@@ -1,0 +1,1 @@
+search_result['160']=["topic_0000000000000076.html","HasCheckedProducts Field","True if the PhotonEditorUtils checked the available products / APIs. If so, the editor may (e.g.) show additional options in settings."];

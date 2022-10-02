@@ -1,0 +1,1 @@
+var breadcrumbs=[['-1',"",""],['2',"Assembly-CSharp-Editor Reference","topic_00000000000000AD.html"],['4',"\u003cdefault\u003e Namespace","topic_00000000000000AF.html"],['87',"PunWizardText Class","topic_0000000000000021.html"],['88',"Fields","topic_0000000000000021_vars--.html"],['110',"OpenDevNetText Field","topic_000000000000003E.html"]];
