@@ -1,0 +1,1 @@
+search_result['1163']=["topic_00000000000003FD.html","ConnectAndJoinRandom Class","This script automatically connects to Photon (using the settings file),\r\ntries to join a random room and creates one if none was found (which is ok)."];

@@ -1,0 +1,1 @@
+search_result['913']=["topic_000000000000033C.html","Room.MaxPlayers Property","Sets a limit of players to this room. This property is shown in lobby, too.\r\nIf the room is full (players count == maxplayers), joining this room will fail."];

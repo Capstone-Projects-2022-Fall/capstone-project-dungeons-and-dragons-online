@@ -1,0 +1,1 @@
+search_result['600']=["topic_0000000000000252.html","PhotonNetwork.MaxResendsBeforeDisconnect Property","Defines the number of times a reliable message can be resent before not getting an ACK for it will trigger a disconnect. Default: 5."];

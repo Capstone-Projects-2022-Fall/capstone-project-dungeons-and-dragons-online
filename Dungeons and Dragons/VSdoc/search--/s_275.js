@@ -1,0 +1,1 @@
+search_result['275']=["topic_0000000000000139.html","RoomOptions.DeleteNullProperties Property","Optionally, properties get deleted, when null gets assigned as value. Defaults to off / false."];

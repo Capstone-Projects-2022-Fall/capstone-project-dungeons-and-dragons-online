@@ -1,0 +1,1 @@
+search_result['1149']=["topic_00000000000003F1.html","PhotonTransformViewScaleControl.GetNetworkScale Method","Gets the last scale that was received through the network"];

@@ -1,0 +1,1 @@
+search_result['1052']=["topic_00000000000003AC.html","PhotonAnimatorView.CacheDiscreteTriggers Method","Caches the discrete triggers values for keeping track of raised triggers, and will be reseted after the sync routine got performed"];

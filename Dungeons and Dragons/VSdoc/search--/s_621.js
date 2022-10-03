@@ -1,0 +1,1 @@
+search_result['621']=["topic_0000000000000266.html","PhotonNetwork.CreateRoom (String, RoomOptions, TypedLobby) Method","Creates a room but fails if this room is existing already. Can only be called on Master Server."];

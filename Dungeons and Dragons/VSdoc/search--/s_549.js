@@ -1,0 +1,1 @@
+search_result['549']=["topic_000000000000021F.html","PhotonNetwork.connectedAndReady Property","A refined version of connected which is true only if your connection to the server is ready to accept operations like join, leave, etc."];

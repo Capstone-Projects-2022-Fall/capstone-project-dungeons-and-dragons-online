@@ -1,0 +1,1 @@
+search_result['274']=["topic_0000000000000138.html","RoomOptions.PublishUserId Property","Defines if the UserIds of players get \"published\" in the room. Useful for FindFriends, if players want to play another game together."];

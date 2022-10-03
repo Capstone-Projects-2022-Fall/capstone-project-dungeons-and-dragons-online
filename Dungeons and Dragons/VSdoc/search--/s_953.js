@@ -1,0 +1,1 @@
+search_result['953']=["topic_000000000000035F.html","RoomInfo.PlayerCount Property","Only used internally in lobby, to display number of players in room (while you\u0027re not in)."];

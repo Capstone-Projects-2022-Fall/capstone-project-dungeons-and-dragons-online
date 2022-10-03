@@ -1,0 +1,1 @@
+search_result['593']=["topic_000000000000024B.html","PhotonNetwork.countOfPlayersInRooms Property","Count of users currently playing your app in some room (sent every 5sec by Master Server).\r\nUse PhotonNetwork.playerList.Length or PhotonNetwork.room.PlayerCount to get the count of players in the roo..."];

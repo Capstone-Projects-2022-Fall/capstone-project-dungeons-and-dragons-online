@@ -1,0 +1,1 @@
+search_result['1490']=["topic_00000000000004C2.html","TurnExtensions.SetFinishedTurn Method","Sets the player\u0027s finished turn (in the ROOM properties)"];

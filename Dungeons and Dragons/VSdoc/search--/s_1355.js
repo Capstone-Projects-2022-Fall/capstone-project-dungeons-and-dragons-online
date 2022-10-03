@@ -1,0 +1,1 @@
+search_result['1355']=["topic_000000000000046C.html","SecondsBeforeRespawn Field","Enables you to define a timeout when the picked up item should re-spawn at the same place it was before."];

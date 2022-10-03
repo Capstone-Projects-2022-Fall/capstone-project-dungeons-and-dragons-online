@@ -1,0 +1,1 @@
+search_result['60']=["topic_000000000000006C.html","FriendInfo.IsInRoom Property",""];

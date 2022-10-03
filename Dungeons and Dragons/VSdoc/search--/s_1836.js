@@ -1,0 +1,1 @@
+search_result['1836']=["topic_00000000000005BC.html","IChatClientListener.OnChatStateChange Method","The ChatClient\u0027s state changed. Usually, OnConnected and OnDisconnected are the callbacks to react to."];

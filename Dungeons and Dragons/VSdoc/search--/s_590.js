@@ -1,0 +1,1 @@
+search_result['590']=["topic_0000000000000248.html","PhotonNetwork.inRoom Property","Is true while being in a room (connectionStateDetailed == ClientState.Joined)."];

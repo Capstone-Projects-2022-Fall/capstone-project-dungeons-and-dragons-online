@@ -1,0 +1,1 @@
+search_result['1456']=["topic_00000000000004AA.html","PunTurnManager.IsOver Property","Gets a value indicating whether the current turn is over. That is the ElapsedTimeinTurn is greater or equal to the TurnDuration"];

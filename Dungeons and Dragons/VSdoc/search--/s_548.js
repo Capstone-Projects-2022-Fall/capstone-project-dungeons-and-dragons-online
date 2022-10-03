@@ -1,0 +1,1 @@
+search_result['548']=["topic_000000000000021E.html","PhotonNetwork.connecting Property","True when you called ConnectUsingSettings (or similar) until the low level connection to Photon gets established."];

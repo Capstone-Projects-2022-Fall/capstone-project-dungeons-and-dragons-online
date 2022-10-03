@@ -1,0 +1,1 @@
+search_result['591']=["topic_0000000000000249.html","PhotonNetwork.isNonMasterClientInRoom Property","True if we are in a room (client) and NOT the room\u0027s masterclient"];

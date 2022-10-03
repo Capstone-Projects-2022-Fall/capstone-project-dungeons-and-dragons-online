@@ -1,0 +1,1 @@
+search_result['564']=["topic_000000000000022E.html","precisionForVectorSynchronization Field","The minimum difference that a Vector2 or Vector3(e.g. a transforms rotation) needs to change before we send it via a PhotonView\u0027s OnSerialize/ObservingComponent."];

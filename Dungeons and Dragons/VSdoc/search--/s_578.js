@@ -1,0 +1,1 @@
+search_result['578']=["topic_000000000000023C.html","PhotonNetwork.autoJoinLobby Property","Set in PhotonServerSettings asset. Defines if the PhotonNetwork should join the \"lobby\" when connected to the Master server."];

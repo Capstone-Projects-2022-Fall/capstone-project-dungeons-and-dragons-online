@@ -1,0 +1,1 @@
+search_result['1128']=["topic_00000000000003E3.html","PhotonTransformViewRotationControl.GetNetworkRotation Method","Gets the last rotation that was received through the network"];

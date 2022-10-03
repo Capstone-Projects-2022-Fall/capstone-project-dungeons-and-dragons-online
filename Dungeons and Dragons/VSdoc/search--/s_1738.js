@@ -1,0 +1,1 @@
+search_result['1738']=["topic_0000000000000569.html","HistoryLength Field","(14) Number of message to fetch from history. 0: no history. 1 and higher: number of messages in history. -1: all history."];

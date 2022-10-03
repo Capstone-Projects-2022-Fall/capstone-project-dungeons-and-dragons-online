@@ -1,0 +1,1 @@
+search_result['1734']=["topic_0000000000000565.html","SubscribeResults Field","(15) Subscribe operation result parameter. A bool[] with result per channel."];

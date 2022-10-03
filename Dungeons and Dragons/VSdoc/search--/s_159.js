@@ -1,0 +1,1 @@
+search_result['159']=["topic_00000000000000B5.html","EmptyRoomTTL Field","(236) Time To Live (TTL) for a room when the last player leaves. Keeps room in memory for case a player re-joins soon. In milliseconds."];

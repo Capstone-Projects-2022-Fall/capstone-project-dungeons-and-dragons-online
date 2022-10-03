@@ -1,0 +1,1 @@
+search_result['3']=["topic_000000000000002B.html","CloudRegionCode Enumeration","Currently available Photon Cloud regions as enum."];

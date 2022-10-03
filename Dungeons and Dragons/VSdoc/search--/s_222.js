@@ -1,0 +1,1 @@
+search_result['222']=["topic_00000000000000F4.html","ExpectedProtocol Field","(195) Protocol which will be used by client to connect master/game servers. Used for nameserver."];

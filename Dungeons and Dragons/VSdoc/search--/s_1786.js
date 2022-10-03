@@ -1,0 +1,1 @@
+search_result['1786']=["topic_000000000000058D.html","ClientAuthenticationType Field","(217) This key\u0027s (byte) value defines the target custom authentication type/service the client connects with. Used in OpAuthenticate"];

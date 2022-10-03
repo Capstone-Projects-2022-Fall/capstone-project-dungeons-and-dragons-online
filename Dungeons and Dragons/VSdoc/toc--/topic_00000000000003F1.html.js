@@ -1,0 +1,1 @@
+var breadcrumbs=[['-1',"",""],['2',"Assembly-CSharp Reference","topic_00000000000005F0.html"],['4',"\u003cdefault\u003e Namespace","topic_00000000000005F2.html"],['705',"PhotonTransformViewScaleControl Class","topic_00000000000003EF.html"],['706',"Methods","topic_00000000000003EF_methods--.html"],['707',"GetNetworkScale Method","topic_00000000000003F1.html"]];

@@ -1,0 +1,1 @@
+search_result['244']=["topic_0000000000000105.html","SetProperties Field","(252) Set Properties (of room or actor/player)"];

@@ -1,0 +1,1 @@
+search_result['1427']=["topic_0000000000000497.html","TeamPlayerProp Field","Defines the player custom property name to use for team affinity of \"this\" player."];

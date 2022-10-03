@@ -1,0 +1,1 @@
+search_result['163']=["topic_00000000000000B9.html","IsInactive Field","(233) Used in EvLeave to describe if a user is inactive (and might come back) or not. In rooms with PlayerTTL, becoming inactive is the default case."];

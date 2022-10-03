@@ -1,0 +1,1 @@
+search_result['572']=["topic_0000000000000236.html","SendMonoMessageTargetType Field","Defines which classes can contain PUN Callback implementations."];

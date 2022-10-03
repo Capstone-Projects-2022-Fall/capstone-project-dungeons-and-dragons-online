@@ -1,0 +1,1 @@
+search_result['595']=["topic_000000000000024D.html","PhotonNetwork.countOfRooms Property","The count of rooms currently in use (available on MasterServer in 5sec intervals)."];

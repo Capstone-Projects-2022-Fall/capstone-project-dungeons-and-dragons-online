@@ -1,0 +1,1 @@
+search_result['1634']=["topic_000000000000050F.html","ChatClient.NameServerAddress Property","The address of last connected Name Server."];

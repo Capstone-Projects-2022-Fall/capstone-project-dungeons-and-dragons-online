@@ -1,0 +1,1 @@
+search_result['384']=["topic_00000000000001B1.html","IPunCallbacks.OnConnectionFail Method","Called when something causes the connection to fail (after it was established), followed by a call to OnDisconnectedFromPhoton()."];

@@ -1,0 +1,1 @@
+search_result['1617']=["topic_0000000000000505.html","ChatChannel.MaxSubscribers Property","Maximum number of channel subscribers. 0 means infinite."];

@@ -1,0 +1,1 @@
+search_result['1679']=["topic_0000000000000534_overloads--.html","ChatClient.TryGetChannel Method","Simplified access to either private or public channels by name."];

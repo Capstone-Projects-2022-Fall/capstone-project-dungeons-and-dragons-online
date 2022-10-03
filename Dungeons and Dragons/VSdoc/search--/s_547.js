@@ -1,0 +1,1 @@
+search_result['547']=["topic_000000000000021D.html","PhotonNetwork.connected Property","False until you connected to Photon initially. True in offline mode, while connected to any server and even while switching servers."];

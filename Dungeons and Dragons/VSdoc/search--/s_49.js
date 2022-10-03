@@ -1,0 +1,1 @@
+search_result['49']=["topic_0000000000000066.html","GameObjectExtensions.GetActive Method","Unity-version-independent replacement for active GO property."];

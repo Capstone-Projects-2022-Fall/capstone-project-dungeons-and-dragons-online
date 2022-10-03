@@ -1,0 +1,1 @@
+search_result['1667']=["topic_000000000000052D.html","ChatClient.SendPrivateMessage (String, Object, Boolean) Method","Sends a private message to a single target user. Calls OnPrivateMessage on the receiving client."];

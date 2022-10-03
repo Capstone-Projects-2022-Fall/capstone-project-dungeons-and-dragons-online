@@ -1,0 +1,1 @@
+search_result['1627']=["topic_000000000000050D.html","ChatClient Class","Central class of the Photon Chat API to connect, handle channels and messages."];

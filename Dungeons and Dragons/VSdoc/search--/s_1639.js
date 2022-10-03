@@ -1,0 +1,1 @@
+search_result['1639']=["topic_0000000000000514.html","ChatClient.CanChat Property","Checks if this client is ready to send messages."];

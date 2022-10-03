@@ -1,0 +1,1 @@
+search_result['252']=["topic_000000000000010D.html","GetGameList Field","(217) Get the game list matching a supplied sql filter (SqlListLobby only)"];

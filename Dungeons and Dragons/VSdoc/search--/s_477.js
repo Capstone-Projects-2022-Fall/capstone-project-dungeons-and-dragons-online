@@ -1,0 +1,1 @@
+search_result['477']=["topic_00000000000001F5.html","PhotonStream.ReceiveNext Method","Read next piece of data from the stream when isReading is true."];

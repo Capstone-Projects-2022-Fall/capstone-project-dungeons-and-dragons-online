@@ -1,0 +1,1 @@
+search_result['813']=["topic_00000000000002E5.html","PhotonStreamQueue.Serialize Method","Serializes the specified stream. Call this in your OnPhotonSerializeView method to send the whole recorded stream."];

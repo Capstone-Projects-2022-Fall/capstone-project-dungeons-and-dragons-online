@@ -1,0 +1,1 @@
+search_result['812']=["topic_00000000000002E4.html","PhotonStreamQueue.ReceiveNext Method","Receives the next object from the queue. This works just like PhotonStream.ReceiveNext"];

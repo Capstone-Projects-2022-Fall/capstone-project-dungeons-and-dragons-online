@@ -1,0 +1,1 @@
+search_result['1335']=["topic_0000000000000462.html","PlayerRoomIndexing.OnJoinedRoom Method","Called when entering a room (by creating or joining it). Called on all clients (including the Master Client)."];

@@ -1,0 +1,1 @@
+search_result['1023']=["topic_0000000000000397.html","ServerSettings.IsAppId Method","Checks if a string is a Guid by attempting to create one."];

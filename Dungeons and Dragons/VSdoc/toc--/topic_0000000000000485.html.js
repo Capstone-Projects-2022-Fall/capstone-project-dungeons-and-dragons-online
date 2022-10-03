@@ -1,0 +1,1 @@
+var breadcrumbs=[['-1',"",""],['2',"Assembly-CSharp Reference","topic_00000000000005F0.html"],['4',"\u003cdefault\u003e Namespace","topic_00000000000005F2.html"],['800',"PickupItemSyncer Class","topic_0000000000000482.html"],['801',"Methods","topic_0000000000000482_methods--.html"],['803',"OnJoinedRoom Method","topic_0000000000000485.html"]];

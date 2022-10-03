@@ -1,0 +1,1 @@
+search_result['901']=["topic_0000000000000335.html","PhotonPingManager.ResolveHost Method","Attempts to resolve a hostname into an IP string or returns empty string if that fails."];

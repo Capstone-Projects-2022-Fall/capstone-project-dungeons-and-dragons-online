@@ -1,0 +1,1 @@
+search_result['479']=["topic_00000000000001F7.html","PhotonStream.SendNext Method","Add another piece of data to send it when isWriting is true."];

@@ -1,0 +1,1 @@
+search_result['1487']=["topic_00000000000004BF.html","TurnExtensions.GetTurn Method","Gets the current turn from a RoomInfo"];
