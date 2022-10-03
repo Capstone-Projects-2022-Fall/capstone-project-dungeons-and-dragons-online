@@ -81,7 +81,11 @@
         <type>placeholder</type>
         <is-default>no</is-default>
         <name />
+<<<<<<< HEAD
         <id>d9ee743304ea48e090ccb6375350f5a4</id>
+=======
+        <id>bf04e69941ab4fe9911a0987a95fd25a</id>
+>>>>>>> main
         <comment><![CDATA[vsdocman_escaped_]_]_></comment>
         <namespaces />
         <topics />

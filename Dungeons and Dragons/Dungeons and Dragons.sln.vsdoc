@@ -48,7 +48,11 @@
       <add key="VBdocman_unbreakSourceLines"><![CDATA[0]]></add>
       <add key="VBdocman_supportedNetFramework"><![CDATA[4.5, 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8]]></add>
       <add key="VBdocman_SelectedProperties"><![CDATA[
+<<<<<<< HEAD
 <ArrayOfString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+=======
+<ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+>>>>>>> main
   <string>showFormsSeparate</string>
   <string>showInherited</string>
   <string>pageFooterText</string>
@@ -102,7 +106,11 @@
         <type>placeholder</type>
         <is-default>no</is-default>
         <name />
+<<<<<<< HEAD
         <id>76d6aee5a055487493454dc7386aec50</id>
+=======
+        <id>f485b1f696b94dd49ee290b5e29d9998</id>
+>>>>>>> main
         <comment><![CDATA[vsdocman_escaped_]_]_></comment>
         <namespaces />
         <topics />
@@ -122,6 +130,7 @@
     <add key="VBdocman_Assembly-CSharp"><![CDATA[default]]></add>
     <add key="VBdocman_Assembly-CSharp-Editor"><![CDATA[default]]></add>
     <add key="VBdocman_Assembly-CSharp-firstpass"><![CDATA[default]]></add>
+<<<<<<< HEAD
     <add key="VBdocman_PsdPlugin"><![CDATA[default]]></add>
     <add key="VBdocman_Unity.2D.Animation.Editor"><![CDATA[default]]></add>
     <add key="VBdocman_Unity.2D.Animation.Runtime"><![CDATA[default]]></add>
@@ -180,5 +189,7 @@
     <add key="VBdocman_UnityEditor.UI"><![CDATA[default]]></add>
     <add key="VBdocman_UnityEngine.TestRunner"><![CDATA[default]]></add>
     <add key="VBdocman_UnityEngine.UI"><![CDATA[default]]></add>
+=======
+>>>>>>> main
   </appSettings>
 </configuration>
