@@ -1,0 +1,1 @@
+search_result['627']=["topic_0000000000000269.html","PhotonNetwork.JoinRoom (String, String()) Method","Join room by roomname and on success calls OnJoinedRoom(). This is not affected by lobbies."];

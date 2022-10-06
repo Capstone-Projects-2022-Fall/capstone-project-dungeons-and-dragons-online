@@ -1,0 +1,1 @@
+search_result['426']=["topic_00000000000001CC.html","PunBehaviour.OnConnectedToPhoton Method","Called when the initial connection got established but before you can use the server. OnJoinedLobby() or OnConnectedToMaster() are called when PUN is ready."];

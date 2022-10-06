@@ -1,0 +1,1 @@
+search_result['649']=["topic_0000000000000277.html","PhotonNetwork.RemovePlayerCustomProperties Method","Locally removes Custom Properties of \"this\" player. Important: This does not synchronize the change! Useful when you switch rooms."];

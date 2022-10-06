@@ -1,0 +1,1 @@
+var breadcrumbs=[['-1',"",""],['2',"Assembly-CSharp Reference","topic_00000000000005F0.html"],['1175',"ExitGames.UtilityScripts Namespace","topic_000000000000045A.html"],['1205',"TextToggleIsOnTransition Class","topic_00000000000004E9.html"],['1212',"Fields","topic_00000000000004E9_vars--.html"],['1215',"NormalOffColor Field","topic_00000000000004EC.html"]];

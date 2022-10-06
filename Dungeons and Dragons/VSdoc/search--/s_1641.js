@@ -1,0 +1,1 @@
+search_result['1641']=["topic_0000000000000516.html","ChatClient.AppVersion Property","The version of your client. A new version also creates a new \"virtual app\" to separate players from older client versions."];

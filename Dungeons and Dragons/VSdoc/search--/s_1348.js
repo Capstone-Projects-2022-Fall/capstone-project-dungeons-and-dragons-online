@@ -1,0 +1,1 @@
+search_result['1348']=["topic_000000000000046A.html","PlayerRoomIndexingExtensions.GetRoomIndex Method","Extension for PhotonPlayer class to wrap up access to the player\u0027s custom property."];

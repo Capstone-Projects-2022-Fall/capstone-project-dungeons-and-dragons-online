@@ -1,0 +1,1 @@
+search_result['645']=["topic_0000000000000273.html","PhotonNetwork.LeaveRoom Method","Leave the current room and return to the Master Server where you can join or create rooms (see remarks)."];

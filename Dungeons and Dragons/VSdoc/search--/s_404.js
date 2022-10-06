@@ -1,0 +1,1 @@
+search_result['404']=["topic_00000000000001C5.html","IPunPrefabPool Interface","Defines all the methods that a Object Pool must implement, so that PUN can use it."];

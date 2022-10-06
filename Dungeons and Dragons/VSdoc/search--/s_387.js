@@ -1,0 +1,1 @@
+search_result['387']=["topic_00000000000001B4.html","IPunCallbacks.OnReceivedRoomListUpdate Method","Called for any update of the room-listing while in a lobby (PhotonNetwork.insideLobby) on the Master Server\r\nor when a response is received for PhotonNetwork.GetCustomRoomList()."];

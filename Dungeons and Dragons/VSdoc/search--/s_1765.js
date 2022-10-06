@@ -1,0 +1,1 @@
+search_result['1765']=["topic_0000000000000581.html","AuthenticationValues.Token Property","After initial authentication, Photon provides a token for this client / user, which is subsequently used as (cached) validation."];

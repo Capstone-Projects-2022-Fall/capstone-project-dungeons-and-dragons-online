@@ -1,0 +1,1 @@
+search_result['522']=["topic_000000000000020E.html","PhotonLagSimulationGui Class","This MonoBehaviour is a basic GUI for the Photon client\u0027s network-simulation feature.\r\nIt can modify lag (fixed delay), jitter (random lag) and packet loss."];

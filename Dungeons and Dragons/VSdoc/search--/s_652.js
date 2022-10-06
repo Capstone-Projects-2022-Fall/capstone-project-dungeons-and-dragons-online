@@ -1,0 +1,1 @@
+search_result['652']=["topic_000000000000027A.html","PhotonNetwork.AllocateSceneViewID Method","Enables the Master Client to allocate a viewID that is valid for scene objects."];

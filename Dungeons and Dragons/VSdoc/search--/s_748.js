@@ -1,0 +1,1 @@
+search_result['748']=["topic_00000000000002B7.html","PhotonPlayer.IsMasterClient Property","True if this player is the Master Client of the current room."];

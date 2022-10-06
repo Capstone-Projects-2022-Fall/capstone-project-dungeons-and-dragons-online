@@ -1,0 +1,1 @@
+search_result['552']=["topic_0000000000000222.html","PhotonNetwork.Server Property","The server (type) this client is currently connected or connecting to."];

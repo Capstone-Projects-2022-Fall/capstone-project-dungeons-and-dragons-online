@@ -1,0 +1,1 @@
+search_result['747']=["topic_00000000000002B6.html","IsLocal Field","Only one player is controlled by each client. Others are not local."];

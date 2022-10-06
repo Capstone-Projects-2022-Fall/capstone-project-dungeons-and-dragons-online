@@ -1,0 +1,1 @@
+search_result['1472']=["topic_00000000000004B5.html","IPunTurnManagerCallbacks.OnTurnBegins Method","Called the turn begins event."];

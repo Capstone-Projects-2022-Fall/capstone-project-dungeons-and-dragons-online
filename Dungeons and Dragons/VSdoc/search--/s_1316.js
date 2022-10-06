@@ -1,0 +1,1 @@
+search_result['1316']=["topic_0000000000000459.html","OnStartDelete Class","This component will destroy the GameObject it is attached to (in Start())."];

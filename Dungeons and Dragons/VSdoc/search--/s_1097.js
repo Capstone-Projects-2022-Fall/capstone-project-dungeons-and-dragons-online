@@ -1,0 +1,1 @@
+search_result['1097']=["topic_00000000000003C5.html","PhotonTransformViewPositionControl.GetExtrapolatedPositionOffset Method","Calculates an estimated position based on the last synchronized position,\r\nthe time when the last position was received and the movement speed of the object"];

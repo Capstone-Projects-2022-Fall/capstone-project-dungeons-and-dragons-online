@@ -1,0 +1,1 @@
+search_result['584']=["topic_0000000000000242.html","PhotonNetwork.sendRateOnSerialize Property","Defines how many times per second OnPhotonSerialize should be called on PhotonViews."];

@@ -1,0 +1,1 @@
+search_result['616']=["topic_0000000000000262.html","PhotonNetwork.InitializeSecurity Method","Used for compatibility with Unity networking only. Encryption is automatically initialized while connecting."];

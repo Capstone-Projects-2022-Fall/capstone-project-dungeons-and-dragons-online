@@ -1,0 +1,1 @@
+search_result['631']=["topic_000000000000026B.html","PhotonNetwork.JoinOrCreateRoom (String, RoomOptions, TypedLobby, String()) Method","Lets you either join a named room or create it on the fly - you don\u0027t have to know if someone created the room already."];

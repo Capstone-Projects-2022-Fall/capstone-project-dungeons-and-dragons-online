@@ -1,0 +1,1 @@
+search_result['445']=["topic_00000000000001DF.html","PunBehaviour.OnPhotonCustomRoomPropertiesChanged Method","Called when a room\u0027s custom properties changed. The propertiesThatChanged contains all that was set via Room.SetCustomProperties."];

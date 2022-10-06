@@ -1,0 +1,1 @@
+search_result['1056']=["topic_00000000000003B0.html","PhotonAnimatorView.GetSynchronizedParameters Method","Get a list of all synchronized parameters"];

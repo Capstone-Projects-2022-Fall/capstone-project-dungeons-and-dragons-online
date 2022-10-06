@@ -1,0 +1,1 @@
+search_result['842']=["topic_000000000000030C.html","PhotonView.owner Property","The owner of a PhotonView is the player who created the GameObject with that view. Objects in the scene don\u0027t have an owner."];

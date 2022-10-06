@@ -1,0 +1,1 @@
+var breadcrumbs=[['-1',"",""],['2',"Assembly-CSharp Reference","topic_00000000000005F0.html"],['4',"\u003cdefault\u003e Namespace","topic_00000000000005F2.html"],['1124',"IPunTurnManagerCallbacks Interface","topic_00000000000004B4.html"],['1125',"Methods","topic_00000000000004B4_methods--.html"],['1130',"OnTurnTimeEnds Method","topic_00000000000004B9.html"]];

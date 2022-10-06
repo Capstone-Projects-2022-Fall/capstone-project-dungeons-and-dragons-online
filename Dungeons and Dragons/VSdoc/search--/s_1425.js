@@ -1,0 +1,1 @@
+search_result['1425']=["topic_0000000000000492.html","Team Enumeration","Enum defining the teams available. First team should be neutral (it\u0027s the default value any field of this enum gets)."];

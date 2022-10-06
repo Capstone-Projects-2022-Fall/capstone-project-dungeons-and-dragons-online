@@ -1,0 +1,1 @@
+search_result['1619']=["topic_0000000000000507.html","ChatChannel Constructor","Used internally to create new channels. This does NOT create a channel on the server! Use ChatClient.Subscribe."];

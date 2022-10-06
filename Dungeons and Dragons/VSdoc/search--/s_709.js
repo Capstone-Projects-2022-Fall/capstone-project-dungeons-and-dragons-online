@@ -1,0 +1,1 @@
+search_result['709']=["topic_000000000000029F.html","PhotonNetwork.GetParent Method","Gets the parent directory of a path. Recursive Function, will return null if parentName not found"];

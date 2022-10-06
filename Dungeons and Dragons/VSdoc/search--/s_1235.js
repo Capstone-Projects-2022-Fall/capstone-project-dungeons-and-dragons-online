@@ -1,0 +1,1 @@
+search_result['1235']=["topic_0000000000000430.html","InputToEvent Class","Utility component to forward mouse or touch input to clicked gameobjects.\r\nCalls OnPress, OnClick and OnRelease methods on \"first\" game object."];

@@ -1,0 +1,1 @@
+search_result['1053']=["topic_00000000000003AD.html","PhotonAnimatorView.DoesLayerSynchronizeTypeExist Method","Check if a specific layer is configured to be synchronize"];

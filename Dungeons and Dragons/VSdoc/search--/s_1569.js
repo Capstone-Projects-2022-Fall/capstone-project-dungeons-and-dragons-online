@@ -1,0 +1,1 @@
+search_result['1569']=["topic_00000000000004E9.html","TextToggleIsOnTransition Class","Use this on toggles texts to have some color transition on the text depending on the isOnState."];

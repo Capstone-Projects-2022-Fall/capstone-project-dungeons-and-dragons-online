@@ -1,0 +1,1 @@
+search_result['562']=["topic_000000000000022C.html","PhotonNetwork.Friends Property","Read-only list of friends, their online status and the room they are in. Null until initialized by a FindFriends call."];

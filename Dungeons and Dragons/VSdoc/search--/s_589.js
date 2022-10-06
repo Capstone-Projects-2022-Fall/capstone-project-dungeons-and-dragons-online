@@ -1,0 +1,1 @@
+search_result['589']=["topic_0000000000000247.html","PhotonNetwork.isMasterClient Property","Are we the master client?"];

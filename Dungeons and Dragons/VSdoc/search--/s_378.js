@@ -1,0 +1,1 @@
+search_result['378']=["topic_00000000000001AB.html","IPunCallbacks.OnPhotonCreateRoomFailed Method","Called when a CreateRoom() call failed. The parameter provides ErrorCode and message (as array)."];

@@ -1,0 +1,1 @@
+search_result['1682']=["topic_0000000000000536.html","ChatClient.TryGetPrivateChannelByUser Method","Simplified access to private channels by target user."];

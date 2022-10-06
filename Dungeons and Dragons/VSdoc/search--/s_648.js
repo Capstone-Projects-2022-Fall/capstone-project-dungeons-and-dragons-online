@@ -1,0 +1,1 @@
+search_result['648']=["topic_0000000000000276.html","PhotonNetwork.SetPlayerCustomProperties Method","Sets this (local) player\u0027s properties and synchronizes them to the other players (don\u0027t modify them directly)."];

@@ -1,0 +1,1 @@
+search_result['1769']=["topic_0000000000000584.html","AuthenticationValues(String) Constructor","Creates minimal info about the user. If this is authenticated or not, depends on the set AuthType."];

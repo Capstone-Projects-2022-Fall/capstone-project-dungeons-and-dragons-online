@@ -1,0 +1,1 @@
+search_result['1552']=["topic_00000000000004E2.html","ButtonInsideScrollList Class","Button inside scroll list will stop scrolling ability of scrollRect container, so that when pressing down on a button and draggin up and down will not affect scrolling.\r\nthis doesn\u0027t do anything if no..."];

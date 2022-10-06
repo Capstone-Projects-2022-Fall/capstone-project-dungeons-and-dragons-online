@@ -1,0 +1,1 @@
+search_result['940']=["topic_0000000000000352.html","RoomInfo.removedFromList Property","Used internally in lobby, to mark rooms that are no longer listed."];

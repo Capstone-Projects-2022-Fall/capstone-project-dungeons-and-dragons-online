@@ -1,0 +1,1 @@
+search_result['915']=["topic_000000000000033E.html","Room.ExpectedUsers Property","List of users who are expected to join this room. In matchmaking, Photon blocks a slot for each of these UserIDs out of the MaxPlayers."];

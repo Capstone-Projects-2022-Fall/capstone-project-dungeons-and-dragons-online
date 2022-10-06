@@ -1,0 +1,1 @@
+search_result['575']=["topic_0000000000000239.html","maxConnections Field","Only used in Unity Networking. In PUN, set the number of players in PhotonNetwork.CreateRoom."];

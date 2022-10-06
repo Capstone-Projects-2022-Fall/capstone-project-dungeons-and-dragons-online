@@ -1,0 +1,1 @@
+search_result['1702']=["topic_000000000000054F.html","ChatOperationCode Class","Wraps up codes for operations used internally in Photon Chat. You don\u0027t have to use them directly usually."];
