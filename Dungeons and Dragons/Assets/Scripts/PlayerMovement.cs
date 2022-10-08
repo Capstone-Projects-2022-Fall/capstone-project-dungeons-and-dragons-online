@@ -7,14 +7,37 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed;
     public Rigidbody2D rb;
     private Vector2 moveDirection;
+    private Inventory inventory;
 
     [SerializeField] private HealthBar healthBar;
+    [SerializeField] private UI_Inventory uiInventory;
+
+    private void Awake()
+    {
+        inventory = new Inventory();
+        uiInventory.setInventory(inventory);
+        ItemWorld.SpawnItemWorld(new Vector3 (1, 1), new Item {itemType = Item.ItemType.LongSword, amt = 1});
+        ItemWorld.SpawnItemWorld(new Vector3 (-1, 1), new Item {itemType = Item.ItemType.HPot, amt = 1});
+        ItemWorld.SpawnItemWorld(new Vector3 (0, -1), new Item {itemType = Item.ItemType.RPot, amt = 1});
+    }
+
 
 
     private void Start()
     {
+        inventory.addItem(new Item {itemType = Item.ItemType.LongSword, amt = 1});
+        Debug.Log(inventory);
         healthBar.SetSize(1.21f);
+    }
 
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        ItemWorld itemWorld = collider.GetComponent<ItemWorld>();
+        if(itemWorld != null)
+        {
+            inventory.addItem(itemWorld.getItem());
+            itemWorld.destroyItem();
+        }
     }
 
 
@@ -58,4 +81,6 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = new Vector3(-3f, transform.localScale.y);
         }
     }
+
+    
 }
