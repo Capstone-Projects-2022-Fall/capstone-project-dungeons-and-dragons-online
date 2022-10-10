@@ -1,0 +1,1 @@
+search_result['1840']=["topic_00000000000005C0.html","IChatClientListener.OnUnsubscribed Method","Result of Unsubscribe operation. Returns for channel name if the channel is now unsubscribed."];

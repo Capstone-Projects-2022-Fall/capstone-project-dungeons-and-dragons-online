@@ -1,0 +1,1 @@
+search_result['1677']=["topic_0000000000000533.html","ChatClient.GetPrivateChannelNameByUser Method","Get you the (locally used) channel name for the chat between this client and another user."];

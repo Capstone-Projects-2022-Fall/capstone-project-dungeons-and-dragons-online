@@ -1,0 +1,1 @@
+search_result['1805']=["topic_000000000000059B.html","GameClosed Field","(32764) Game is closed and can\u0027t be joined. Join another game."];

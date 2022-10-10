@@ -1,0 +1,1 @@
+search_result['738']=["topic_00000000000002B2.html","PhotonPlayer Class","Summarizes a \"player\" within a room, identified (in that room) by actorID."];

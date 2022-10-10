@@ -1,0 +1,1 @@
+search_result['749']=["topic_00000000000002B8.html","PhotonPlayer.IsInactive Property","Players might be inactive in a room when PlayerTTL for a room is \u003e 0. If true, the player is not getting events from this room (now) but can return later."];

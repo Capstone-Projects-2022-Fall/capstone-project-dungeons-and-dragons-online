@@ -1,0 +1,1 @@
+search_result['1453']=["topic_00000000000004A7.html","PunTurnManager.RemainingSecondsInTurn Property","Gets the remaining seconds for the current turn. Ranges from 0 to TurnDuration"];

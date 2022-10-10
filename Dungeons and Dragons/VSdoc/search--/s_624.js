@@ -1,0 +1,1 @@
+search_result['624']=["topic_0000000000000267_overloads--.html","PhotonNetwork.CreateRoom Method","Creates a room but fails if this room is existing already. Can only be called on Master Server."];

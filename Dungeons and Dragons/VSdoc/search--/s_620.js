@@ -1,0 +1,1 @@
+search_result['620']=["topic_0000000000000265_overloads--.html","PhotonNetwork.CreateRoom Method","Creates a room with given name but fails if this room(name) is existing already. Creates random name for roomName null."];

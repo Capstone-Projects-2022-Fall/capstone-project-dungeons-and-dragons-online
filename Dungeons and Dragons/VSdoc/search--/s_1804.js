@@ -1,0 +1,1 @@
+search_result['1804']=["topic_000000000000059A.html","GameFull Field","(32765) Game is full. This rarely happens when some player joined the room before your join completed."];

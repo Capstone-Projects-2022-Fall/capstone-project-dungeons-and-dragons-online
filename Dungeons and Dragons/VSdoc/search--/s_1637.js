@@ -1,0 +1,1 @@
+search_result['1637']=["topic_0000000000000512.html","ChatClient.State Property","Current state of the ChatClient. Also use CanChat."];

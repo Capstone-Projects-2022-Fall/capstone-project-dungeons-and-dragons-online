@@ -1,0 +1,1 @@
+var breadcrumbs=[['-1',"",""],['2',"Assembly-CSharp Reference","topic_00000000000005F0.html"],['1175',"ExitGames.UtilityScripts Namespace","topic_000000000000045A.html"],['1177',"PlayerRoomIndexing Class","topic_000000000000045B.html"],['1190',"Fields","topic_000000000000045B_vars--.html"],['1192',"RoomPlayerIndexedProp Field","topic_000000000000045F.html"]];

@@ -1,0 +1,1 @@
+search_result['1663']=["topic_000000000000052A.html","ChatClient.Subscribe (String(), Int32) Method","Sends operation to subscribe client to channels, optionally fetching a number of messages from the cache."];

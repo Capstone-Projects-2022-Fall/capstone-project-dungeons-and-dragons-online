@@ -1,0 +1,1 @@
+c['635']=[['636',"PeekNext Method","topic_00000000000001F6.html",0],['637',"ReceiveNext Method","topic_00000000000001F5.html",0],['638',"SendNext Method","topic_00000000000001F7.html",0],['639',"Serialize Method","topic_00000000000001F9_overloads--.html",1],['650',"SetReadStream Method","topic_00000000000001F1.html",0],['651',"ToArray Method","topic_00000000000001F8.html",0]];

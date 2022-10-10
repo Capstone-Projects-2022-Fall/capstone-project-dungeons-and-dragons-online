@@ -1,0 +1,1 @@
+search_result['1638']=["topic_0000000000000513.html","ChatClient.DisconnectedCause Property","Disconnection cause. Check this inside IChatClientListener.OnDisconnected."];

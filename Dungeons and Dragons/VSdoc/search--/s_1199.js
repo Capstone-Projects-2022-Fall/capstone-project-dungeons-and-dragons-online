@@ -1,0 +1,1 @@
+search_result['1199']=["topic_0000000000000417.html","CullArea.GetActiveCells Method","Gets a list of all cell IDs the player is currently inside or nearby."];

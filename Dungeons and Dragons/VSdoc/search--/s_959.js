@@ -1,0 +1,1 @@
+search_result['959']=["topic_0000000000000365.html","RoomInfo.Equals Method","Makes RoomInfo comparable (by name)."];

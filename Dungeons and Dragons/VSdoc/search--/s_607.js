@@ -1,0 +1,1 @@
+search_result['607']=["topic_0000000000000259.html","PhotonNetwork.ConnectToMaster Method","Connect to a Photon Master Server by address, port, appID and game(client) version."];

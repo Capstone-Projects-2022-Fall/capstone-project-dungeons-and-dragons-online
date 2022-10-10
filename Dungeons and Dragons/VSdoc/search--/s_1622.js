@@ -1,0 +1,1 @@
+search_result['1622']=["topic_0000000000000509.html","ChatChannel.Add (String(), Object(), Int32) Method","Used internally to add messages to this channel."];

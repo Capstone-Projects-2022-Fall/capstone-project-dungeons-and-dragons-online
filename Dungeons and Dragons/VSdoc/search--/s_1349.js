@@ -1,0 +1,1 @@
+search_result['1349']=["topic_000000000000046B.html","PickupItem Class","Makes a scene object pickup-able. Needs a PhotonView which belongs to the scene."];

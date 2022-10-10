@@ -1,0 +1,1 @@
+search_result['475']=["topic_00000000000001F3.html","PhotonStream.isReading Property","If true, this client should read data send by another client."];

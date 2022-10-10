@@ -1,0 +1,1 @@
+search_result['341']=["topic_0000000000000172_overloads--.html","AuthenticationValues Constructor","Creates minimal info about the user. If this is authenticated or not, depends on the set AuthType."];

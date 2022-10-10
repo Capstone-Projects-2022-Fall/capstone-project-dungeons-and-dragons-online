@@ -1,0 +1,1 @@
+var breadcrumbs=[['-1',"",""],['2',"Assembly-CSharp-Editor Reference","topic_00000000000000AD.html"],['153',"ExitGames.Client.Photon Namespace","topic_0000000000000000.html"],['170',"AccountServiceReturnCodes Class","topic_000000000000000D.html"],['171',"Fields","topic_000000000000000D_vars--.html"],['173',"InvalidParameters Field","topic_0000000000000010.html"]];

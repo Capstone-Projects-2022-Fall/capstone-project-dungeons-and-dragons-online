@@ -1,0 +1,1 @@
+search_result['377']=["topic_00000000000001AA.html","IPunCallbacks.OnMasterClientSwitched Method","Called after switching to a new MasterClient when the current one leaves."];

@@ -1,0 +1,1 @@
+search_result['333']=["topic_000000000000016C.html","AuthenticationValues.AuthType Property","The type of custom authentication provider that should be used. Currently only \"Custom\" or \"None\" (turns this off)."];

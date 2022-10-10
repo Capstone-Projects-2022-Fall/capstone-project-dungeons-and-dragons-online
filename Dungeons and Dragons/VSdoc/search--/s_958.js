@@ -1,0 +1,1 @@
+search_result['958']=["topic_0000000000000364.html","RoomInfo Constructor","Constructs a RoomInfo to be used in room listings in lobby."];

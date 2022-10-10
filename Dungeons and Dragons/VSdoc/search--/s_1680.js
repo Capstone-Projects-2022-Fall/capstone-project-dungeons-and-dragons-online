@@ -1,0 +1,1 @@
+search_result['1680']=["topic_0000000000000535.html","ChatClient.TryGetChannel (String, out ChatChannel) Method","Simplified access to all channels by name. Checks public channels first, then private ones."];

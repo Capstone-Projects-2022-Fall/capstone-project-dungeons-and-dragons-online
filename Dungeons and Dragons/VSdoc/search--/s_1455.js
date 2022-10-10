@@ -1,0 +1,1 @@
+search_result['1455']=["topic_00000000000004A9.html","PunTurnManager.IsFinishedByMe Property","Gets a value indicating whether the current turn is finished by me."];

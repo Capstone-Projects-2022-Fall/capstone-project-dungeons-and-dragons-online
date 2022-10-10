@@ -1,0 +1,1 @@
+search_result['393']=["topic_00000000000001BA.html","IPunCallbacks.OnPhotonMaxCccuReached Method","Because the concurrent user limit was (temporarily) reached, this client is rejected by the server and disconnecting."];

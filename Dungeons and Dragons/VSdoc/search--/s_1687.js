@@ -1,0 +1,1 @@
+search_result['1687']=["topic_0000000000000545.html","ChatEventCode Class","Wraps up internally used constants in Photon Chat events. You don\u0027t have to use them directly usually."];

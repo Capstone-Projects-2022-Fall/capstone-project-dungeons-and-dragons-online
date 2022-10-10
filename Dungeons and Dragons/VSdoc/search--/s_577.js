@@ -1,0 +1,1 @@
+search_result['577']=["topic_000000000000023B.html","PhotonNetwork.autoCleanUpPlayerObjects Property","This setting defines per room, if network-instantiated GameObjects (with PhotonView) get cleaned up when the creator of it leaves."];

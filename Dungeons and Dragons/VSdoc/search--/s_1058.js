@@ -1,0 +1,1 @@
+search_result['1058']=["topic_00000000000003B2.html","PhotonAnimatorView.GetParameterSynchronizeType Method","Gets the type how the parameter is synchronized"];

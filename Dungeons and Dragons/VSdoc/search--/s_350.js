@@ -1,0 +1,1 @@
+search_result['350']=["topic_0000000000000178.html","FindFriendsOptions Class","Options for OpFindFriends can be combined to filter which rooms of friends are returned."];

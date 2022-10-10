@@ -1,0 +1,1 @@
+search_result['583']=["topic_0000000000000241.html","PhotonNetwork.sendRate Property","Defines how many times per second PhotonNetwork should send a package. If you change\r\nthis, do not forget to also change \u0027sendRateOnSerialize\u0027."];

@@ -1,0 +1,1 @@
+search_result['579']=["topic_000000000000023D.html","PhotonNetwork.EnableLobbyStatistics Property","Set in PhotonServerSettings asset. Enable to get a list of active lobbies from the Master Server."];

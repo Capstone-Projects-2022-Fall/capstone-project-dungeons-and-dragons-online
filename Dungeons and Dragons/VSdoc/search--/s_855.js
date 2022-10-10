@@ -1,0 +1,1 @@
+search_result['855']=["topic_0000000000000318.html","PhotonView.TransferOwnership (Int32) Method","Transfers the ownership of this PhotonView (and GameObject) to another player."];

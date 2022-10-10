@@ -1,0 +1,1 @@
+search_result['1223']=["topic_0000000000000426.html","NodeType Field","Describes the current node type of the cell tree node."];

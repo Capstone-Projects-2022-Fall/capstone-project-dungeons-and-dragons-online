@@ -1,0 +1,1 @@
+search_result['1451']=["topic_00000000000004A5.html","TurnDuration Field","The duration of the turn in seconds."];

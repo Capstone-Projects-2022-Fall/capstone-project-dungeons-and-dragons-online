@@ -1,0 +1,1 @@
+search_result['670']=["topic_0000000000000287.html","PhotonNetwork.DestroyPlayerObjects (Int32) Method","Network-Destroy all GameObjects, PhotonViews and their RPCs of this player (by ID). Can only be called on local player (for \"self\") or Master Client (for anyone)."];

@@ -1,0 +1,1 @@
+search_result['672']=["topic_0000000000000288.html","PhotonNetwork.DestroyAll Method","Network-Destroy all GameObjects, PhotonViews and their RPCs in the room. Removes anything buffered from the server. Can only be called by Master Client (for anyone)."];

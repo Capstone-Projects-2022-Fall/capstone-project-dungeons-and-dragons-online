@@ -1,0 +1,1 @@
+search_result['750']=["topic_00000000000002B9.html","PhotonPlayer.CustomProperties Property","Read-only cache for custom properties of player. Set via PhotonPlayer.SetCustomProperties."];

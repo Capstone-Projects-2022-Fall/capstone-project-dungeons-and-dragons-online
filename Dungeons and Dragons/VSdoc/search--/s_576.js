@@ -1,0 +1,1 @@
+search_result['576']=["topic_000000000000023A.html","PhotonNetwork.automaticallySyncScene Property","Defines if all clients in a room should load the same level as the Master Client (if that used PhotonNetwork.LoadLevel)."];
