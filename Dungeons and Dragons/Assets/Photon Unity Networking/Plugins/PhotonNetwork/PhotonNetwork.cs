@@ -3510,6 +3510,11 @@ public static class PhotonNetwork
             }
         }
     }
+
+    internal static GameObject Instantiate(GameObject enemy, Vector3 vector3, Quaternion identity)
+    {
+        throw new NotImplementedException();
+    }
 #endif
 
 }

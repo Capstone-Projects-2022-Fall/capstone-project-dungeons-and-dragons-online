@@ -17,7 +17,7 @@ public class Player : Photon.MonoBehaviour
     public float moveSpeed;
     // Start is called before the first frame update
     private void Awake(){
-        if(photonView.isMine){
+        if (photonView.isMine){
             PlayerCamera.SetActive(true);
             PlayerNameText.text = PhotonNetwork.playerName;
         } else {
@@ -32,15 +32,45 @@ public class Player : Photon.MonoBehaviour
         }
     }
 
+    public void FixedUpdate()
+    {
+        Move();
+    }
+
     private void checkInput(){
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
 
         moveDirection = new Vector2(moveX,moveY).normalized;
+    }
 
+    public void Move()
+    {
         rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
+
+        if (moveDirection.x < 0)
+        {
+            photonView.RPC("FlipFalse", PhotonTargets.AllBuffered);
+        }
+        if (moveDirection.x > 0)
+        {
+            photonView.RPC("FlipTrue", PhotonTargets.AllBuffered);
+        }
+
+        
+        //checkFlipping();
         Debug.Log("here");
     }
 
-  
+    [PunRPC]
+    void FlipFalse()
+    {
+        sr.flipX = false;
+    }
+    [PunRPC]
+    void FlipTrue()
+    {
+        sr.flipX = true;
+    }
+
 }

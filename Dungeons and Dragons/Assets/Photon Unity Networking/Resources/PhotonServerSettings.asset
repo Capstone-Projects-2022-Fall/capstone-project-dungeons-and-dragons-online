@@ -37,4 +37,8 @@ MonoBehaviour:
   - PunRespawn
   - RequestForPickupItems
   - RequestForPickupTimes
+  - checkFlipping
+  - FlipFalse
+  - FlipTrue
+  - findPlayer
   DisableAutoOpenWizard: 1
