@@ -1,0 +1,1 @@
+search_result['395']=["topic_00000000000001BC.html","IPunCallbacks.OnPhotonPlayerPropertiesChanged Method","Called when custom player-properties are changed. Player and the changed properties are passed as object[]."];

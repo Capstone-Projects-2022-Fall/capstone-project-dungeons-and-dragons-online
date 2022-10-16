@@ -1,0 +1,1 @@
+search_result['642']=["topic_0000000000000271.html","PhotonNetwork.JoinLobby (TypedLobby) Method","On a Master Server you can join a lobby to get lists of available rooms."];

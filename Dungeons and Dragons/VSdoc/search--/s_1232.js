@@ -1,0 +1,1 @@
+search_result['1232']=["topic_000000000000042D.html","CellTreeNode.GetActiveCells Method","Gathers all cell IDs the player is currently inside or nearby."];

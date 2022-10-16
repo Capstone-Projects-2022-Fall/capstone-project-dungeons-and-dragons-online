@@ -1,0 +1,1 @@
+search_result['1323']=["topic_000000000000045B.html","PlayerRoomIndexing Class","Implements consistent indexing in a room/game with help of room properties. Access them by PhotonPlayer.GetRoomIndex() extension."];

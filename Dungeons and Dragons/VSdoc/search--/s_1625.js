@@ -1,0 +1,1 @@
+search_result['1625']=["topic_000000000000050B.html","ChatChannel.ClearMessages Method","Clear the local cache of messages currently stored. This frees memory but doesn\u0027t affect the server."];

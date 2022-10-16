@@ -1,0 +1,1 @@
+search_result['472']=["topic_00000000000001F0.html","PhotonStream Constructor","Creates a stream and initializes it. Used by PUN internally."];

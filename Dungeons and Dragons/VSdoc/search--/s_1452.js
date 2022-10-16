@@ -1,0 +1,1 @@
+search_result['1452']=["topic_00000000000004A6.html","PunTurnManager.ElapsedTimeInTurn Property","Gets the elapsed time in the current turn in seconds"];

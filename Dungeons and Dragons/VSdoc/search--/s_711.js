@@ -1,0 +1,1 @@
+search_result['711']=["topic_00000000000002A1.html","PhotonNetwork.InternalCleanPhotonMonoFromSceneIfStuck Method","Internally used by Editor scripts, called on Hierarchy change (includes scene save) to remove surplus hidden PhotonHandlers."];

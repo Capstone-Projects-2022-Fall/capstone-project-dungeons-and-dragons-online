@@ -1,0 +1,1 @@
+search_result['1788']=["topic_000000000000058F.html","ClientAuthenticationData Field","(214) This key\u0027s (string or byte[]) value provides parameters sent to the custom authentication service setup in Photon Dashboard. Used in OpAuthenticate"];

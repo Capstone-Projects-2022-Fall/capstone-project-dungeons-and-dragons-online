@@ -1,0 +1,1 @@
+search_result['594']=["topic_000000000000024C.html","PhotonNetwork.countOfPlayers Property","The count of players currently using this application (available on MasterServer in 5sec intervals)."];

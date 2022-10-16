@@ -1,0 +1,1 @@
+search_result['669']=["topic_0000000000000286_overloads--.html","PhotonNetwork.DestroyPlayerObjects Method","Network-Destroy all GameObjects, PhotonViews and their RPCs of targetPlayer. Can only be called on local player (for \"self\") or Master Client (for anyone)."];

@@ -1,0 +1,1 @@
+search_result['1342']=["topic_0000000000000469.html","PlayerRoomIndexingExtensions Class","Extension used for PlayerRoomIndexing and PhotonPlayer class."];

@@ -1,0 +1,1 @@
+search_result['1234']=["topic_000000000000042F.html","CellTreeNode.IsPointNearCell Method","Checks if the given point is near the cell."];

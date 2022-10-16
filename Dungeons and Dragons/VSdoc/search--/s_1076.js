@@ -1,0 +1,1 @@
+search_result['1076']=["topic_00000000000003BA.html","PhotonTransformView Class","This class helps you to synchronize position, rotation and scale\r\nof a GameObject. It also gives you many different options to make\r\nthe synchronized values appear smooth, even when the data is only\r\n..."];

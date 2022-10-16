@@ -1,0 +1,1 @@
+search_result['647']=["topic_0000000000000275.html","PhotonNetwork.GetRoomList Method","Gets currently cached rooms of the last rooms list sent by the server as RoomInfo array.\r\nThis list is either available and updated automatically and periodically while in a lobby (check insideLobby) ..."];

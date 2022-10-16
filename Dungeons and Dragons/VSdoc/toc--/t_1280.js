@@ -1,0 +1,1 @@
+c['1280']=[['1281',"ChatChannel Constructor","topic_0000000000000507.html",0],['1282',"Properties","topic_00000000000004FC_props--.html",1],['1288',"Methods","topic_00000000000004FC_methods--.html",1],['1295',"Fields","topic_00000000000004FC_vars--.html",1]];

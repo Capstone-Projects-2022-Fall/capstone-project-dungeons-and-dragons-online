@@ -1,0 +1,1 @@
+search_result['543']=["topic_0000000000000219.html","PhotonServerSettings Field","Serialized server settings, written by the Setup Wizard for use in ConnectUsingSettings."];

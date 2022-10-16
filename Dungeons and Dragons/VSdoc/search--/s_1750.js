@@ -1,0 +1,1 @@
+search_result['1750']=["topic_0000000000000570.html","ChatPeer.NameServerAddress Property","Name Server Address for Photon Cloud (based on current protocol). You can use the default values and usually won\u0027t have to set this value."];

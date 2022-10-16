@@ -1,0 +1,1 @@
+search_result['1059']=["topic_00000000000003B3.html","PhotonAnimatorView.SetLayerSynchronized Method","Sets the how a layer should be synchronized"];

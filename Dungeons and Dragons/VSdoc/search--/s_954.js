@@ -1,0 +1,1 @@
+search_result['954']=["topic_0000000000000360.html","RoomInfo.IsLocalClientInside Property","State if the local client is already in the game or still going to join it on gameserver (in lobby always false)."];

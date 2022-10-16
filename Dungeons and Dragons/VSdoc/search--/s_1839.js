@@ -1,0 +1,1 @@
+search_result['1839']=["topic_00000000000005BF.html","IChatClientListener.OnSubscribed Method","Result of Subscribe operation. Returns subscription result for every requested channel name."];

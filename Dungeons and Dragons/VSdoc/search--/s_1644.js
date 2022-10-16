@@ -1,0 +1,1 @@
+search_result['1644']=["topic_0000000000000519.html","ChatClient.UserId Property","The unique ID of a user/person, stored in AuthValues.UserId. Set it before you connect."];

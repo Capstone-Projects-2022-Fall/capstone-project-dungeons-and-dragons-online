@@ -1,0 +1,1 @@
+search_result['554']=["topic_0000000000000224.html","PhotonNetwork.room Property","Get the room we\u0027re currently in. Null if we aren\u0027t in any room."];

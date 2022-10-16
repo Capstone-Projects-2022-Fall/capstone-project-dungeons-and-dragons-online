@@ -1,0 +1,1 @@
+search_result['902']=["topic_0000000000000336.html","Room Class","This class resembles a room that PUN joins (or joined).\r\nThe properties are settable as opposed to those of a RoomInfo and you can close or hide \"your\" room."];

@@ -1,0 +1,1 @@
+search_result['442']=["topic_00000000000001DC.html","PunBehaviour.OnPhotonRandomJoinFailed Method","Called when a JoinRandom() call failed. The parameter provides ErrorCode and message."];

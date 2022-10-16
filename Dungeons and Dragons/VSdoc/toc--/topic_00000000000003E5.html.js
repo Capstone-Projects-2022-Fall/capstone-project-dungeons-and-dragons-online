@@ -1,0 +1,1 @@
+var breadcrumbs=[['-1',"",""],['2',"Assembly-CSharp Reference","topic_00000000000005F0.html"],['4',"\u003cdefault\u003e Namespace","topic_00000000000005F2.html"],['693',"PhotonTransformViewRotationControl Class","topic_00000000000003E1.html"],['694',"Methods","topic_00000000000003E1_methods--.html"],['697',"OnPhotonSerializeView Method","topic_00000000000003E5.html"]];

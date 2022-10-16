@@ -1,0 +1,1 @@
+search_result['1550']=["topic_00000000000004E0.html","TimeKeeper Constructor","Creates a new, enabled TimeKeeper and sets it\u0027s interval."];

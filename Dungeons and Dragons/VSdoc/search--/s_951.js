@@ -1,0 +1,1 @@
+search_result['951']=["topic_000000000000035D.html","RoomInfo.CustomProperties Property","Read-only \"cache\" of custom properties of a room. Set via Room.SetCustomProperties (not available for RoomInfo class!)."];

@@ -1,0 +1,1 @@
+search_result['852']=["topic_0000000000000316.html","PhotonView.RequestOwnership Method","Depending on the PhotonView\u0027s ownershipTransfer setting, any client can request to become owner of the PhotonView."];

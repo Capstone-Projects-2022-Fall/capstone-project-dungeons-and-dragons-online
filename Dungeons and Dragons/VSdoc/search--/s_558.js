@@ -1,0 +1,1 @@
+search_result['558']=["topic_0000000000000228.html","PhotonNetwork.masterClient Property","The Master Client of the current room or null (outside of rooms)."];

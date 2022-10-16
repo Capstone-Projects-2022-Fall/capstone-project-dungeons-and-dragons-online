@@ -1,0 +1,1 @@
+search_result['912']=["topic_000000000000033B.html","Room.AutoCleanUp Property","Gets if this room uses autoCleanUp to remove all (buffered) RPCs and instantiated GameObjects when a player leaves."];

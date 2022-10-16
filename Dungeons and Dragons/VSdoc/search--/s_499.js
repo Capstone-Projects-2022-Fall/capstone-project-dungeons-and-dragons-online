@@ -1,0 +1,1 @@
+search_result['499']=["topic_0000000000000202.html","PhotonStream.Serialize (ref Quaternion) Method","Will read or write the value, depending on the stream\u0027s isWriting value."];

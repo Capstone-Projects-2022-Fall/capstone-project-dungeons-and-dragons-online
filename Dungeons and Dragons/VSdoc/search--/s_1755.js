@@ -1,0 +1,1 @@
+search_result['1755']=["topic_0000000000000574.html","CustomAuthenticationType Enumeration","Options for optional \"Custom Authentication\" services used with Photon. Used by OpAuthenticate after connecting to Photon."];

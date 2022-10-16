@@ -1,0 +1,1 @@
+search_result['1792']=["topic_0000000000000593.html","ErrorCode Class","ErrorCode defines the default codes associated with Photon client/server communication."];

@@ -1,0 +1,1 @@
+search_result['603']=["topic_0000000000000255.html","EventCallback Delegate","Defines the delegate usable in OnEventCall."];

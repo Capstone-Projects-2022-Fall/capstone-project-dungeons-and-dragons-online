@@ -1,0 +1,1 @@
+search_result['545']=["topic_000000000000021B.html","PhotonNetwork.CloudRegion Property","Currently used Cloud Region (if any). As long as the client is not on a Master Server or Game Server, the region is not yet defined."];

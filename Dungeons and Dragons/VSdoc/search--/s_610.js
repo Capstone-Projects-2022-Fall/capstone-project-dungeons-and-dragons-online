@@ -1,0 +1,1 @@
+search_result['610']=["topic_000000000000025C.html","PhotonNetwork.ConnectToBestCloudServer Method","Connect to the Photon Cloud region with the lowest ping (on platforms that support Unity\u0027s Ping)."];

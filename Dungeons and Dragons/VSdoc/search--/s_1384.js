@@ -1,0 +1,1 @@
+search_result['1384']=["topic_0000000000000482.html","PickupItemSyncer Class","Finds out which PickupItems are not spawned at the moment and send this to new players."];

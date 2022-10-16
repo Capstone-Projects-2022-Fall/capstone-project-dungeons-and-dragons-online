@@ -1,0 +1,1 @@
+search_result['1809']=["topic_000000000000059F.html","GameDoesNotExist Field","(32758) Join can fail if the room (name) is not existing (anymore). This can happen when players leave while you join."];

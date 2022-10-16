@@ -1,0 +1,1 @@
+search_result['1640']=["topic_0000000000000515.html","ChatClient.CanChatInChannel Method","Checks if this client is ready to publish messages inside a public channel."];

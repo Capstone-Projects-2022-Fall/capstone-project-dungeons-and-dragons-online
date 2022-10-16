@@ -1,0 +1,1 @@
+search_result['1653']=["topic_0000000000000522.html","ChatClient.Connect Method","Connects this client to the Photon Chat Cloud service, which will also authenticate the user (and set a UserId)."];

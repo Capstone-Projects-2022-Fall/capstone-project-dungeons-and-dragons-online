@@ -1,0 +1,1 @@
+search_result['1657']=["topic_0000000000000526.html","ChatClient.Disconnect Method","Disconnects from the Chat Server by sending a \"disconnect command\", which prevents a timeout server-side."];

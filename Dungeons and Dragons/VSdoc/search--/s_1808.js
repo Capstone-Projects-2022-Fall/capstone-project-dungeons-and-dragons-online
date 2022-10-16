@@ -1,0 +1,1 @@
+search_result['1808']=["topic_000000000000059E.html","NoRandomMatchFound Field","(32760) Random matchmaking only succeeds if a room exists that is neither closed nor full. Repeat in a few seconds or create a new room."];

@@ -1,0 +1,1 @@
+var breadcrumbs=[['-1',"",""],['2',"Assembly-CSharp Reference","topic_00000000000005F0.html"],['4',"\u003cdefault\u003e Namespace","topic_00000000000005F2.html"],['790',"PickupItemSimple Class","topic_000000000000047A.html"],['796',"Fields","topic_000000000000047A_vars--.html"],['798',"SecondsBeforeRespawn Field","topic_000000000000047B.html"]];

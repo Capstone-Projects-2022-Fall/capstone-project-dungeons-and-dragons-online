@@ -1,0 +1,1 @@
+search_result['544']=["topic_000000000000021A.html","PhotonNetwork.ServerAddress Property","Currently used server address (no matter if master or game server)."];

@@ -1,0 +1,1 @@
+search_result['1615']=["topic_0000000000000503.html","ChatChannel.LastMsgId Property","ID of the last message received."];
