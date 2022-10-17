@@ -1,0 +1,1 @@
+search_result['1661']=["topic_0000000000000529.html","ChatClient.Subscribe (String(), Int32()) Method","Sends operation to subscribe to a list of channels by name and possibly retrieve messages we did not receive while unsubscribed."];

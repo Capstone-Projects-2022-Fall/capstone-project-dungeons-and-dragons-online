@@ -1,0 +1,1 @@
+search_result['957']=["topic_0000000000000363.html","RoomInfo.IsVisible Property","Defines if the room is listed in its lobby.\r\nRooms can be created invisible, or changed to invisible.\r\nTo change if a room can be joined, use property: open."];

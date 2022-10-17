@@ -1,0 +1,1 @@
+search_result['1085']=["topic_00000000000003BE.html","PhotonTransformView.SetSynchronizedValues Method","These values are synchronized to the remote objects if the interpolation mode\r\nor the extrapolation mode SynchronizeValues is used. Your movement script should pass on\r\nthe current speed (in units/sec..."];

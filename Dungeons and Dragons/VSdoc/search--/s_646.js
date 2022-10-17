@@ -1,0 +1,1 @@
+search_result['646']=["topic_0000000000000274.html","PhotonNetwork.GetCustomRoomList Method","Fetches a custom list of games from the server, matching a SQL-like \"where\" clause, then triggers OnReceivedRoomListUpdate callback."];

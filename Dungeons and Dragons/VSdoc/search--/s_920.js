@@ -1,0 +1,1 @@
+search_result['920']=["topic_0000000000000343.html","Room.SetPropertiesListedInLobby Method","Enables you to define the properties available in the lobby if not all properties are needed to pick a room."];

@@ -1,0 +1,1 @@
+search_result['1603']=["topic_00000000000004FC.html","ChatChannel Class","A channel of communication in Photon Chat, updated by ChatClient and provided as READ ONLY."];

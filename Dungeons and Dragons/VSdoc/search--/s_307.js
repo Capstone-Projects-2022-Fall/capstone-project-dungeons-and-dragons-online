@@ -1,0 +1,1 @@
+search_result['307']=["topic_0000000000000152.html","Name Field","Name of the lobby this game gets added to. Default: null, attached to default lobby. Lobbies are unique per lobbyName plus lobbyType, so the same name can be used when several types are existing."];

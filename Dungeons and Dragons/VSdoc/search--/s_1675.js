@@ -1,0 +1,1 @@
+search_result['1675']=["topic_0000000000000531.html","ChatClient.AddFriends Method","Adds friends to a list on the Chat Server which will send you status updates for those."];

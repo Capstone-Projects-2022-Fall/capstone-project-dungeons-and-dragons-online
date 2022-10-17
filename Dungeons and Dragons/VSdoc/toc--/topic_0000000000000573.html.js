@@ -1,0 +1,1 @@
+var breadcrumbs=[['-1',"",""],['2',"Assembly-CSharp Reference","topic_00000000000005F0.html"],['1253',"Photon.Chat Namespace","topic_00000000000004F4.html"],['1395',"ChatPeer Class","topic_000000000000056D.html"],['1399',"Methods","topic_000000000000056D_methods--.html"],['1400',"AuthenticateOnNameServer Method","topic_0000000000000573.html"]];

@@ -1,0 +1,1 @@
+search_result['993']=["topic_000000000000037B.html","ServerSettings Class","Collection of connection-relevant settings, used internally by PhotonNetwork.ConnectUsingSettings."];

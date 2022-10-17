@@ -1,0 +1,1 @@
+search_result['776']=["topic_00000000000002CA.html","PhotonPlayer.ToString Method","Brief summary string of the PhotonPlayer. Includes name or player.ID and if it\u0027s the Master Client."];

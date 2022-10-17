@@ -1,0 +1,1 @@
+search_result['570']=["topic_0000000000000234.html","PrefabCache Field","Keeps references to GameObjects for frequent instantiation (out of memory instead of loading the Resources)."];

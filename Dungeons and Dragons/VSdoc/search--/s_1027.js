@@ -1,0 +1,1 @@
+search_result['1027']=["topic_000000000000039B.html","PhotonAnimatorView Class","This class helps you to synchronize Mecanim animations\r\nSimply add the component to your GameObject and make sure that\r\nthe PhotonAnimatorView is added to the list of observed components"];

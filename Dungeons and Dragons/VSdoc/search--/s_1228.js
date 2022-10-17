@@ -1,0 +1,1 @@
+search_result['1228']=["topic_000000000000042A.html","CellTreeNode(Byte, ENodeType, CellTreeNode) Constructor","Constructor to define the ID and the node type as well as setting a parent node."];

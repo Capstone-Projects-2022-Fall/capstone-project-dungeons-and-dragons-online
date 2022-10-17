@@ -1,0 +1,1 @@
+search_result['297']=["topic_000000000000014A.html","SequenceChannel Field","Events are ordered per \"channel\". If you have events that are independent of others, they can go into another sequence or channel."];

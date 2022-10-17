@@ -1,0 +1,1 @@
+search_result['934']=["topic_0000000000000351.html","RoomInfo Class","A simplified room with just the info required to list and join, used for the room listing in the lobby.\r\nThe properties are not settable (open, MaxPlayers, etc)."];

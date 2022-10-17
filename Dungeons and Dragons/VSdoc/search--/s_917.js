@@ -1,0 +1,1 @@
+search_result['917']=["topic_0000000000000340.html","Room.EmptyRoomTtl Property","Room Time To Live. How long a room stays available (and in server-memory), after the last player becomes inactive. After this time, the room gets persisted or destroyed."];

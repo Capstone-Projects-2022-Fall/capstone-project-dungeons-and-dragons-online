@@ -1,0 +1,1 @@
+search_result['1488']=["topic_00000000000004C0.html","TurnExtensions.GetTurnStart Method","Returns the start time when the turn began. This can be used to calculate how long it\u0027s going on."];

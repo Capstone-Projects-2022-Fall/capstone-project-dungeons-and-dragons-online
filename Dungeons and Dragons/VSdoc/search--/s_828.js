@@ -1,0 +1,1 @@
+search_result['828']=["topic_00000000000002FE.html","OwnerShipWasTransfered Field","Flag to check if ownership of this photonView was set during the lifecycle. Used for checking when joining late if event with mismatched owner and sender needs addressing."];

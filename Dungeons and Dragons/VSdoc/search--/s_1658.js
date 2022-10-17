@@ -1,0 +1,1 @@
+search_result['1658']=["topic_0000000000000527.html","ChatClient.StopThread Method","Locally shuts down the connection to the Chat Server. This resets states locally but the server will have to timeout this peer."];

@@ -1,0 +1,1 @@
+search_result['963']=["topic_0000000000000369.html","RoomInfo.InternalCacheProperties Method","Copies \"well known\" properties to fields (IsVisible, etc) and caches the custom properties (string-keys only) in a local hashtable."];

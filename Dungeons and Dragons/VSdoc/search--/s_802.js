@@ -1,0 +1,1 @@
+search_result['802']=["topic_00000000000002DF.html","PhotonStreamQueue Class","The PhotonStreamQueue helps you poll object states at higher frequencies then what\r\nPhotonNetwork.sendRate dictates and then sends all those states at once when\r\nSerialize() is called.\r\nOn the receivi..."];

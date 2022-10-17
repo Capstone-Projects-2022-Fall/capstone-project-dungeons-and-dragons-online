@@ -1,0 +1,1 @@
+search_result['1444']=["topic_00000000000004A3.html","PunTurnManager Class","Pun turnBased Game manager.\r\nProvides an Interface (IPunTurnManagerCallbacks) for the typical turn flow and logic, between players\r\nProvides Extensions for PhotonPlayer, Room and RoomInfo to feature d..."];

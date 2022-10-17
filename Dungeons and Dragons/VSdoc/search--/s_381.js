@@ -1,0 +1,1 @@
+search_result['381']=["topic_00000000000001AE.html","IPunCallbacks.OnJoinedLobby Method","Called on entering a lobby on the Master Server. The actual room-list updates will call OnReceivedRoomListUpdate()."];

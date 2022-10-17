@@ -1,0 +1,1 @@
+search_result['1069']=["topic_00000000000003B8.html","PhotonRigidbodyView Class","This class helps you to synchronize the velocities of a physics RigidBody.\r\nNote that only the velocities are synchronized and because Unitys physics\r\nengine is not deterministic (ie. the results aren..."];

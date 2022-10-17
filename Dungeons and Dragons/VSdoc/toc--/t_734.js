@@ -1,0 +1,1 @@
+c['734']=[['735',"Get(Component) Method","topic_0000000000000325.html",0],['736',"Get(GameObject) Method","topic_0000000000000326.html",0]];

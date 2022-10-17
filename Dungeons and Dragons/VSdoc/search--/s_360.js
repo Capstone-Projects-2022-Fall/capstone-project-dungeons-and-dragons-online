@@ -1,0 +1,1 @@
+search_result['360']=["topic_0000000000000192.html","DisconnectCause Enumeration","Summarizes the cause for a disconnect. Used in: OnConnectionFail and OnFailedToConnectToPhoton."];

@@ -1,0 +1,1 @@
+search_result['677']=["topic_000000000000028B.html","PhotonNetwork.RemoveRPCsInGroup Method","Remove all buffered RPCs from server that were sent in the targetGroup, if this is the Master Client or if this controls the individual PhotonView."];

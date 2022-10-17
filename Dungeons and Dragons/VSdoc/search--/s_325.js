@@ -1,0 +1,1 @@
+search_result['325']=["topic_000000000000015D.html","AuthModeOption Enumeration","Options for authentication modes. From \"classic\" auth on each server to AuthOnce (on NameServer)."];

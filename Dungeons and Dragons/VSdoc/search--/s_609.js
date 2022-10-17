@@ -1,0 +1,1 @@
+search_result['609']=["topic_000000000000025B.html","PhotonNetwork.ReconnectAndRejoin Method","When the client lost connection during gameplay, this method attempts to reconnect and rejoin the room."];

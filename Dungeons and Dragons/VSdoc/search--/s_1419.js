@@ -1,0 +1,1 @@
+search_result['1419']=["topic_0000000000000491.html","PunTeams Class","Implements teams in a room/game with help of player properties. Access them by PhotonPlayer.GetTeam extension."];

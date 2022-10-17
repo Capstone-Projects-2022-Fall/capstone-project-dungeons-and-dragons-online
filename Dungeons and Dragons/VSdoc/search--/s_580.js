@@ -1,0 +1,1 @@
+search_result['580']=["topic_000000000000023E.html","PhotonNetwork.LobbyStatistics Property","If turned on, the Master Server will provide information about active lobbies for this application."];

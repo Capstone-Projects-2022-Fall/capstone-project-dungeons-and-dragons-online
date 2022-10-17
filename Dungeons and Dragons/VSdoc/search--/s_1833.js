@@ -1,0 +1,1 @@
+search_result['1833']=["topic_00000000000005B9.html","IChatClientListener.DebugReturn Method","All debug output of the library will be reported through this method. Print it or put it in a\r\nbuffer to use it on-screen."];

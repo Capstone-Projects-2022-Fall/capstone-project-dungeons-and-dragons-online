@@ -1,0 +1,1 @@
+c['1053']=[['1054',"GetFinishedTurn Method","topic_00000000000004C1.html",0],['1055',"GetTurn Method","topic_00000000000004BF.html",0],['1056',"GetTurnStart Method","topic_00000000000004C0.html",0],['1057',"SetFinishedTurn Method","topic_00000000000004C2.html",0],['1058',"SetTurn Method","topic_00000000000004BE.html",0]];

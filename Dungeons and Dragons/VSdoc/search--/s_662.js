@@ -1,0 +1,1 @@
+search_result['662']=["topic_0000000000000282.html","PhotonNetwork.CloseConnection Method","Request a client to disconnect (KICK). Only the master client can do this"];

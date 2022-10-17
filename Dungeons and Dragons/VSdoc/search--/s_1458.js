@@ -1,0 +1,1 @@
+search_result['1458']=["topic_00000000000004AC.html","TurnManagerEventOffset Field","The turn manager event offset event message byte. Used internaly for defining data in Room Custom Properties"];

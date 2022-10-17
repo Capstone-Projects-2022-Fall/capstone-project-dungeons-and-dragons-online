@@ -1,0 +1,1 @@
+c['856']=[['857',"BeginTurn Method","topic_00000000000004AF.html",0],['858',"GetPlayerFinishedTurn Method","topic_00000000000004B1.html",0],['859',"OnEvent Method","topic_00000000000004B2.html",0],['860',"OnPhotonCustomRoomPropertiesChanged Method","topic_00000000000004B3.html",0],['861',"SendMove Method","topic_00000000000004B0.html",0]];

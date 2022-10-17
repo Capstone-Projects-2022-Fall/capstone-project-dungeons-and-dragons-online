@@ -1,0 +1,1 @@
+search_result['296']=["topic_0000000000000149.html","Receivers Field","Sends the event to All, MasterClient or Others (default). Be careful with MasterClient, as the client might disconnect before it got the event and it gets lost."];

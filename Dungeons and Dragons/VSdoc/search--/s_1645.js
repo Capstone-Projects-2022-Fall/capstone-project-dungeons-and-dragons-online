@@ -1,0 +1,1 @@
+search_result['1645']=["topic_000000000000051A.html","MessageLimit Field","If greater than 0, new channels will limit the number of messages they cache locally."];

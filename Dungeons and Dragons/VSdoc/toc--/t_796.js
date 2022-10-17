@@ -1,0 +1,1 @@
+c['796']=[['797',"PickupOnCollide Field","topic_000000000000047C.html",0],['798',"SecondsBeforeRespawn Field","topic_000000000000047B.html",0],['799',"SentPickup Field","topic_000000000000047D.html",0]];

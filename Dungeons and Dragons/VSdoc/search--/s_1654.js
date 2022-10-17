@@ -1,0 +1,1 @@
+search_result['1654']=["topic_0000000000000523.html","ChatClient.ConnectAndSetStatus Method","Connects this client to the Photon Chat Cloud service, which will also authenticate the user (and set a UserId).\r\nThis also sets an online status once connected. By default it will set user status to ..."];

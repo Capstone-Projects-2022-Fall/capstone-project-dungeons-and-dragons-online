@@ -1,0 +1,1 @@
+search_result['618']=["topic_0000000000000264.html","PhotonNetwork.FindFriends Method","Requests the rooms and online status for a list of friends and saves the result in PhotonNetwork.Friends."];

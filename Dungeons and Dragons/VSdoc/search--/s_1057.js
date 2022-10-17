@@ -1,0 +1,1 @@
+search_result['1057']=["topic_00000000000003B1.html","PhotonAnimatorView.GetLayerSynchronizeType Method","Gets the type how the layer is synchronized"];
