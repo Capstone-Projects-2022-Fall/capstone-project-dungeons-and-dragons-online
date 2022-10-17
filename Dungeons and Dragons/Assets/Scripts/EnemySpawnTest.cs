@@ -5,21 +5,21 @@ using UnityEngine;
 public class EnemySpawnTest : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] private GameObject enemyPrefab;
+    public GameObject enemyPrefab;
 
-    [SerializeField] private GameObject enemyPrefab2;
     private float enemyInterval = 3.5f;
-    void Start()
+    
+    void Awake()
     {
-        StartCoroutine(SpawnEnemy(enemyInterval, enemyPrefab));
-        StartCoroutine(SpawnEnemy(enemyInterval, enemyPrefab2));
+        SpawnEnemy(enemyInterval, enemyPrefab);
+        //SpawnEnemy(enemyInterval, enemyPrefab2);
     }
 
-    private IEnumerator SpawnEnemy(float interval, GameObject enemy)
+    private void SpawnEnemy(float interval, GameObject enemy)
     {
-        yield return new WaitForSeconds(interval);
+        //yield return new WaitForSeconds(interval);
         float randVal = Random.Range(-1f, 1f);
-        GameObject newEnemy = Instantiate(enemy, new Vector2(this.transform.position.x * randVal, this.transform.position.y), Quaternion.identity);
-        StartCoroutine(SpawnEnemy(interval, enemy));
+        PhotonNetwork.Instantiate(enemy.name, new Vector2(this.transform.position.x * randVal, this.transform.position.y), Quaternion.identity, 0);
+        //StartCoroutine(SpawnEnemy(interval, newEnemy));
     }
  }

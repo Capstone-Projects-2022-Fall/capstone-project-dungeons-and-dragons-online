@@ -1,13 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public GameObject PlayerPrefab;
 	public GameObject GameCanvas;
 	public GameObject SceneCamera;
+	public GameObject SpawnEnemy;
 	public GameObject EnemyPrefab;
 	//public GameObject Instance;
 
@@ -23,13 +21,19 @@ public class GameManager : MonoBehaviour
 	
 		GameCanvas.SetActive(false);
 		SceneCamera.SetActive(false);
+		SpawnEnemy.SetActive(true);
 	}
-
+	/*
 	public void SpawnEnemy()
     {
+		if (!PhotonNetwork.isMasterClient)
+			return;
 		float randVal = Random.Range(-1f, 1f);
-
+		//PhotonNetwork.Instantiate(EnemyPrefab.name, new Vector2(this.transform.position.x * randVal, this.transform.position.y), Quaternion.identity, 0);
+		randVal = Random.Range(-1f, 1f);
+		//PhotonNetwork.Instantiate(EnemyPrefab.name, new Vector2(this.transform.position.x * randVal, this.transform.position.y), Quaternion.identity, 0);
+		randVal = Random.Range(-1f, 1f);
 		PhotonNetwork.Instantiate(EnemyPrefab.name, new Vector2(this.transform.position.x * randVal, this.transform.position.y), Quaternion.identity, 0);
 	}
-
+	*/
 }

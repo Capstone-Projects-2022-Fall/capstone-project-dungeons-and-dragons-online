@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class Enemy : MonoBehaviour
 {
     /// Get the chasing object
-    private GameObject player;
+    private GameObject[] player;
     public PhotonView photonView;
     public Rigidbody2D rb;
     public SpriteRenderer sr;
@@ -18,7 +18,7 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        player = GameObject.FindGameObjectsWithTag("Player");
     }
 
     // Update is called once per frame
@@ -28,15 +28,16 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         photonView.RPC("findPlayer", PhotonTargets.AllBuffered);
+
         //findPlayer();
     }
 
     [PunRPC]
     private void findPlayer()
     {
-        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+        for (int i = 0; i < player.Length; i++)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, player[i].transform.position, speed * Time.deltaTime);
+        }
     }
-
-
-
 }

@@ -6,7 +6,7 @@ using UnityEngine;
 public class Inventory
 {
 
-    public event EventHandler OnItemListChanged;
+    //public event EventHandler OnItemListChanged;
 
     private List<Item> itemList;
 

@@ -20,14 +20,6 @@ public class GameHandler : MonoBehaviour
 		GameCanvas.SetActive(true);
 	}
 
-	public void SpawnPlayer(){
-		float randVal = Random.Range(-1f,1f);
-
-		PhotonNetwork.Instantiate(PlayerPrefab.name, new Vector2(this.transform.position.x * randVal, this.transform.position.y), Quaternion.identity, 0);
-		GameCanvas.SetActive(false);
-		SceneCamera.SetActive(false);
-	}
-
 	private IEnumerator SpawnEnemy(float interval, GameObject enemy)
 	{
 		yield return new WaitForSeconds(interval);
