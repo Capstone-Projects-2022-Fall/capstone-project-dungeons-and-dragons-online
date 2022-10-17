@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Photon.Pun;
 
 public class GameManager : MonoBehaviour
 {
 	//This is the player object that will spawn for each player to control
     public GameObject PlayerPrefab;
 	//Tilemap
+	
 	public GameObject GameCanvas;
 	//Main camera
 	public GameObject SceneCamera;

@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Dungeons and Dragons",
+    "\\Dungeons and Dragons\\Assets",
+    "\\Dungeons and Dragons\\Assets\\Scripts"
   ],
-  "SelectedNode": "\\Dungeons and Dragons.sln",
+  "SelectedNode": "\\Dungeons and Dragons\\Assets\\Scripts\\PhotonChatController.cs",
   "PreviewInSolutionExplorer": false
 }
