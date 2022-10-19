@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Photon.Pun;
 
-public class Player : Photon.MonoBehaviour
+public class Player : MonoBehaviour
 {
     public PhotonView photonView;
     //Hitbox for the player
@@ -27,14 +28,16 @@ public class Player : Photon.MonoBehaviour
     /// </summary>
     private void Awake(){
         //If the camera is theirs
-        if(photonView.isMine){
+        if(photonView.IsMine){
             //Set it to their active camera
             PlayerCamera.SetActive(true);
+            
             //Also set their name
-            PlayerNameText.text = PhotonNetwork.playerName;
+            PlayerNameText.text = PhotonNetwork.NickName;
         } else {//If its not them
             //Give the other players their name
-            PlayerNameText.text = photonView.owner.name;
+            PlayerNameText.text = photonView.Owner.NickName;
+            
             //Give the other players a different color name to distinguish
             PlayerNameText.color = Color.cyan;
         }
@@ -45,7 +48,7 @@ public class Player : Photon.MonoBehaviour
     /// </summary>
     private void Update(){
         //If there is an input from the current user
-        if(photonView.isMine){
+        if(photonView.IsMine){
             //Launch the check input function
             checkInput();
         }
