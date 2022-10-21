@@ -1,12 +1,16 @@
 using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Photon.Pun;
 
-public class MenuController : MonoBehaviour
+using Photon.Realtime;
+
+public class MenuController : MonoBehaviourPunCallbacks
 {
     //Idk what this is so dont touch it
-    [SerializeField] private string VersionName = "0.1";
+    [SerializeField] private AppSettings VersionName ;
 
     //The menus for connecting
     [SerializeField] private GameObject UsernameMenu;
@@ -20,12 +24,15 @@ public class MenuController : MonoBehaviour
     //Just the start button
     [SerializeField] private GameObject StartButton;
 
+    public static Action GetPhotonFriends = delegate{};
+
     /// <summary>
     /// Connects to photon network when the main menu opens
     /// </summary>
     private void Awake(){
         //Connects to the photon network
-        PhotonNetwork.ConnectUsingSettings(VersionName);
+        //PhotonNetwork.ConnectUsingSettings();
+        PhotonNetwork.ConnectUsingSettings();
     }
 
     /// <summary>
@@ -39,11 +46,11 @@ public class MenuController : MonoBehaviour
     /// <summary>
     /// When the user joins the lobby, send a message to the console confirming connection
     /// </summary>
-    private void OnConnectedToMaster(){
+    public override void OnConnectedToMaster(){
+        Debug.Log("Connected");
         //Joins lobby
         PhotonNetwork.JoinLobby(TypedLobby.Default);
         //Print to log
-        Debug.Log("Connected");
     }
 
     /// <summary>
@@ -64,16 +71,32 @@ public class MenuController : MonoBehaviour
     /// </summary>
     public void setUsername(){
         //Turns of username menu
-        UsernameMenu.SetActive(false);
+        //UsernameMenu.SetActive(false);
         //Sets player username
-        PhotonNetwork.playerName = UsernameInput.text;
+    
+        
+        PhotonNetwork.NickName = UsernameInput.text;
+        PlayerPrefs.SetString("USERNAME", UsernameInput.text);
+
+        UIInvite.OnRoomInviteAccept += HandleRoomInviteAccept;
+
+        
+        RoomOptions roomOptions = new RoomOptions();
+        roomOptions.MaxPlayers=8;
+        PhotonNetwork.JoinOrCreateRoom("Main", roomOptions, TypedLobby.Default);
+        
+        
+    }
+
+    public void OnDestroy(){
+        UIInvite.OnRoomInviteAccept -= HandleRoomInviteAccept;
     }
 
     /// <summary>
     /// Creates a photon lobby from the user passed name
     /// </summary>
     public void CreateGame(){
-        PhotonNetwork.CreateRoom(CreateGameInput.text, new RoomOptions(){maxPlayers = 8}, null);
+        PhotonNetwork.CreateRoom(CreateGameInput.text, new RoomOptions(){MaxPlayers = 8}, null);
     }
 
     /// <summary>
@@ -81,15 +104,44 @@ public class MenuController : MonoBehaviour
     /// </summary>
     public void JoinGame(){
         RoomOptions roomOptions = new RoomOptions();
-        roomOptions.maxPlayers=4;
+        roomOptions.MaxPlayers=8;
         PhotonNetwork.JoinOrCreateRoom(JoinGameInput.text, roomOptions, TypedLobby.Default);
     }
 
     /// <summary>
     /// Once player joins room, launch the game
     /// </summary>
-    private void OnJoinedRoom(){
+    public override void OnJoinedRoom(){
         PhotonNetwork.LoadLevel("MainGame");
+    }
+
+    private void HandleRoomInviteAccept(string roomName){
+        PlayerPrefs.SetString("PHOTONROOM",roomName);
+        if(PhotonNetwork.InRoom){
+            PhotonNetwork.LeaveRoom();
+        }
+        else{
+            if(PhotonNetwork.InLobby){
+                JoinPlayerRoom();
+            }
+        }
+    }
+
+    private void JoinPlayerRoom(){
+        string roomName = PlayerPrefs.GetString("PHOTONROOM");
+        PlayerPrefs.SetString("PHOTONROOM", roomName);
+        PhotonNetwork.JoinRoom(roomName);
+    }
+
+    public override void OnJoinedLobby()
+    {
+        string roomName = PlayerPrefs.GetString("PHOTONROOM");
+        if(!string.IsNullOrEmpty(roomName)){
+            JoinPlayerRoom();
+        }
+        else{
+            //PhotonNetwork.CreateRoom(PhotonNetwork.LocalPlayer.UserId);
+        }
     }
 
 
