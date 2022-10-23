@@ -63,6 +63,10 @@ public class Player : MonoBehaviour
 
         //Set the direction
         moveDirection = new Vector2(moveX,moveY).normalized;
+        //set inputs for animatior 
+        anim.SetFloat("Horizontal", moveDirection.x);
+        anim.SetFloat("Vertical", moveDirection.y);
+        anim.SetFloat("Speed", moveDirection.sqrMagnitude);
 
         //Get velocity based off of input
         rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
