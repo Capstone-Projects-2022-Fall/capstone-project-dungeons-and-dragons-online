@@ -32,9 +32,6 @@ public class PlayerMovement : MonoBehaviour
     {
         inventory = new Inventory();
         uiInventory.setInventory(inventory);
-        ItemWorld.SpawnItemWorld(new Vector3 (1, 1), new Item {itemType = Item.ItemType.LongSword, amt = 1});
-        ItemWorld.SpawnItemWorld(new Vector3 (-1, 1), new Item {itemType = Item.ItemType.HPot, amt = 1});
-        ItemWorld.SpawnItemWorld(new Vector3 (0, -1), new Item {itemType = Item.ItemType.RPot, amt = 1});
     }
 
 
