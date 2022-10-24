@@ -42,7 +42,10 @@ public class Player : Photon.MonoBehaviour
         float moveY = Input.GetAxisRaw("Vertical");
 
         moveDirection = new Vector2(moveX,moveY).normalized;
-    }
+        //set inputs for animatior 
+        anim.SetFloat("Horizontal", moveDirection.x);
+        anim.SetFloat("Vertical", moveDirection.y);
+        anim.SetFloat("Speed", moveDirection.sqrMagnitude);
 
     public void Move()
     {
