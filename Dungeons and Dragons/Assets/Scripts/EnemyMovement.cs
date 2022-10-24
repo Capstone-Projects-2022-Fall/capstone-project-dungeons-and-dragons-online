@@ -1,36 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 /// <summary>
 /// Enemy movement handler
 /// </summary>
 public class EnemyMovement : MonoBehaviour
 {
-    /// <summary>
     /// Get the chasing object
-    /// </summary>
-    public GameObject player;
+    private GameObject player;
 
-    /// <summary>
     /// the speed of the enemy
-    /// </summary>
     public float speed;
 
-    /// <summary>
     /// the chasing distance detector 
-    /// </summary>
-    public float distancBetween;
+    //public float distancBetween;
 
-    /// <summary>
     /// the distance between the enemy and player
-    /// </summary>
-    private float distance;
 
     // Start is called before the first frame update
+
     void Start()
     {
-        
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
@@ -40,7 +33,7 @@ public class EnemyMovement : MonoBehaviour
     void Update()
     {
         // Getting the distance between enemy and player object
-        distance = Vector2.Distance(transform.position, player.transform.position);
+        /*distance = Vector2.Distance(transform.position, player.transform.position);
         Vector2 direction = player.transform.position - transform.position;
         
         direction.Normalize();
@@ -51,7 +44,13 @@ public class EnemyMovement : MonoBehaviour
              // Keep updating the movement
             transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
           //  transform.rotation = Quaternion.Euler(Vector3.forward * angle);
-        }
+        }*/
+        findPlayer();
+    }
+
+    private void findPlayer()
+    {
+        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
     }
 
     /// <summary>

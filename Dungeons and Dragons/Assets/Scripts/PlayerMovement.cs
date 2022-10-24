@@ -27,24 +27,27 @@ public class PlayerMovement : MonoBehaviour
     /// </summary>
     [SerializeField] private HealthBar healthBar;
     [SerializeField] private UI_Inventory uiInventory;
+    /*
+        private void Awake()
+        {
+            inventory = new Inventory();
+            uiInventory.setInventory(inventory);
+            ItemWorld.SpawnItemWorld(new Vector3 (1, 1), new Item {itemType = Item.ItemType.LongSword, amt = 1});
+            ItemWorld.SpawnItemWorld(new Vector3 (-1, 1), new Item {itemType = Item.ItemType.HPot, amt = 1});
+            ItemWorld.SpawnItemWorld(new Vector3 (0, -1), new Item {itemType = Item.ItemType.RPot, amt = 1});
+        }
 
-    private void Awake()
-    {
-        inventory = new Inventory();
-        uiInventory.setInventory(inventory);
-    }
-
-
+     */
     /// <summary>
     /// Update is called once per frame and initialize the health value
     /// </summary>
     private void Start()
     {
-        inventory.addItem(new Item {itemType = Item.ItemType.LongSword, amt = 1});
-        Debug.Log(inventory);
+        //inventory.addItem(new Item {itemType = Item.ItemType.LongSword, amt = 1});
+        //Debug.Log(inventory);
         healthBar.SetSize(1.21f);
     }
-
+/*
     private void OnTriggerEnter2D(Collider2D collider)
     {
         ItemWorld itemWorld = collider.GetComponent<ItemWorld>();
@@ -54,11 +57,11 @@ public class PlayerMovement : MonoBehaviour
             itemWorld.destroyItem();
         }
     }
-
-    /// <summary>
-    /// Update is called once per frame
-    /// </summary>
-    void Update()
+*/
+/// <summary>
+/// Update is called once per frame
+/// </summary>
+void Update()
     {
         ProcessInputs();
     }
@@ -78,7 +81,7 @@ public class PlayerMovement : MonoBehaviour
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
 
-        moveDirection = new Vector2(moveX,moveY).normalized;
+        moveDirection = new Vector2(moveX,moveY).normalized; 
     }
 
     /// <summary>
