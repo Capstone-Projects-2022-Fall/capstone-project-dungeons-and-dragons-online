@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Photon.Pun;
 
 /// <summary>
 /// Enemy movement handler
@@ -27,9 +28,9 @@ public class Enemy : MonoBehaviour
     /// </summary>
     void Update()
     {
-        photonView.RPC("findPlayer", PhotonTargets.AllBuffered);
+        photonView.RPC("findPlayer", RpcTarget.AllBuffered);
 
-        //findPlayer();
+        findPlayer();
     }
 
     [PunRPC]
