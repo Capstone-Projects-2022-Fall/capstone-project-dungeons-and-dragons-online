@@ -20,9 +20,9 @@ public class AttackArea : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collider)
     {
         // If the target has EnemyHealth compnent then is triggered
-        if (collider.GetComponent<EnemyHealth>() != null)
+        if (collider.GetComponent<Health>() != null)
         {
-            EnemyHealth health = collider.GetComponent<EnemyHealth>();
+            Health health = collider.GetComponent<Health>();
             health.Damage(damage);
         }
     }
