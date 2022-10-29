@@ -1184,6 +1184,65 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &993850460
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 993850462}
+  - component: {fileID: 993850461}
+  m_Layer: 0
+  m_Name: ItemAssets
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &993850461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993850460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52bbde635538f9d408698c603f125627, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pfItemWorld: {fileID: 8663264166859196216, guid: 696d51c81080dfd45bf692911ede5acc, type: 3}
+  LongSword: {fileID: 21300000, guid: 5b65a747ca9d7314db19e3d5fd14d589, type: 3}
+  HPot: {fileID: 21300000, guid: faaf8600a80bc3c4595d95e98963f12e, type: 3}
+  RPot: {fileID: 21300000, guid: 1e442b0b17b76214f847ac11e8414298, type: 3}
+  G: {fileID: 0}
+  Chestplate: {fileID: 0}
+  BHelm: {fileID: 0}
+  BBoots: {fileID: 0}
+  DManPlate: {fileID: 0}
+  BORK: {fileID: 0}
+  DBlade: {fileID: 0}
+  Dagger: {fileID: 0}
+  Swifties: {fileID: 0}
+  Sallet: {fileID: 0}
+  AshenBow: {fileID: 0}
+--- !u!4 &993850462
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993850460}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.41699922, y: -1.8441378, z: 0.028245617}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1018470503
 GameObject:
   m_ObjectHideFlags: 0
@@ -1420,6 +1479,7 @@ MonoBehaviour:
   moveSpeed: 5
   rb: {fileID: 1170014915}
   healthBar: {fileID: 1143012515}
+  uiInventory: {fileID: 2068488040}
 --- !u!114 &1170014918
 MonoBehaviour:
   m_ObjectHideFlags: 0

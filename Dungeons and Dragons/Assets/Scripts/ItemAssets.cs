@@ -13,6 +13,11 @@ public class ItemAssets : MonoBehaviour
 
     public Transform pfItemWorld;
 
+    public void createItemWorld()
+    {
+        
+    }
+
     public Sprite LongSword;
     public Sprite HPot;
     public Sprite RPot;
