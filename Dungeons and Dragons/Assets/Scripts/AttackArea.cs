@@ -3,6 +3,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 /// <summary>
 /// AttackArea handler
@@ -25,5 +26,6 @@ public class AttackArea : MonoBehaviour
             Health health = collider.GetComponent<Health>();
             health.Damage(damage);
         }
+       
     }
 }
