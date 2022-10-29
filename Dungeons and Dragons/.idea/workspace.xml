@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cc6a32e2-c93e-4489-bd2d-7a0dbb7f2daa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Dungeons and Dragons.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/Hub_Tile.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/Hub_Tile.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/characters.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/characters/player.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/characters/player.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/characters/slime.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/characters/slime.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/objects.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/objects/chest_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/objects/chest_01.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/objects/objects.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/objects/objects.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/particles.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/particles/dust_particles_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/particles/dust_particles_01.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/Mystic_Wood.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/Mystic_Wood.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/chest_01_0.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/chest_01_0.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/chest_01_1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/chest_01_1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/chest_01_2.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/chest_01_2.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/chest_01_3.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/chest_01_3.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_16x16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_16x16.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_16x16_0.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_16x16_0.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_16x16_1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_16x16_1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_16x16_2.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_16x16_2.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_16x16_3.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_16x16_3.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_16x16_4.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_16x16_4.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_16x16_5.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_16x16_5.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_16x16_6.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_16x16_6.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_16x16_7.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_16x16_7.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_8x8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_8x8.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_8x8_0.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_8x8_0.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_8x8_1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_8x8_1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_8x8_2.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_8x8_2.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_8x8_3.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_8x8_3.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_8x8_4.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_8x8_4.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_8x8_5.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_8x8_5.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_8x8_6.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_8x8_6.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_8x8_7.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/decor_8x8_7.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/fences.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/fences.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/fences_0.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/fences_0.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/fences_1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/fences_1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/fences_10.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/fences_10.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/fences_11.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/fences_11.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/fences_12.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/fences_12.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/fences_13.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/fences_13.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/fences_14.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/fences_14.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/fences_15.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/fences_15.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/fences_2.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/fences_2.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/fences_3.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/fences_3.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/fences_4.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/fences_4.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/fences_5.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/fences_5.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/fences_6.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/fences_6.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/fences_7.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/fences_7.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/fences_8.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/fences_8.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/fences_9.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/fences_9.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/floors.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/floors/wooden.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/floors/wooden.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/grass.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/grass.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/grass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/grass.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/objects_0.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/objects_0.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/objects_1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/objects_1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/objects_2.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/objects_2.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/objects_3.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/objects_3.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/objects_4.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/objects_4.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/objects_5.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/objects_5.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/objects_6.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/objects_6.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/objects_7.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/objects_7.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/objects_8.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/objects_8.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_0.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_0.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_10.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_10.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_11.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_11.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_12.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_12.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_13.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_13.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_14.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_14.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_15.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_15.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_16.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_16.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_17.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_17.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_18.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_18.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_19.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_19.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_2.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_2.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_20.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_20.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_21.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_21.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_22.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_22.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_23.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_23.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_24.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_24.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_25.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_25.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_26.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_26.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_27.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_27.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_28.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_28.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_29.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_29.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_3.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_3.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_30.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_30.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_31.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_31.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_32.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_32.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_33.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_33.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_34.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_34.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_35.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_35.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_36.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_36.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_37.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_37.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_38.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_38.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_39.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_39.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_4.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_4.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_40.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_40.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_41.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_41.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_42.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_42.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_43.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_43.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_5.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_5.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_6.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_6.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_7.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_7.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_8.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_8.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_9.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/plains_9.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls/walls.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls/walls.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls/wooden_door.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls/wooden_door.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls/wooden_door_b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls/wooden_door_b.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_0.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_0.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_10.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_10.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_11.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_11.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_12.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_12.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_13.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_13.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_14.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_14.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_15.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_15.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_16.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_16.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_17.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_17.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_18.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_18.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_19.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_19.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_2.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_2.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_20.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_20.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_21.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_21.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_22.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_22.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_23.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_23.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_24.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_24.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_25.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_25.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_26.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_26.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_27.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_27.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_28.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_28.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_29.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_29.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_3.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_3.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_30.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_30.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_4.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_4.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_5.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_5.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_6.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_6.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_7.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_7.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_8.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_8.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_9.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/walls_9.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/water_decorations.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/water_decorations.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/water_decorations_0.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/water_decorations_0.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/water_decorations_1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/water_decorations_1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/water_decorations_2.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/water_decorations_2.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/water_decorations_3.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/water_decorations_3.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/wooden.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/wooden.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/wooden_door_0.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/wooden_door_0.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/wooden_door_1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/wooden_door_1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/wooden_door_b_0.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/wooden_door_b_0.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/wooden_door_b_1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/New Folder/sprites/tilesets/wooden_door_b_1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="Ronald_Workspace" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2GGze7SaVFZ7VR0HCWy74tFnT6m" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cc6a32e2-c93e-4489-bd2d-7a0dbb7f2daa" name="Default Changelist" comment="" />
+      <created>1666029801030</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666029801030</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

@@ -7,66 +7,129 @@ using Photon.Pun;
 public class Player : MonoBehaviour
 {
     public PhotonView photonView;
-    //Hitbox for the player
     public Rigidbody2D rb;
-    //The animation for the player
     public Animator anim;
-    //The players individual camera
     public GameObject PlayerCamera;
     public SpriteRenderer sr;
-    //Username
     public Text PlayerNameText;
+    public GameObject player;
 
-    //This will be the players movement
+    //attack
+    public GameObject attackArea;
+    private bool attacking = false;
+    private float timeToAttack = 0.05f;
+    private float timer = 0f;
+
     private Vector2 moveDirection;
 
-    //Speed modifier
     public float moveSpeed;
-
-    /// <summary>
-    /// When a player is spawned, give them a camera and a username above there head
-    /// </summary>
+    // Start is called before the first frame update
     private void Awake(){
-        //If the camera is theirs
-        if(photonView.IsMine){
-            //Set it to their active camera
+        if (photonView.IsMine){
             PlayerCamera.SetActive(true);
-            
-            //Also set their name
             PlayerNameText.text = PhotonNetwork.NickName;
-        } else {//If its not them
-            //Give the other players their name
-            PlayerNameText.text = photonView.Owner.NickName;
             
-            //Give the other players a different color name to distinguish
+        } else {
+            PlayerNameText.text = photonView.Owner.NickName;
             PlayerNameText.color = Color.cyan;
         }
     }
 
-    /// <summary>
-    /// Checks input from the user every frame
-    /// </summary>
     private void Update(){
-        //If there is an input from the current user
         if(photonView.IsMine){
-            //Launch the check input function
             checkInput();
         }
     }
-    /// <summary>
-    /// Check input give the player the appropriate velocity based on the input from the user
-    /// </summary>
-    private void checkInput(){
-        //Set x and y axis
+
+    public void FixedUpdate()
+    {
+        if (photonView.IsMine)
+        {
+            if (Input.GetKeyDown(KeyCode.J))
+            {
+                photonView.RPC("Attack", RpcTarget.AllBuffered);
+            }
+        }
+        Move();
+    }
+
+    private void checkInput()
+    {
+        //move direction
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
 
-        //Set the direction
-        moveDirection = new Vector2(moveX,moveY).normalized;
+        moveDirection = new Vector2(moveX, moveY).normalized;
 
-        //Get velocity based off of input
+
+
+        //set inputs for animatior 
+        anim.SetFloat("Horizontal", moveDirection.x);
+        anim.SetFloat("Vertical", moveDirection.y);
+        anim.SetFloat("Speed", moveDirection.sqrMagnitude);
+
+    }
+    /*
+    public void Attack(bool attacking)
+    {
+        attackArea.SetActive(attacking);
+    }*/
+
+    public void Move()
+    {
         rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
+
+        if (moveDirection.x < 0)
+        {
+                photonView.RPC("FlipFalse", RpcTarget.AllBuffered);
+                //FlipFalse();
+        }
+        if (moveDirection.x > 0)
+        {
+                photonView.RPC("FlipTrue", RpcTarget.AllBuffered);
+                //FlipTrue();
+        }
+
+        
+        //checkFlipping();
+        Debug.Log("here");
     }
 
-  
+    [PunRPC]
+    void Attack()
+    {
+
+        // Key J for normal attack the attack status will become ture
+        attacking = true;
+        attackArea.SetActive(attacking);
+        
+        // Attack status is true then will call the attackArea class to start attacking
+        if (attacking)
+        {
+            timer += Time.deltaTime * 2;
+
+            if (timer >= timeToAttack)
+            {
+                timer = 0;
+                attacking = false;
+                attackArea.SetActive(attacking);
+            }
+        }
+        
+    }
+
+    [PunRPC]
+    void FlipFalse()
+    {
+        //attackArea.transform.position = new Vector3(attackArea.transform.position.x - 0.29f, attackArea.transform.position.y, 0);
+        player.transform.localScale = new Vector3(-1.01715f, player.transform.localScale.y,1);
+    }
+    
+    [PunRPC]
+    void FlipTrue()
+    {
+        //attackArea.transform.position = new Vector3(attackArea.transform.position.x, attackArea.transform.position.y, 0);
+        player.transform.localScale = new Vector3(1.01715f, player.transform.localScale.y,1);
+    }
+
 }
