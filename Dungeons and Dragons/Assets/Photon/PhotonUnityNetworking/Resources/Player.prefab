@@ -31,7 +31,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2453743924847153508}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -111,10 +111,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6286505278166741268}
   - {fileID: 5516016068155568897}
   m_Father: {fileID: 6286505278479089539}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -212,8 +211,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2453743924847153508}
-  m_RootOrder: 0
+  m_Father: {fileID: 6286505278479089539}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &6286505278166741270
 Camera:
@@ -302,8 +301,9 @@ Transform:
   m_LocalScale: {x: 1.0171502, y: 1.0323267, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2453743924847153508}
   - {fileID: 3657417919315889041}
+  - {fileID: 6286505278166741268}
+  - {fileID: 2453743924847153508}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -422,7 +422,7 @@ MonoBehaviour:
   rb: {fileID: 6286505278479089540}
   anim: {fileID: 4030372497283990349}
   PlayerCamera: {fileID: 6286505278166741269}
-  sr: {fileID: 0}
+  sr: {fileID: 6286505278479089536}
   PlayerNameText: {fileID: 1631036392260151643}
   attackArea: {fileID: 8778392516070197106}
   moveSpeed: 5
@@ -545,7 +545,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6286505278479089539}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2459315385374607665
 SpriteRenderer:

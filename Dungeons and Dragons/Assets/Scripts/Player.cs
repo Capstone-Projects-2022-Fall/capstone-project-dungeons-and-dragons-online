@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
     //attack
     public GameObject attackArea;
     private bool attacking = false;
-    private float timeToAttack = 0.25f;
+    private float timeToAttack = 0.1f;
     private float timer = 0f;
 
     private Vector2 moveDirection;
@@ -42,6 +42,13 @@ public class Player : MonoBehaviour
 
     public void FixedUpdate()
     {
+        if (photonView.IsMine)
+        {
+            if (Input.GetKeyDown(KeyCode.J))
+            {
+                photonView.RPC("Attack", RpcTarget.AllBuffered);
+            }
+        }
         Move();
     }
 
@@ -53,25 +60,7 @@ public class Player : MonoBehaviour
 
         moveDirection = new Vector2(moveX, moveY).normalized;
 
-        //attack
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            attacking = true;
-            Attack(attacking);
-        }
 
-        // Attack status is true then will call the attackArea class to start attacking
-        if (attacking)
-        {
-            timer += Time.deltaTime * 2;
-
-            if (timer >= timeToAttack)
-            {
-                timer = 0;
-                attacking = false;
-                Attack(attacking);
-            }
-        }
 
         //set inputs for animatior 
         anim.SetFloat("Horizontal", moveDirection.x);
@@ -79,11 +68,11 @@ public class Player : MonoBehaviour
         anim.SetFloat("Speed", moveDirection.sqrMagnitude);
 
     }
-
+    /*
     public void Attack(bool attacking)
     {
         attackArea.SetActive(attacking);
-    }
+    }*/
 
     public void Move()
     {
@@ -105,8 +94,29 @@ public class Player : MonoBehaviour
         Debug.Log("here");
     }
 
+    [PunRPC]
+    void Attack()
+    {
 
+        // Key J for normal attack the attack status will become ture
+        //
+        attacking = true;
+        attackArea.SetActive(attacking);
+        
+        // Attack status is true then will call the attackArea class to start attacking
+        if (attacking)
+        {
+            timer += Time.deltaTime * 2;
 
+            if (timer >= timeToAttack)
+            {
+                timer = 0;
+                attacking = false;
+                attackArea.SetActive(attacking);
+            }
+        }
+        
+    }
 
     [PunRPC]
     void FlipFalse()
