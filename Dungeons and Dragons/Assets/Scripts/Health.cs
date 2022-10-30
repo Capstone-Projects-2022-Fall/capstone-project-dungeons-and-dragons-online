@@ -22,7 +22,7 @@ public class Health : MonoBehaviour
     void Update()
     {
         // Testing Onlys
-       /* if (Input.GetKeyDown(KeyCode.O))
+        if (Input.GetKeyDown(KeyCode.O))
          {
              Damage(10);
             // healthBar.SetSize();
@@ -31,7 +31,7 @@ public class Health : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.H))
         {
             Heal(10);
-        }*/
+        }
     }
     /// <summary>
     /// Damage and health visualization
@@ -59,7 +59,7 @@ public class Health : MonoBehaviour
 
         this.health -= amount;
         //Debug.Log((float)(this.health * 0.01 * 1.21f));
-        healthBar.SetSize((float)(this.health * 0.01 * 1.21f));
+        healthBar.SetSize((float)(this.health  * 0.01 * 0.1169186f));
   
         StartCoroutine(VisualIndicator(Color.red));
 
@@ -86,7 +86,7 @@ public class Health : MonoBehaviour
         else
         {
             this.health += amount;
-            healthBar.SetSize((float)(this.health * 0.01 * 1.21f));
+            healthBar.SetSize((float)(this.health * 0.01 * 0.1169186f));
         }
     }
 
