@@ -43,8 +43,7 @@ public class PlayerMovement : MonoBehaviour
     /// </summary>
     private void Start()
     {
-        //inventory.addItem(new Item {itemType = Item.ItemType.LongSword, amt = 1});
-        //Debug.Log(inventory);
+        //ItemWorld.SpawnItemWorld(new Vector3(3, -3), new Item{itemType = Item.ItemType.LongSword, amt = 1});
         healthBar.SetSize(1.21f);
     }
 /*
