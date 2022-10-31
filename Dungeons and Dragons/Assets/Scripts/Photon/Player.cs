@@ -92,7 +92,7 @@ public class Player : MonoBehaviour
 
         
         //checkFlipping();
-        Debug.Log("here");
+        //Debug.Log("here");
     }
 
     [PunRPC]

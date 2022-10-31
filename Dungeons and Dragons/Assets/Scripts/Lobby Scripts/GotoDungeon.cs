@@ -2,15 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Photon.Pun;
 
 
-public class GotoDungeon : MonoBehaviour
+
+public class GotoDungeon : MonoBehaviourPunCallbacks
 {
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collision.gameObject.name == "DungeonSceneTrigger")
-        {
-            SceneManager.LoadScene("SampleScene");
-        }
+        PhotonNetwork.LoadLevel("SampleScene");
     }
 }
