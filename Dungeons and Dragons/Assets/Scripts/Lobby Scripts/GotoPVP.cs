@@ -6,11 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class GotoPVP : MonoBehaviour
 {
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collision.gameObject.name == "PVPSceneTrigger")
-        {
-            SceneManager.LoadScene("BattleMap");
-        }
+        SceneManager.LoadScene("BattleMap");
     }
 }
