@@ -2,15 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Photon.Pun;
 
 
 public class GotoPVP : MonoBehaviour
 {
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void Start()
     {
-        if (collision.gameObject.name == "PVPSceneTrigger")
+        PhotonNetwork.AutomaticallySyncScene = true;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
         {
-            SceneManager.LoadScene("BattleMap");
+            PhotonNetwork.LoadLevel("BattleMap");
         }
     }
 }

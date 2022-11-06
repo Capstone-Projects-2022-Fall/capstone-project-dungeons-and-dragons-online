@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class GotoDungeon : MonoBehaviour
 {
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collision.gameObject.name == "DungeonSceneTrigger")
+        
         {
             SceneManager.LoadScene("SampleScene");
         }

@@ -8494,6 +8494,7 @@ GameObject:
   - component: {fileID: 1245862161}
   - component: {fileID: 1245862160}
   - component: {fileID: 1245862159}
+  - component: {fileID: 1245862162}
   m_Layer: 0
   m_Name: PVPSceneTrigger
   m_TagString: Untagged
@@ -8511,10 +8512,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.106802836, y: -0.2732929}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -8525,7 +8526,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.78639436, y: 1.4036889}
   m_EdgeRadius: 0
 --- !u!212 &1245862160
 SpriteRenderer:
@@ -8587,13 +8588,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1245862158}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.37, y: -1.2, z: 0}
-  m_LocalScale: {x: 0.06286855, y: 0.2195149, z: 1.3977}
+  m_LocalPosition: {x: 3.9441, y: -1.1836, z: 0}
+  m_LocalScale: {x: 0.21108207, y: 0.1865822, z: 1.3977}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1245862162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245862158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4b548196a71f6048b008df46f2bc892, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1246762960
 GameObject:
   m_ObjectHideFlags: 0
@@ -25124,6 +25137,7 @@ GameObject:
   - component: {fileID: 1565970840}
   - component: {fileID: 1565970839}
   - component: {fileID: 1565970838}
+  - component: {fileID: 1565970841}
   m_Layer: 0
   m_Name: DungeonSceneTrigger
   m_TagString: Untagged
@@ -25141,7 +25155,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -25224,6 +25238,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1565970841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565970837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d87445dd8e52e94cbb45475055128bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1574619862
 GameObject:
   m_ObjectHideFlags: 0
