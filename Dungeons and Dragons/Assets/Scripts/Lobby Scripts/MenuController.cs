@@ -32,6 +32,7 @@ public class MenuController : MonoBehaviourPunCallbacks
     private void Awake(){
         //Connects to the photon network
         //PhotonNetwork.ConnectUsingSettings();
+        PhotonNetwork.AutomaticallySyncScene = true;
         PhotonNetwork.ConnectUsingSettings();
     }
 
