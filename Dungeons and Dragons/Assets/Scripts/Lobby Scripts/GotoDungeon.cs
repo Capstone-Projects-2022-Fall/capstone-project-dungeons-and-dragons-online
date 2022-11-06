@@ -10,6 +10,9 @@ public class GotoDungeon : MonoBehaviourPunCallbacks
 {
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        PhotonNetwork.LoadLevel("SampleScene");
+        if (PhotonNetwork.IsMasterClient)
+        {
+            PhotonNetwork.LoadLevel("RandomMap");
+        }
     }
 }

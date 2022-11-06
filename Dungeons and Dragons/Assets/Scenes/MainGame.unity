@@ -8546,6 +8546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4b548196a71f6048b008df46f2bc892, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  photonView: {fileID: 0}
 --- !u!1 &1190398661
 GameObject:
   m_ObjectHideFlags: 0
@@ -42822,15 +42823,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3475910386451944649, guid: 227a2a4b86c2d4f4cacacfa0a165c2f3, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.098305
+      value: 0.14793919
       objectReference: {fileID: 0}
     - target: {fileID: 3475910386451944649, guid: 227a2a4b86c2d4f4cacacfa0a165c2f3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.3278
+      value: 3.314
       objectReference: {fileID: 0}
     - target: {fileID: 3475910386451944649, guid: 227a2a4b86c2d4f4cacacfa0a165c2f3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3858
+      value: 0.418
       objectReference: {fileID: 0}
     - target: {fileID: 3475910386451944649, guid: 227a2a4b86c2d4f4cacacfa0a165c2f3, type: 3}
       propertyPath: m_LocalPosition.z
