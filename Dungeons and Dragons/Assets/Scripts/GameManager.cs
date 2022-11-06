@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
 		GameCanvas.SetActive(false);
 		SceneCamera.SetActive(false);
 
-		Debug.Log(this.transform.position.x);
+		//Debug.Log(this.transform.position.x);
 
 		// ItemWorld inst = ItemWorld.SpawnItemWorld(new Vector3(3, -3), new Item{itemType = Item.ItemType.LongSword, amt = 1});
 		// phItemWorld(inst);
