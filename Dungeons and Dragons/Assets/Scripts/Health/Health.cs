@@ -1,23 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using Photon.Pun;
 /// <summary>
 /// Health bar handler
 /// </summary>
 public class Health : MonoBehaviour
 {
+    [SerializeField] private PhotonView photonView;
     /// <summary>
     /// Set the initial health value to 100
     /// </summary>
     [SerializeField] private int health = 100;
-
     /// <summary>
     /// Set the maximum health value to 100
     /// </summary>
     private int MAX_HEALTH = 100;
-
+    
     [SerializeField] private HealthBar healthBar;
-
+    [SerializeField] private GameObject BacktoMain;
     // Update is called once per frame
     void Update()
     {
@@ -32,6 +34,11 @@ public class Health : MonoBehaviour
         {
             Heal(10);
         }
+    }
+
+    public void FixedUpdate()
+    {
+
     }
     /// <summary>
     /// Damage and health visualization
@@ -59,14 +66,15 @@ public class Health : MonoBehaviour
 
         this.health -= amount;
         //Debug.Log((float)(this.health * 0.01 * 1.21f));
-        healthBar.SetSize((float)(this.health  * 0.01 * 0.1169186f));
-  
+        
         StartCoroutine(VisualIndicator(Color.red));
 
         if (health <= 0)
         {
             Die();
+            //photonView.RPC("Die", RpcTarget.MasterClient);
         }
+        healthBar.SetSize((float)(this.health * 0.01 * 0.1169186f));
     }
     /// <summary>
     /// Calculate the heal
@@ -97,5 +105,12 @@ public class Health : MonoBehaviour
     {
         Debug.Log("dead");
         Destroy(gameObject);
+        if (photonView.IsMine)
+        {
+            PhotonNetwork.LeaveRoom();
+            PhotonNetwork.LoadLevel("VictoryScene");
+        }
+
+        //SceneManager.LoadScene("MainMenu");
     }
 }

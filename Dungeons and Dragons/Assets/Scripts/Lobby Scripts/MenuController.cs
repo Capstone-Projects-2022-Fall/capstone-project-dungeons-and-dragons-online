@@ -20,7 +20,7 @@ public class MenuController : MonoBehaviourPunCallbacks
     [SerializeField] private InputField UsernameInput;
     [SerializeField] private InputField CreateGameInput;
     [SerializeField] private InputField JoinGameInput;
-
+    
     //Just the start button
     [SerializeField] private GameObject StartButton;
 
@@ -32,8 +32,11 @@ public class MenuController : MonoBehaviourPunCallbacks
     private void Awake(){
         //Connects to the photon network
         //PhotonNetwork.ConnectUsingSettings();
-        PhotonNetwork.AutomaticallySyncScene = true;
-        PhotonNetwork.ConnectUsingSettings();
+        if (!PhotonNetwork.IsConnected)
+        {
+            PhotonNetwork.AutomaticallySyncScene = true;
+            PhotonNetwork.ConnectUsingSettings();
+        }
     }
 
     /// <summary>
