@@ -43,7 +43,7 @@ public class MenuController : MonoBehaviourPunCallbacks
         //Displays username menu
         UsernameMenu.SetActive(true);
     }
-/*
+
     /// <summary>
     /// When the user joins the lobby, send a message to the console confirming connection
     /// </summary>
@@ -53,7 +53,7 @@ public class MenuController : MonoBehaviourPunCallbacks
         PhotonNetwork.JoinLobby(TypedLobby.Default);
         //Print to log
     }
-    */
+    
     /// <summary>
     /// Changes the players username to the one passed by the user
     /// </summary>
@@ -72,32 +72,32 @@ public class MenuController : MonoBehaviourPunCallbacks
     /// </summary>
     public void setUsername(){
         //Turns of username menu
-        //UsernameMenu.SetActive(false);
+        UsernameMenu.SetActive(false);
         //Sets player username
     
         
         PhotonNetwork.NickName = UsernameInput.text;
         PlayerPrefs.SetString("USERNAME", UsernameInput.text);
 
-        UIInvite.OnRoomInviteAccept += HandleRoomInviteAccept;
+        //UIInvite.OnRoomInviteAccept += HandleRoomInviteAccept;
 
-        
+        /*
         RoomOptions roomOptions = new RoomOptions();
         roomOptions.MaxPlayers=8;
         PhotonNetwork.JoinOrCreateRoom("Main", roomOptions, TypedLobby.Default);
-        
+        */
         
     }
-
+    /*
     public void OnDestroy(){
         UIInvite.OnRoomInviteAccept -= HandleRoomInviteAccept;
-    }
-/*
+    }*/
+
     /// <summary>
     /// Creates a photon lobby from the user passed name
     /// </summary>
     public void CreateGame(){
-        PhotonNetwork.CreateRoom(CreateGameInput.text, new RoomOptions(){MaxPlayers = 20}, null);
+        PhotonNetwork.CreateRoom(CreateGameInput.text, new RoomOptions(){MaxPlayers = 4}, null);
     }
 
     /// <summary>
@@ -105,17 +105,17 @@ public class MenuController : MonoBehaviourPunCallbacks
     /// </summary>
     public void JoinGame(){
         RoomOptions roomOptions = new RoomOptions();
-        roomOptions.MaxPlayers=20;
+        roomOptions.MaxPlayers=4;
         PhotonNetwork.JoinOrCreateRoom(JoinGameInput.text, roomOptions, TypedLobby.Default);
     }
-*/
+
     /// <summary>
     /// Once player joins room, launch the game
     /// </summary>
     public override void OnJoinedRoom(){
         PhotonNetwork.LoadLevel("MainGame");
     }
-
+    /*
     private void HandleRoomInviteAccept(string roomName){
         PlayerPrefs.SetString("PHOTONROOM",roomName);
         if(PhotonNetwork.InRoom){
@@ -145,5 +145,5 @@ public class MenuController : MonoBehaviourPunCallbacks
         }
     }
 
-
+    */
 }
