@@ -93,6 +93,7 @@ public class Player : MonoBehaviour
         
         //checkFlipping();
         //Debug.Log("here");
+        //Debug.Log(PhotonNetwork.CountOfPlayers.ToString());
     }
 
     [PunRPC]

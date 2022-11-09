@@ -3,21 +3,25 @@ using Photon.Pun;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject PlayerPrefab;
+	public GameObject PlayerPrefab;
 	public GameObject GameCanvas;
 	public GameObject SceneCamera;
 
-	public GameObject pfItemWorld;
+
 	
 	/// <summary>
 	/// Displays the game map when the user loads in
 	/// </summary>
 	private void Awake(){
 		GameCanvas.SetActive(true);
-		
 	}
 
-	public void SpawnPlayer(){
+    public void FixedUpdate()
+    {
+		checkPlayer();
+    }
+
+    public void SpawnPlayer(){
 		float randVal = Random.Range(-1f,1f);
 
 		PhotonNetwork.Instantiate(PlayerPrefab.name, new Vector2(this.transform.position.x *-0.2f, this.transform.position.y *0.2f), Quaternion.identity, 0);
@@ -40,5 +44,12 @@ public class GameManager : MonoBehaviour
         // return itemWorld;
 
 	}
+
+	public void checkPlayer()
+    {
+		Debug.Log(PhotonNetwork.CountOfPlayers.ToString());
+	}
+
+
 
 }

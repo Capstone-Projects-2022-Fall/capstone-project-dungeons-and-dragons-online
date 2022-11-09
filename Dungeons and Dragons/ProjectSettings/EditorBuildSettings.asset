@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RandomMap.unity
     guid: cef596fcd216291478dd8c66832552d5
+  - enabled: 1
+    path: Assets/Scenes/VictoryScene.unity
+    guid: 08b6734a4de3a3443aa8ad4217fcbab7
   m_configObjects: {}
