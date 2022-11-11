@@ -37,8 +37,11 @@ public class SkinManager : MonoBehaviour
 
     public void PlayGame()
     {
+#if UNITY_EDITOR
         PrefabUtility.SaveAsPrefabAsset(playerskin, "Assets/Photon/PhotonUnityNetworking/Resources/selectedSkin.prefab");
+#endif
         SceneManager.LoadScene("MainGame");
+
     }
 
 }
