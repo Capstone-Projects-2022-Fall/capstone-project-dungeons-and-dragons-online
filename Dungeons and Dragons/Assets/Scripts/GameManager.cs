@@ -1,18 +1,28 @@
 using UnityEngine;
 using Photon.Pun;
+using UnityEngine.SceneManagement;
+using UnityEditor;
+using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
 {
 	public GameObject PlayerPrefab;
 	public GameObject GameCanvas;
 	public GameObject SceneCamera;
+    public GameObject newSkin;
+	private Sprite playersprite;
 
 
-	
-	/// <summary>
-	/// Displays the game map when the user loads in
-	/// </summary>
-	private void Awake(){
+	private void Start()
+    {
+		playersprite = newSkin.GetComponent<SpriteRenderer>().sprite;
+		PlayerPrefab.GetComponent<SpriteRenderer>().sprite = playersprite;
+    }
+
+    /// <summary>
+    /// Displays the game map when the user loads in
+    /// </summary>
+    private void Awake(){
 		GameCanvas.SetActive(true);
 	}
 
@@ -24,7 +34,7 @@ public class GameManager : MonoBehaviour
     public void SpawnPlayer(){
 		float randVal = Random.Range(-1f,1f);
 
-		PhotonNetwork.Instantiate(PlayerPrefab.name, new Vector2(this.transform.position.x *-0.2f, this.transform.position.y *0.2f), Quaternion.identity, 0);
+        PhotonNetwork.Instantiate(PlayerPrefab.name, new Vector2(this.transform.position.x *-0.2f, this.transform.position.y *0.2f), Quaternion.identity, 0);
 	
 		GameCanvas.SetActive(false);
 		SceneCamera.SetActive(false);
