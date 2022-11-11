@@ -152,12 +152,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fce740a8ac0aba64e813af98c1d09836, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sr: {fileID: 332486580}
   skins:
   - {fileID: 651160385, guid: 2bb7fcc58a4c5e14da05b474d632a6cc, type: 3}
   - {fileID: 883787886, guid: 2bb7fcc58a4c5e14da05b474d632a6cc, type: 3}
   - {fileID: 1669886620, guid: 2bb7fcc58a4c5e14da05b474d632a6cc, type: 3}
   playerskin: {fileID: 332486579}
+  sr: {fileID: 332486580}
+  selectedSkin: 0
 --- !u!4 &253690613
 Transform:
   m_ObjectHideFlags: 0
@@ -1079,7 +1080,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 25.115993
+  orthographic size: 30.14507
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1322,8 +1323,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905045750}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.2529, y: 0, z: 0}
-  m_LocalScale: {x: 9.953886, y: 9.333824, z: 1}
+  m_LocalPosition: {x: -0.1247, y: -0.0384, z: 0}
+  m_LocalScale: {x: 10.448716, y: 11.086623, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1383,6 +1384,10 @@ PrefabInstance:
     - target: {fileID: 5691736900250120948, guid: e448b4fb3cf15cd43af892b10d29dd7b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5691736900250120949, guid: e448b4fb3cf15cd43af892b10d29dd7b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e448b4fb3cf15cd43af892b10d29dd7b, type: 3}

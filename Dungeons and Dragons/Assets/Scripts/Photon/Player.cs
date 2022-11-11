@@ -123,14 +123,14 @@ public class Player : MonoBehaviour
     void FlipFalse()
     {
         //attackArea.transform.position = new Vector3(attackArea.transform.position.x - 0.29f, attackArea.transform.position.y, 0);
-        player.transform.localScale = new Vector3(-1.01715f, player.transform.localScale.y,1);
+        player.transform.localScale = new Vector3(-0.5f, player.transform.localScale.y,1);
     }
     
     [PunRPC]
     void FlipTrue()
     {
         //attackArea.transform.position = new Vector3(attackArea.transform.position.x, attackArea.transform.position.y, 0);
-        player.transform.localScale = new Vector3(1.01715f, player.transform.localScale.y,1);
+        player.transform.localScale = new Vector3(0.5f, player.transform.localScale.y,1);
     }
 
 }
