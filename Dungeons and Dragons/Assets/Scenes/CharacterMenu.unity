@@ -152,12 +152,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fce740a8ac0aba64e813af98c1d09836, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sr: {fileID: 332486580}
   skins:
   - {fileID: 651160385, guid: 2bb7fcc58a4c5e14da05b474d632a6cc, type: 3}
   - {fileID: 883787886, guid: 2bb7fcc58a4c5e14da05b474d632a6cc, type: 3}
   - {fileID: 1669886620, guid: 2bb7fcc58a4c5e14da05b474d632a6cc, type: 3}
   playerskin: {fileID: 332486579}
+  sr: {fileID: 332486580}
+  selectedSkin: 0
 --- !u!4 &253690613
 Transform:
   m_ObjectHideFlags: 0
@@ -1302,7 +1303,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -10
   m_Sprite: {fileID: 21300000, guid: 5ad2e13dbdf7090479183a6643289b74, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
