@@ -392,7 +392,7 @@ MonoBehaviour:
   PlayerPrefab: {fileID: 6286505278479089537, guid: feacaf17a9d31854db859ceb10896944, type: 3}
   GameCanvas: {fileID: 158699995}
   SceneCamera: {fileID: 1332222419}
-  pfItemWorld: {fileID: 0}
+  newSkin: {fileID: 0}
 --- !u!4 &379741594
 Transform:
   m_ObjectHideFlags: 0
@@ -910,8 +910,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -391.88, y: 0.125}
-  m_SizeDelta: {x: 783.75, y: -0.25}
+  m_AnchoredPosition: {x: -391.75, y: 0}
+  m_SizeDelta: {x: 783.49, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1532452860
 MonoBehaviour:
@@ -926,14 +926,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 5ad2e13dbdf7090479183a6643289b74, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1060,7 +1060,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.94966215, g: 1, b: 0.5330188, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
