@@ -100,7 +100,13 @@ public class MenuController : MonoBehaviourPunCallbacks
     /// Creates a photon lobby from the user passed name
     /// </summary>
     public void CreateGame(){
-        PhotonNetwork.CreateRoom(CreateGameInput.text, new RoomOptions(){MaxPlayers = 4}, null);
+        RoomOptions roomOptions = new RoomOptions(){MaxPlayers = 4};
+        ExitGames.Client.Photon.Hashtable RoomCustomProps = new ExitGames.Client.Photon.Hashtable();
+        int seed = UnityEngine.Random.Range(0, 1000);
+        RoomCustomProps.Add("Seed", seed);
+        roomOptions.CustomRoomProperties = RoomCustomProps;
+        Debug.Log(seed.ToString());
+        PhotonNetwork.CreateRoom(CreateGameInput.text, roomOptions, null);
     }
 
     /// <summary>
@@ -116,7 +122,9 @@ public class MenuController : MonoBehaviourPunCallbacks
     /// Once player joins room, launch the game
     /// </summary>
     public override void OnJoinedRoom(){
+
         PhotonNetwork.LoadLevel("CharacterMenu");
+        
     }
     /*
     private void HandleRoomInviteAccept(string roomName){

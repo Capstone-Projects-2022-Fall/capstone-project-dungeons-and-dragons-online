@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
+using ExitGames.Client.Photon;
 
 public class Player : MonoBehaviour
 {
@@ -33,6 +34,7 @@ public class Player : MonoBehaviour
             PlayerNameText.text = photonView.Owner.NickName;
             PlayerNameText.color = Color.cyan;
         }
+        
     }
 
     private void Update(){
@@ -132,5 +134,7 @@ public class Player : MonoBehaviour
         //attackArea.transform.position = new Vector3(attackArea.transform.position.x, attackArea.transform.position.y, 0);
         player.transform.localScale = new Vector3(0.5f, player.transform.localScale.y,1);
     }
+
+
 
 }
