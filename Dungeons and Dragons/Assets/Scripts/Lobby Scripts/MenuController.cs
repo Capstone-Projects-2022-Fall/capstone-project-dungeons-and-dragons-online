@@ -105,7 +105,7 @@ public class MenuController : MonoBehaviourPunCallbacks
         int seed = UnityEngine.Random.Range(0, 1000);
         RoomCustomProps.Add("Seed", seed);
         roomOptions.CustomRoomProperties = RoomCustomProps;
-        Debug.Log(seed);
+        Debug.Log(seed.ToString());
         PhotonNetwork.CreateRoom(CreateGameInput.text, roomOptions, null);
     }
 
