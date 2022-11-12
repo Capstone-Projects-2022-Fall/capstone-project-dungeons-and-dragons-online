@@ -3,6 +3,8 @@ using Photon.Pun;
 using UnityEngine.SceneManagement;
 using UnityEditor;
 using System.Collections.Generic;
+using Photon.Realtime;
+using ExitGames.Client.Photon;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,11 +14,14 @@ public class GameManager : MonoBehaviour
     public GameObject newSkin;
 	private Sprite playersprite;
 
+	int seed = -1;
+
 
 	private void Start()
     {
 		playersprite = newSkin.GetComponent<SpriteRenderer>().sprite;
 		PlayerPrefab.GetComponent<SpriteRenderer>().sprite = playersprite;
+		
     }
 
     /// <summary>
@@ -24,11 +29,15 @@ public class GameManager : MonoBehaviour
     /// </summary>
     private void Awake(){
 		GameCanvas.SetActive(true);
+		Debug.Log((int)PhotonNetwork.CurrentRoom.CustomProperties["Seed"]);
+		Random.InitState((int)PhotonNetwork.CurrentRoom.CustomProperties["Seed"]);
+		
 	}
 
     public void FixedUpdate()
     {
-		checkPlayer();
+		//checkPlayer();
+		
     }
 
     public void SpawnPlayer(){

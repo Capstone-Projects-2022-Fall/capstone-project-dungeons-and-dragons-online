@@ -1,8 +1,11 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
+using Photon.Realtime;
+using ExitGames.Client.Photon;
 
-public class RoomSpawner : MonoBehaviour {
+public class RoomSpawner : MonoBehaviourPun {
 
 	public int openingDirection;
 	// 1 --> need bottom door
@@ -17,14 +20,18 @@ public class RoomSpawner : MonoBehaviour {
 
 	public float waitTime = 4f;
 
+
 	void Start(){
 		Destroy(gameObject, waitTime);
+		PhotonView photonView = PhotonView.Get(this);
+		
 		templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
 		Invoke("Spawn", 0.1f);
 		//photonView.PRC("",___);
 	}
 
 	// [PRC]
+
 	void Spawn(){
 		if(spawned == false){
 			if(openingDirection == 1){
@@ -44,6 +51,7 @@ public class RoomSpawner : MonoBehaviour {
 				rand = Random.Range(0, templates.rightRooms.Length);
 				Instantiate(templates.rightRooms[rand], transform.position, templates.rightRooms[rand].transform.rotation);
 			}
+			//Debug.Log(rand);
 			spawned = true;
 		}
 	}
@@ -57,4 +65,6 @@ public class RoomSpawner : MonoBehaviour {
 			spawned = true;
 		}
 	}
+
+
 }
