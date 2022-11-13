@@ -45,7 +45,10 @@ MonoBehaviour:
   - Attack
   - Die
   - getHealth
-  - Save
+  - Spawn
+  - OnTriggerEnter2D
+  - Start
+  - Update
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
