@@ -42,8 +42,8 @@ public class GameManager : MonoBehaviour
 
     public void SpawnPlayer(){
 		float randVal = Random.Range(-1f,1f);
-
-        PhotonNetwork.Instantiate(PlayerPrefab.name, new Vector2(this.transform.position.x *-0.2f, this.transform.position.y *0.2f), Quaternion.identity, 0);
+		//PlayerPrefab.name
+		PhotonNetwork.Instantiate("Archer", new Vector2(this.transform.position.x *-0.2f, this.transform.position.y *0.2f), Quaternion.identity, 0);
 	
 		GameCanvas.SetActive(false);
 		SceneCamera.SetActive(false);
