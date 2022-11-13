@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using Photon.Pun;
 
 using Photon.Realtime;
+using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviourPunCallbacks
 {
@@ -116,7 +117,7 @@ public class MenuController : MonoBehaviourPunCallbacks
     /// Once player joins room, launch the game
     /// </summary>
     public override void OnJoinedRoom(){
-        PhotonNetwork.LoadLevel("CharacterMenu");
+            PhotonNetwork.LoadLevel("CharacterMenu");
     }
     /*
     private void HandleRoomInviteAccept(string roomName){
