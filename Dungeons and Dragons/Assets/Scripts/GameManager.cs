@@ -3,6 +3,8 @@ using Photon.Pun;
 using UnityEngine.SceneManagement;
 using UnityEditor;
 using System.Collections.Generic;
+using Photon.Realtime;
+using ExitGames.Client.Photon;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,11 +14,14 @@ public class GameManager : MonoBehaviour
     public GameObject newSkin;
 	private Sprite playersprite;
 
+	int seed = -1;
+
 
 	private void Start()
     {
 		playersprite = newSkin.GetComponent<SpriteRenderer>().sprite;
 		PlayerPrefab.GetComponent<SpriteRenderer>().sprite = playersprite;
+		
     }
 
     /// <summary>
@@ -24,17 +29,21 @@ public class GameManager : MonoBehaviour
     /// </summary>
     private void Awake(){
 		GameCanvas.SetActive(true);
+		Debug.Log((int)PhotonNetwork.CurrentRoom.CustomProperties["Seed"]);
+		Random.InitState((int)PhotonNetwork.CurrentRoom.CustomProperties["Seed"]);
+		
 	}
 
     public void FixedUpdate()
     {
-		checkPlayer();
+		//checkPlayer();
+		
     }
 
     public void SpawnPlayer(){
 		float randVal = Random.Range(-1f,1f);
-
-        PhotonNetwork.Instantiate(PlayerPrefab.name, new Vector2(this.transform.position.x *-0.2f, this.transform.position.y *0.2f), Quaternion.identity, 0);
+		//PlayerPrefab.name
+		PhotonNetwork.Instantiate("Archer", new Vector2(this.transform.position.x *-0.2f, this.transform.position.y *0.2f), Quaternion.identity, 0);
 	
 		GameCanvas.SetActive(false);
 		SceneCamera.SetActive(false);

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
+using ExitGames.Client.Photon;
 
 public class Player : MonoBehaviour
 {
@@ -53,6 +54,7 @@ public class Player : MonoBehaviour
             PlayerNameText.text = photonView.Owner.NickName;
             PlayerNameText.color = Color.cyan;
         }
+        
     }
 
     private void Update(){
@@ -153,6 +155,7 @@ public class Player : MonoBehaviour
         player.transform.localScale = new Vector3(0.5f, player.transform.localScale.y,1);
     }
 
+
     public void UpdateCharacter(int selectedOption)
     {
         Character character = characterDB.GetCharacter(selectedOption);
@@ -163,4 +166,5 @@ public class Player : MonoBehaviour
     {
         selectedOption = PlayerPrefs.GetInt("selectedOption");
     }
+
 }
