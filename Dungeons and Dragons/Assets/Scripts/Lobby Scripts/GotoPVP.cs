@@ -15,6 +15,6 @@ public class GotoPVP : MonoBehaviour
             PhotonNetwork.LoadLevel("BattleMap");
         }
   
-        //Destroy(gameObject);
+        Destroy(gameObject);
     }
 }
