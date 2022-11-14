@@ -25,6 +25,26 @@ public class Player : MonoBehaviour
 
     public float moveSpeed;
     // Start is called before the first frame update
+
+    //Character Selector
+    public CharacterDatabase characterDB;
+    public SpriteRenderer artworkSprite;
+    private int selectedOption = 0;
+
+    private void Start()
+    {
+        if (!PlayerPrefs.HasKey("selectedOption"))
+        {
+            selectedOption = 0;
+        }
+        else
+        {
+            Load();
+        }
+        UpdateCharacter(selectedOption);
+        
+    }
+
     private void Awake(){
         if (photonView.IsMine){
             PlayerCamera.SetActive(true);
@@ -136,5 +156,15 @@ public class Player : MonoBehaviour
     }
 
 
+    public void UpdateCharacter(int selectedOption)
+    {
+        Character character = characterDB.GetCharacter(selectedOption);
+        artworkSprite.sprite = character.CharacterSprtie;
+    }
+
+    private void Load()
+    {
+        selectedOption = PlayerPrefs.GetInt("selectedOption");
+    }
 
 }
