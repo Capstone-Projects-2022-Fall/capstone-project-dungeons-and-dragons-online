@@ -49,6 +49,9 @@ MonoBehaviour:
   - OnTriggerEnter2D
   - Start
   - Update
+  - RPC_AddNewMessage
+  - SubmitMessage
+  - SendMessage
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
