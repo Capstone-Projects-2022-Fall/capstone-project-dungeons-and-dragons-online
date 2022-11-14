@@ -14,5 +14,6 @@ public class GotoDungeon : MonoBehaviourPunCallbacks
         {
             PhotonNetwork.LoadLevel("RandomMap");
         }
+        Destroy(gameObject);
     }
 }

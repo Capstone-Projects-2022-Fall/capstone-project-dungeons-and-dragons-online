@@ -5101,19 +5101,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   photonView: {fileID: 0}
---- !u!114 &1165527717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1165527715}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fdbbb3854d524d40afa7913da922aa2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  newTrack: {fileID: 0}
 --- !u!1 &1190398661
 GameObject:
   m_ObjectHideFlags: 0
@@ -39601,19 +39588,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d87445dd8e52e94cbb45475055128bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1372001656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1372001654}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fdbbb3854d524d40afa7913da922aa2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  newTrack: {fileID: 0}
 --- !u!1 &1376838297
 GameObject:
   m_ObjectHideFlags: 0
