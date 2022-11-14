@@ -27,6 +27,13 @@ public class MenuController : MonoBehaviourPunCallbacks
 
     public static Action GetPhotonFriends = delegate{};
 
+    //skin manager
+    public CharacterDatabase characterDB;
+    public PhotonView photoView;
+    public Text nameText;
+    public SpriteRenderer artworkSprite;
+    private int selectedOption = 0;
+
     /// <summary>
     /// Connects to photon network when the main menu opens
     /// </summary>
@@ -124,8 +131,7 @@ public class MenuController : MonoBehaviourPunCallbacks
     /// </summary>
     public override void OnJoinedRoom(){
 
-            PhotonNetwork.LoadLevel("CharacterMenu");
-
+            PhotonNetwork.LoadLevel("MainGame");
     }
     /*
     private void HandleRoomInviteAccept(string roomName){
@@ -158,4 +164,41 @@ public class MenuController : MonoBehaviourPunCallbacks
     }
 
     */
+
+    public void NextOption()
+    {
+        selectedOption = selectedOption + 1;
+        if (selectedOption >= characterDB.CharacterCount)
+        {
+            selectedOption = 0;
+        }
+
+        UpdateCharacter(selectedOption);
+        /// photoView.RPC("Save", RpcTarget.AllBuffered);
+        Save();
+
+    }
+
+    public void BackOption()
+    {
+        selectedOption = selectedOption - 1;
+        if (selectedOption < 0)
+        {
+            selectedOption = characterDB.CharacterCount - 1;
+        }
+        UpdateCharacter(selectedOption);
+        Save();
+    }
+
+    public void UpdateCharacter(int selectedOption)
+    {
+        Character character = characterDB.GetCharacter(selectedOption);
+        artworkSprite.sprite = character.CharacterSprtie;
+        nameText.text = character.CharacterName;
+    }
+
+    private void Save()
+    {
+        PlayerPrefs.SetInt("selectedOption", selectedOption);
+    }
 }

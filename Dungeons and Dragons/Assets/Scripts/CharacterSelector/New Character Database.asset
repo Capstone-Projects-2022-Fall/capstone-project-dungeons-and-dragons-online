@@ -15,7 +15,7 @@ MonoBehaviour:
   character:
   - CharacterName: Sword
     CharacterSprtie: {fileID: 651160385, guid: 2bb7fcc58a4c5e14da05b474d632a6cc, type: 3}
-  - CharacterName: Long
+  - CharacterName: Archor
     CharacterSprtie: {fileID: 883787886, guid: 2bb7fcc58a4c5e14da05b474d632a6cc, type: 3}
-  - CharacterName: Healer
+  - CharacterName: Wizard
     CharacterSprtie: {fileID: 1669886620, guid: 2bb7fcc58a4c5e14da05b474d632a6cc, type: 3}

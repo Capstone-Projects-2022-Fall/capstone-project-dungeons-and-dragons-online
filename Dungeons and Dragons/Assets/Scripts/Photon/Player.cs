@@ -31,30 +31,16 @@ public class Player : MonoBehaviour
     public SpriteRenderer artworkSprite;
     private int selectedOption = 0;
 
-    private void Start()
-    {
-        if (!PlayerPrefs.HasKey("selectedOption"))
-        {
-            selectedOption = 0;
-        }
-        else
-        {
-            Load();
-        }
-        UpdateCharacter(selectedOption);
-        
-    }
-
     private void Awake(){
         if (photonView.IsMine){
             PlayerCamera.SetActive(true);
             PlayerNameText.text = PhotonNetwork.NickName;
-            
+            selectedOption = PlayerPrefs.GetInt("selectedOption");
         } else {
             PlayerNameText.text = photonView.Owner.NickName;
             PlayerNameText.color = Color.cyan;
         }
-        
+        UpdateCharacter(selectedOption);
     }
 
     private void Update(){
@@ -82,8 +68,6 @@ public class Player : MonoBehaviour
         float moveY = Input.GetAxisRaw("Vertical");
 
         moveDirection = new Vector2(moveX, moveY).normalized;
-
-
 
         //set inputs for animatior 
         anim.SetFloat("Horizontal", moveDirection.x);
@@ -162,9 +146,6 @@ public class Player : MonoBehaviour
         artworkSprite.sprite = character.CharacterSprtie;
     }
 
-    private void Load()
-    {
-        selectedOption = PlayerPrefs.GetInt("selectedOption");
-    }
+
 
 }
