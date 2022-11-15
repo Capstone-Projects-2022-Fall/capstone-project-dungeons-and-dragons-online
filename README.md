@@ -11,7 +11,6 @@ Check out the QA_Acceptance_Testing_Document.xlsx to see the full document. You 
 <img width="683" alt="image" src="https://user-images.githubusercontent.com/78548481/201815711-80ffff8d-5f80-43fc-91df-7027ed76bac7.png">
 
 ## GitHub Release
-A link to your tagged release on GitHub. The release should have this information attached:
 
 ####  New features
 - Players can now enter a randomly generated dungeon and the PVP arena
@@ -27,8 +26,8 @@ A link to your tagged release on GitHub. The release should have this informatio
 - Users can lose their health and die
 
 ####  Known bugs/limitations
-- Issues with blank prefabs in randomly generated dungeons prevalent.
-- Photon still giving issues with custom character synchronization.
+- Issues with blank prefabs in randomly generated dungeons prevalent
+- Photon still giving issues with custom character synchronization
 - Chat box needs to be implemented into the three scenes and removed from player prefab to deal with rotation
 - Item and Enemy spawning in dungeon must be implemented and PVP Win Condition needs to be set
 - Players cannot currently leave the dungeon or PVP arena once they enter, they need to restart the game to go to the main hub again
