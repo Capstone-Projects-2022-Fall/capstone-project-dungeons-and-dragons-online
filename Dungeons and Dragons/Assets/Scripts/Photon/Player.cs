@@ -49,8 +49,14 @@ public class Player : MonoBehaviour
         if (photonView.IsMine){
             PlayerCamera.SetActive(true);
             PlayerNameText.text = PhotonNetwork.NickName;
-            
+            //Player picks class
+            //ExitGames.Client.Photon.Hashtable PlayerProps = new ExitGames.Client.Photon.Hashtable();
+            //PlayerProps.Add("Class", whatever class they chose);
+            //Player.SetCustomProperties(PlayerProps);
+
         } else {
+            //class = photonView.GetCustomProperty("Class");
+            //sprite = class;
             PlayerNameText.text = photonView.Owner.NickName;
             PlayerNameText.color = Color.cyan;
         }
