@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
 using ExitGames.Client.Photon;
+using System;
 
 public class Player : MonoBehaviour
 {
@@ -30,6 +31,7 @@ public class Player : MonoBehaviour
     public CharacterDatabase characterDB;
     public SpriteRenderer artworkSprite;
     private int selectedOption = 0;
+
 
     private void Start()
     {
@@ -59,19 +61,24 @@ public class Player : MonoBehaviour
             //sprite = class;
             PlayerNameText.text = photonView.Owner.NickName;
             PlayerNameText.color = Color.cyan;
+            
         }
         
     }
 
     private void Update(){
-        if(photonView.IsMine){
+        if(photonView.IsMine && !UIPause.isPaused){
             checkInput();
+        } else if (UIPause.isAI){
+            moveTowardsPlayer();
         }
     }
 
+
+
     public void FixedUpdate()
     {
-        if (photonView.IsMine)
+        if (photonView.IsMine && !UIPause.isPaused)
         {
             if (Input.GetKeyDown(KeyCode.J))
             {
@@ -171,6 +178,12 @@ public class Player : MonoBehaviour
     private void Load()
     {
         selectedOption = PlayerPrefs.GetInt("selectedOption");
+    }
+
+    private void moveTowardsPlayer()
+    {
+        Debug.Log("RObot");
+        rb.velocity = new Vector2(0 * moveSpeed, 2 * moveSpeed);
     }
 
 }
