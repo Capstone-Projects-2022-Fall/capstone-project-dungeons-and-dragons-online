@@ -20,19 +20,35 @@ public class Health : MonoBehaviour
     
     [SerializeField] private HealthBar healthBar;
     [SerializeField] private GameObject BacktoMain;
+
+    //chat
+    public static bool chatSelected;
+
+    public void selectChat()
+    {
+        chatSelected = true;
+    }
+    public void deselectChat()
+    {
+        chatSelected = false;
+    }
+
     // Update is called once per frame
     void Update()
     {
-        // Testing Onlys
-        if (Input.GetKeyDown(KeyCode.O))
-         {
-             Damage(10);
-            // healthBar.SetSize();
-            
-         }
-        if (Input.GetKeyDown(KeyCode.H))
+        if(!chatSelected)
         {
-            Heal(10);
+            // Testing Onlys
+            if (Input.GetKeyDown(KeyCode.O))
+            {
+                Damage(10);
+                // healthBar.SetSize();
+                
+            }
+            if (Input.GetKeyDown(KeyCode.H))
+            {
+                Heal(10);
+            }
         }
     }
 
