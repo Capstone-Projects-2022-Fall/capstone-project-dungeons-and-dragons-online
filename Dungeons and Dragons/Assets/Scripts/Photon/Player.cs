@@ -31,6 +31,18 @@ public class Player : MonoBehaviour
     public SpriteRenderer artworkSprite;
     private int selectedOption = 0;
 
+    //chat
+    public static bool chatSelected;
+
+    public void selectChat()
+    {
+        chatSelected = true;
+    }
+    public void deselectChat()
+    {
+        chatSelected = false;
+    }
+
     private void Start()
     {
         if (!PlayerPrefs.HasKey("selectedOption"))
@@ -64,7 +76,7 @@ public class Player : MonoBehaviour
     }
 
     private void Update(){
-        if(photonView.IsMine){
+        if(photonView.IsMine && !chatSelected){
             checkInput();
         }
     }
