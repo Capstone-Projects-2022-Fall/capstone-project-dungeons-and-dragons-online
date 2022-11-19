@@ -32,6 +32,8 @@ public class Player : MonoBehaviour
     public SpriteRenderer artworkSprite;
     private int selectedOption = 0;
 
+     private GameObject[] otherPlayers;
+
 
     private void Start()
     {
@@ -67,9 +69,9 @@ public class Player : MonoBehaviour
     }
 
     private void Update(){
-        if(photonView.IsMine && !UIPause.isPaused){
+        if(photonView.IsMine && !UIPause.isPaused && !UIPause.isAI){
             checkInput();
-        } else if (UIPause.isAI){
+        } else if (photonView.IsMine && UIPause.isAI){
             moveTowardsPlayer();
         }
     }
@@ -78,7 +80,7 @@ public class Player : MonoBehaviour
 
     public void FixedUpdate()
     {
-        if (photonView.IsMine && !UIPause.isPaused)
+        if (photonView.IsMine && !UIPause.isPaused && !UIPause.isAI)
         {
             if (Input.GetKeyDown(KeyCode.J))
             {
@@ -182,8 +184,14 @@ public class Player : MonoBehaviour
 
     private void moveTowardsPlayer()
     {
-        Debug.Log("RObot");
-        rb.velocity = new Vector2(0 * moveSpeed, 2 * moveSpeed);
+        otherPlayers = GameObject.FindGameObjectsWithTag("Player");
+        if(otherPlayers[0].activeSelf){
+            transform.position = Vector2.MoveTowards(transform.position, otherPlayers[1].transform.position, moveSpeed * Time.deltaTime);
+        } else {
+           
+            transform.position = Vector2.MoveTowards(transform.position, otherPlayers[0].transform.position, moveSpeed * Time.deltaTime);
+        }
     }
 
 }
+
