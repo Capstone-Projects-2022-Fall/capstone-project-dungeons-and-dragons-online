@@ -83,7 +83,7 @@ public class Player : MonoBehaviour
 
     public void FixedUpdate()
     {
-        if (photonView.IsMine)
+        if (photonView.IsMine && !chatSelected)
         {
             if (Input.GetKeyDown(KeyCode.J))
             {
