@@ -12,43 +12,36 @@ public class GameManager : MonoBehaviour
 	public GameObject GameCanvas;
 	public GameObject SceneCamera;
     public GameObject newSkin;
-	private Sprite playersprite;
 
 	int seed = -1;
 
+	//skin manager
+	public CharacterDatabase characterDB;
+	public PhotonView photoView;
+	public SpriteRenderer artworkSprite;
 
-	private void Start()
-    {
-		playersprite = newSkin.GetComponent<SpriteRenderer>().sprite;
-		PlayerPrefab.GetComponent<SpriteRenderer>().sprite = playersprite;
-		
-    }
-
-    /// <summary>
-    /// Displays the game map when the user loads in
-    /// </summary>
-    private void Awake(){
+	/// <summary>
+	/// Displays the game map when the user loads in
+	/// </summary>
+	private void Awake(){
 		GameCanvas.SetActive(true);
 		Debug.Log((int)PhotonNetwork.CurrentRoom.CustomProperties["Seed"]);
 		Random.InitState((int)PhotonNetwork.CurrentRoom.CustomProperties["Seed"]);
-		
-	}
 
-    public void FixedUpdate()
-    {
-		//checkPlayer();
 		
-    }
+
+	}
 
     public void SpawnPlayer(){
 		float randVal = Random.Range(-1f,1f);
 		//PlayerPrefab.name
-		PhotonNetwork.Instantiate("Player", new Vector2(this.transform.position.x *-0.2f, this.transform.position.y *0.2f), Quaternion.identity, 0);
+		Debug.Log((int)PhotonNetwork.LocalPlayer.CustomProperties["selectedOption"]);
+		UpdateCharacter((int)PhotonNetwork.LocalPlayer.CustomProperties["selectedOption"]);
+		
+		PhotonNetwork.Instantiate(PlayerPrefab.name, new Vector2(this.transform.position.x *-0.2f, this.transform.position.y *0.2f), Quaternion.identity, 0);
 	
 		GameCanvas.SetActive(false);
 		SceneCamera.SetActive(false);
-
-		//Debug.Log(this.transform.position.x);
 
 		// ItemWorld inst = ItemWorld.SpawnItemWorld(new Vector3(3, -3), new Item{itemType = Item.ItemType.LongSword, amt = 1});
 		// phItemWorld(inst);
@@ -69,6 +62,10 @@ public class GameManager : MonoBehaviour
 		Debug.Log(PhotonNetwork.CountOfPlayers.ToString());
 	}
 
-
+	public void UpdateCharacter(int selectedOption)
+	{
+		Character character = characterDB.GetCharacter(selectedOption);
+		artworkSprite.sprite = character.CharacterSprtie;
+	}
 
 }

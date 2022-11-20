@@ -34,6 +34,10 @@ public class MenuController : MonoBehaviourPunCallbacks
     public SpriteRenderer artworkSprite;
     private int selectedOption = 0;
 
+    Player player;
+    private ExitGames.Client.Photon.Hashtable RoomCustomProps = new ExitGames.Client.Photon.Hashtable();
+    private ExitGames.Client.Photon.Hashtable PlayerCustomProps = new ExitGames.Client.Photon.Hashtable();
+
     /// <summary>
     /// Connects to photon network when the main menu opens
     /// </summary>
@@ -46,7 +50,7 @@ public class MenuController : MonoBehaviourPunCallbacks
             PhotonNetwork.ConnectUsingSettings();
         }
     }
-
+    
     /// <summary>
     /// Changes the players username to the one passed by the user
     /// </summary>
@@ -85,10 +89,11 @@ public class MenuController : MonoBehaviourPunCallbacks
         //Turns of username menu
         UsernameMenu.SetActive(false);
         //Sets player username
-    
-        
         PhotonNetwork.NickName = UsernameInput.text;
         PlayerPrefs.SetString("USERNAME", UsernameInput.text);
+
+        //Sets player skin
+        //updatePlayerSkin(player);
 
         //UIInvite.OnRoomInviteAccept += HandleRoomInviteAccept;
 
@@ -97,7 +102,7 @@ public class MenuController : MonoBehaviourPunCallbacks
         roomOptions.MaxPlayers=8;
         PhotonNetwork.JoinOrCreateRoom("Main", roomOptions, TypedLobby.Default);
         */
-        
+
     }
     /*
     public void OnDestroy(){
@@ -108,8 +113,9 @@ public class MenuController : MonoBehaviourPunCallbacks
     /// Creates a photon lobby from the user passed name
     /// </summary>
     public void CreateGame(){
-        RoomOptions roomOptions = new RoomOptions(){MaxPlayers = 4};
-        ExitGames.Client.Photon.Hashtable RoomCustomProps = new ExitGames.Client.Photon.Hashtable();
+        RoomOptions roomOptions = new RoomOptions(){MaxPlayers = 4, BroadcastPropsChangeToAll = true};
+
+        //Random map
         int seed = UnityEngine.Random.Range(0, 1000);
         RoomCustomProps.Add("Seed", seed);
         roomOptions.CustomRoomProperties = RoomCustomProps;
@@ -174,7 +180,6 @@ public class MenuController : MonoBehaviourPunCallbacks
         }
 
         UpdateCharacter(selectedOption);
-        /// photoView.RPC("Save", RpcTarget.AllBuffered);
         Save();
 
     }
@@ -199,6 +204,30 @@ public class MenuController : MonoBehaviourPunCallbacks
 
     private void Save()
     {
-        PlayerPrefs.SetInt("selectedOption", selectedOption);
+        //PlayerPrefs.SetInt("selectedOption", selectedOption);
+        PlayerCustomProps["selectedOption"] = selectedOption;
+        PhotonNetwork.SetPlayerCustomProperties(PlayerCustomProps);
     }
+    /*
+    public override void OnPlayerPropertiesUpdate(Player targetPlayer, ExitGames.Client.Photon.Hashtable changedProps)
+    {
+        if (player == targetPlayer)
+        {
+            updatePlayerSkin(targetPlayer);
+        }
+    }
+
+    void updatePlayerSkin(Player player)
+    {
+        if (player.CustomProperties.ContainsKey("selectedOption"))
+        {
+            selectedOption = (int)PlayerCustomProps["selectedOption"];
+            PlayerCustomProps["selectedOption"] = (int)PlayerCustomProps["selectedOption"];
+        }
+        else
+        {
+            PlayerCustomProps["selectedOption"] = 0;
+        }
+    }
+    */
 }

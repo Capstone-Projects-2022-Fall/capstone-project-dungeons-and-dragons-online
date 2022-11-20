@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using Photon.Pun;
 using ExitGames.Client.Photon;
 
-public class Player : MonoBehaviour
+public class PlayerItem : MonoBehaviour
 {
     public PhotonView photonView;
     public Rigidbody2D rb;
@@ -26,21 +26,15 @@ public class Player : MonoBehaviour
     public float moveSpeed;
     // Start is called before the first frame update
 
-    //Character Selector
-    public CharacterDatabase characterDB;
-    public SpriteRenderer artworkSprite;
-    private int selectedOption = 0;
-
     private void Awake(){
+
         if (photonView.IsMine){
             PlayerCamera.SetActive(true);
             PlayerNameText.text = PhotonNetwork.NickName;
-            selectedOption = PlayerPrefs.GetInt("selectedOption");
         } else {
             PlayerNameText.text = photonView.Owner.NickName;
             PlayerNameText.color = Color.cyan;
         }
-        UpdateCharacter(selectedOption);
     }
 
     private void Update(){
@@ -138,14 +132,13 @@ public class Player : MonoBehaviour
         //attackArea.transform.position = new Vector3(attackArea.transform.position.x, attackArea.transform.position.y, 0);
         player.transform.localScale = new Vector3(0.5f, player.transform.localScale.y,1);
     }
-
-
+    /*
     public void UpdateCharacter(int selectedOption)
     {
         Character character = characterDB.GetCharacter(selectedOption);
-        artworkSprite.sprite = character.CharacterSprtie;
+        sr.sprite = character.CharacterSprtie;
     }
-
+    */
 
 
 }

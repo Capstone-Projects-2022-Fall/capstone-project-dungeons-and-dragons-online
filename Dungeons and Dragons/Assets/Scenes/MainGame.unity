@@ -5471,6 +5471,9 @@ MonoBehaviour:
   GameCanvas: {fileID: 1246762960}
   SceneCamera: {fileID: 1142278568}
   newSkin: {fileID: 5691736900250120946, guid: e448b4fb3cf15cd43af892b10d29dd7b, type: 3}
+  characterDB: {fileID: 11400000, guid: c0d314d2b93d2fc49a01d20dbdddb04b, type: 2}
+  photoView: {fileID: 0}
+  artworkSprite: {fileID: 6286505278479089536, guid: feacaf17a9d31854db859ceb10896944, type: 3}
 --- !u!4 &1268860904
 Transform:
   m_ObjectHideFlags: 0
