@@ -33,6 +33,9 @@ public class Enemy : MonoBehaviour
         findPlayer();
     }
 
+    /// <summary>
+	/// Finds the closest player and moves towards them.
+	/// </summary>
     [PunRPC]
     private void findPlayer()
     {
