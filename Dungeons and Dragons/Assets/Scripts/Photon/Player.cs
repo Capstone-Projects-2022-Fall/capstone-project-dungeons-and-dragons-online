@@ -31,6 +31,18 @@ public class Player : MonoBehaviour
     public SpriteRenderer artworkSprite;
     private int selectedOption = 0;
 
+    //chat
+    public static bool chatSelected;
+
+    public void selectChat()
+    {
+        chatSelected = true;
+    }
+    public void deselectChat()
+    {
+        chatSelected = false;
+    }
+
     private void Start()
     {
         if (!PlayerPrefs.HasKey("selectedOption"))
@@ -49,8 +61,14 @@ public class Player : MonoBehaviour
         if (photonView.IsMine){
             PlayerCamera.SetActive(true);
             PlayerNameText.text = PhotonNetwork.NickName;
-            
+            //Player picks class
+            //ExitGames.Client.Photon.Hashtable PlayerProps = new ExitGames.Client.Photon.Hashtable();
+            //PlayerProps.Add("Class", whatever class they chose);
+            //Player.SetCustomProperties(PlayerProps);
+
         } else {
+            //class = photonView.GetCustomProperty("Class");
+            //sprite = class;
             PlayerNameText.text = photonView.Owner.NickName;
             PlayerNameText.color = Color.cyan;
         }
@@ -58,14 +76,14 @@ public class Player : MonoBehaviour
     }
 
     private void Update(){
-        if(photonView.IsMine){
+        if(photonView.IsMine && !chatSelected){
             checkInput();
         }
     }
 
     public void FixedUpdate()
     {
-        if (photonView.IsMine)
+        if (photonView.IsMine && !chatSelected)
         {
             if (Input.GetKeyDown(KeyCode.J))
             {
