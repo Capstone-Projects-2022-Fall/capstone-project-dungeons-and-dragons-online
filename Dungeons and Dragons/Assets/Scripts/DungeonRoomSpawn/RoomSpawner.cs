@@ -5,22 +5,42 @@ using Photon.Pun;
 using Photon.Realtime;
 using ExitGames.Client.Photon;
 
-public class RoomSpawner : MonoBehaviourPun {
+/// <summary>
+/// This handles which room is selected to spawn randomly
+/// </summary>
 
+public class RoomSpawner : MonoBehaviourPun {
+	/// <summary>
+	/// Stores where the room has a door too.
+	/// </summary>
 	public int openingDirection;
 	// 1 --> need bottom door
 	// 2 --> need top door
 	// 3 --> need left door
 	// 4 --> need right door
 
-
+	/// <summary>
+	/// Holds the template for the rooms that can spawn.
+	/// </summary>
 	private RoomTemplates templates;
+	/// <summary>
+	/// Random number to determine what room gets spawned
+	/// </summary>
 	private int rand;
+	/// <summary>
+	/// Then if the room gets spawned, there is a boolean to signal it.
+	/// </summary>
 	public bool spawned = false;
 
+	/// <summary>
+	/// A 4 millisecond timer so rooms don't spawn twice.
+	/// </summary>
 	public float waitTime = 4f;
 
 
+	/// <summary>
+	/// Finds the dungeon game object on start up.
+	/// </summary>
 	void Start(){
 		Destroy(gameObject, waitTime);
 		PhotonView photonView = PhotonView.Get(this);
@@ -30,7 +50,9 @@ public class RoomSpawner : MonoBehaviourPun {
 		//photonView.PRC("",___);
 	}
 
-	// [PRC]
+	/// <summary>
+	/// Spawns a room in the direction that is needed.
+	/// </summary>
 
 	void Spawn(){
 		if(spawned == false){
@@ -56,6 +78,9 @@ public class RoomSpawner : MonoBehaviourPun {
 		}
 	}
 
+	/// <summary>
+	///Handles the spawn point for the first room of the dungeon.
+	/// </summary>
 	void OnTriggerEnter2D(Collider2D other){
 		if(other.CompareTag("SpawnPoint")){
 			if(other.GetComponent<RoomSpawner>().spawned == false && spawned == false){
