@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
 	public GameObject SceneCamera;
     public GameObject newSkin;
 	private Sprite playersprite;
-
+	private RoomInfo ri;
 	int seed = -1;
 
 
@@ -37,8 +37,10 @@ public class GameManager : MonoBehaviour
     public void FixedUpdate()
     {
 		//checkPlayer();
-		
-    }
+		print("Current players" + ri.PlayerCount);
+		checkWinning();
+
+	}
 
     public void SpawnPlayer(){
 		float randVal = Random.Range(-1f,1f);
@@ -68,7 +70,14 @@ public class GameManager : MonoBehaviour
     {
 		Debug.Log(PhotonNetwork.CountOfPlayers.ToString());
 	}
-
+	public void checkWinning()
+    {
+		if(ri.PlayerCount == 0)
+        {
+			print("all players die");
+			PhotonNetwork.LoadLevel("VictoryScene");
+        }
+    }
 
 
 }
