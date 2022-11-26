@@ -37,8 +37,8 @@ public class GameManager : MonoBehaviour
     public void FixedUpdate()
     {
 		//checkPlayer();
-		print("Current players" + ri.PlayerCount);
-		checkWinning();
+		//print("Current players" + ri.PlayerCount);
+		//checkWinning();
 
 	}
 
@@ -70,14 +70,15 @@ public class GameManager : MonoBehaviour
     {
 		Debug.Log(PhotonNetwork.CountOfPlayers.ToString());
 	}
-	public void checkWinning()
+
+	/*public void checkWinning()
     {
 		if(ri.PlayerCount == 0)
         {
 			print("all players die");
 			PhotonNetwork.LoadLevel("VictoryScene");
         }
-    }
+    }*/
 
 
 }
