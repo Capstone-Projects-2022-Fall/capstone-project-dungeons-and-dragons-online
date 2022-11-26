@@ -9,7 +9,7 @@ public class Destroyer : MonoBehaviour
     /// <summary>
     /// Timer to keep track of how long an items been on the ground.
     /// </summary>
-    float timer = 500;
+    float timer = 200;
     /// <summary>
     /// When a player stands on top of the object, it gets destroyed.
     /// </summary>
