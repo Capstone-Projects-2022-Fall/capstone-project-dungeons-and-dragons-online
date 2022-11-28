@@ -284,5 +284,24 @@ public class Player : MonoBehaviour
             inventory.addItem(itemWorld.getItem());
             itemWorld.destroyItem();
         }
+
+        if (collider.GetComponent<SpriteRenderer>() != null && collider.GetComponent<SpriteRenderer>().sprite.name == "skinSelection_0")
+        {
+            Character character = characterDB.GetCharacter(0);
+            sr.sprite = character.CharacterSprtie;
+        }
+
+        if (collider.GetComponent<SpriteRenderer>() != null && collider.GetComponent<SpriteRenderer>().sprite.name == "skinSelection_1")
+        {
+            Character character = characterDB.GetCharacter(1);
+            sr.sprite = character.CharacterSprtie;
+        }
+
+        if (collider.GetComponent<SpriteRenderer>() != null && collider.GetComponent<SpriteRenderer>().sprite.name == "skinSelection_2")
+        {
+            Character character = characterDB.GetCharacter(2);
+            sr.sprite = character.CharacterSprtie;
+        }
     }
+
 }
