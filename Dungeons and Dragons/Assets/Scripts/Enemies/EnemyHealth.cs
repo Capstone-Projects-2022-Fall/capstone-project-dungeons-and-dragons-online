@@ -68,7 +68,8 @@ public class EnemyHealth : MonoBehaviour
     private void Die()
     {
         Debug.Log("dead");
-        PhotonNetwork.Instantiate(dropItem.name, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+        // PhotonNetwork.Instantiate(dropItem.name, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+        ItemWorld.SpawnItemWorld(new Vector3 (this.transform.position.x, this.transform.position.y), new Item {itemType = Item.ItemType.LongSword, amt = 1});
         Destroy(gameObject);
     }
 }
