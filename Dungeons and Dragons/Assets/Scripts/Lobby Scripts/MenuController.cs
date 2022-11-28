@@ -28,15 +28,15 @@ public class MenuController : MonoBehaviourPunCallbacks
     public static Action GetPhotonFriends = delegate{};
 
     //skin manager
+    /*
     public CharacterDatabase characterDB;
     public PhotonView photoView;
     public Text nameText;
     public SpriteRenderer artworkSprite;
     private int selectedOption = 0;
-
-    Player player;
+    */
     private ExitGames.Client.Photon.Hashtable RoomCustomProps = new ExitGames.Client.Photon.Hashtable();
-    private ExitGames.Client.Photon.Hashtable PlayerCustomProps = new ExitGames.Client.Photon.Hashtable();
+    
 
     /// <summary>
     /// Connects to photon network when the main menu opens
@@ -170,7 +170,7 @@ public class MenuController : MonoBehaviourPunCallbacks
     }
 
     */
-
+    /*
     public void NextOption()
     {
         selectedOption = selectedOption + 1;
@@ -180,7 +180,6 @@ public class MenuController : MonoBehaviourPunCallbacks
         }
 
         UpdateCharacter(selectedOption);
-        Save();
 
     }
 
@@ -192,7 +191,7 @@ public class MenuController : MonoBehaviourPunCallbacks
             selectedOption = characterDB.CharacterCount - 1;
         }
         UpdateCharacter(selectedOption);
-        Save();
+        
     }
 
     public void UpdateCharacter(int selectedOption)
@@ -200,34 +199,6 @@ public class MenuController : MonoBehaviourPunCallbacks
         Character character = characterDB.GetCharacter(selectedOption);
         artworkSprite.sprite = character.CharacterSprtie;
         nameText.text = character.CharacterName;
-    }
-
-    private void Save()
-    {
-        //PlayerPrefs.SetInt("selectedOption", selectedOption);
-        PlayerCustomProps["selectedOption"] = selectedOption;
-        PhotonNetwork.SetPlayerCustomProperties(PlayerCustomProps);
-    }
-    /*
-    public override void OnPlayerPropertiesUpdate(Player targetPlayer, ExitGames.Client.Photon.Hashtable changedProps)
-    {
-        if (player == targetPlayer)
-        {
-            updatePlayerSkin(targetPlayer);
-        }
-    }
-
-    void updatePlayerSkin(Player player)
-    {
-        if (player.CustomProperties.ContainsKey("selectedOption"))
-        {
-            selectedOption = (int)PlayerCustomProps["selectedOption"];
-            PlayerCustomProps["selectedOption"] = (int)PlayerCustomProps["selectedOption"];
-        }
-        else
-        {
-            PlayerCustomProps["selectedOption"] = 0;
-        }
     }
     */
 }

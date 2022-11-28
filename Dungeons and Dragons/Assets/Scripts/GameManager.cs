@@ -15,11 +15,6 @@ public class GameManager : MonoBehaviour
 
 	int seed = -1;
 
-	//skin manager
-	public CharacterDatabase characterDB;
-	public PhotonView photoView;
-	public SpriteRenderer artworkSprite;
-
 	/// <summary>
 	/// Displays the game map when the user loads in
 	/// </summary>
@@ -28,16 +23,11 @@ public class GameManager : MonoBehaviour
 		Debug.Log((int)PhotonNetwork.CurrentRoom.CustomProperties["Seed"]);
 		Random.InitState((int)PhotonNetwork.CurrentRoom.CustomProperties["Seed"]);
 
-		
-
 	}
 
     public void SpawnPlayer(){
 		float randVal = Random.Range(-1f,1f);
 		//PlayerPrefab.name
-		Debug.Log((int)PhotonNetwork.LocalPlayer.CustomProperties["selectedOption"]);
-		UpdateCharacter((int)PhotonNetwork.LocalPlayer.CustomProperties["selectedOption"]);
-		
 		PhotonNetwork.Instantiate(PlayerPrefab.name, new Vector2(this.transform.position.x *-0.2f, this.transform.position.y *0.2f), Quaternion.identity, 0);
 	
 		GameCanvas.SetActive(false);
@@ -60,12 +50,6 @@ public class GameManager : MonoBehaviour
 	public void checkPlayer()
     {
 		Debug.Log(PhotonNetwork.CountOfPlayers.ToString());
-	}
-
-	public void UpdateCharacter(int selectedOption)
-	{
-		Character character = characterDB.GetCharacter(selectedOption);
-		artworkSprite.sprite = character.CharacterSprtie;
 	}
 
 }
