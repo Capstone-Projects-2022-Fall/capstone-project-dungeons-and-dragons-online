@@ -45,9 +45,13 @@ MonoBehaviour:
   - Attack
   - Die
   - getHealth
-
-  - Save
-
+  - Spawn
+  - OnTriggerEnter2D
+  - Start
+  - Update
+  - RPC_AddNewMessage
+  - SubmitMessage
+  - SendMessage
   DisableAutoOpenWizard: 1
-  ShowSettings: 1
+  ShowSettings: 0
   DevRegionSetOnce: 1

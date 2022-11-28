@@ -12,8 +12,9 @@ public class GameManager : MonoBehaviour
 	public GameObject GameCanvas;
 	public GameObject SceneCamera;
     public GameObject newSkin;
+	public GameObject pfItemWorld;
 	private Sprite playersprite;
-
+	private RoomInfo ri;
 	int seed = -1;
 
 
@@ -21,7 +22,8 @@ public class GameManager : MonoBehaviour
     {
 		playersprite = newSkin.GetComponent<SpriteRenderer>().sprite;
 		PlayerPrefab.GetComponent<SpriteRenderer>().sprite = playersprite;
-		
+		PhotonNetwork.Instantiate(this.pfItemWorld.name, new Vector3(-10f,1f), Quaternion.identity, 0);
+		Debug.Log("Instantiated Item World");
     }
 
     /// <summary>
@@ -37,13 +39,15 @@ public class GameManager : MonoBehaviour
     public void FixedUpdate()
     {
 		//checkPlayer();
-		
-    }
+		//print("Current players" + ri.PlayerCount);
+		//checkWinning();
+
+	}
 
     public void SpawnPlayer(){
 		float randVal = Random.Range(-1f,1f);
 		//PlayerPrefab.name
-		PhotonNetwork.Instantiate("Archer", new Vector2(this.transform.position.x *-0.2f, this.transform.position.y *0.2f), Quaternion.identity, 0);
+		PhotonNetwork.Instantiate("Player", new Vector2(this.transform.position.x *-0.2f, this.transform.position.y *0.2f), Quaternion.identity, 0);
 	
 		GameCanvas.SetActive(false);
 		SceneCamera.SetActive(false);
@@ -69,6 +73,14 @@ public class GameManager : MonoBehaviour
 		Debug.Log(PhotonNetwork.CountOfPlayers.ToString());
 	}
 
+	/*public void checkWinning()
+    {
+		if(ri.PlayerCount == 0)
+        {
+			print("all players die");
+			PhotonNetwork.LoadLevel("VictoryScene");
+        }
+    }*/
 
 
 }

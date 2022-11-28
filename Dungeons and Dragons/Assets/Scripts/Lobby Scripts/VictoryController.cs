@@ -19,6 +19,6 @@ public class VictoryController : MonoBehaviour
 
     public void backtoMenu()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("GAME");
     }
 }
