@@ -20,7 +20,6 @@ public class EnemySpawnPoint : MonoBehaviour
     {
         while(enemyCount < 3)
         {
-            
             xPos = (Random.Range(-2, 2)/5f);
             yPos = Random.Range(-2, 2)/5f;
             PhotonNetwork.Instantiate(enemy.name, new Vector2(this.transform.position.x + xPos, this.transform.position.y + yPos), Quaternion.identity);
