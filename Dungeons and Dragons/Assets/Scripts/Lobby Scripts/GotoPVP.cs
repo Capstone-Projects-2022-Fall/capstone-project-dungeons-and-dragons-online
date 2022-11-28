@@ -4,10 +4,15 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Photon.Pun;
 
-
+/// <summary>
+ /// Handles sending players to the PVP areana.
+ /// </summary>
 public class GotoPVP : MonoBehaviour
 {
     public PhotonView photonView;
+    /// <summary>
+    /// Handles sending players to the pvp areana when they enter the door for it.
+    /// </summary>
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (PhotonNetwork.IsMasterClient)
@@ -15,6 +20,6 @@ public class GotoPVP : MonoBehaviour
             PhotonNetwork.LoadLevel("BattleMap");
         }
   
-        //Destroy(gameObject);
+        Destroy(gameObject);
     }
 }

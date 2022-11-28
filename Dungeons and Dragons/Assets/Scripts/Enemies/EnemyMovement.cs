@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Photon.Pun;
 
 /// <summary>
 /// Enemy movement handler
@@ -10,6 +11,7 @@ public class EnemyMovement : MonoBehaviour
 {
     /// Get the chasing object
     private GameObject player;
+    public PhotonView pv;
 
     /// the speed of the enemy
     public float speed;
@@ -23,7 +25,7 @@ public class EnemyMovement : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+
     }
 
     // Update is called once per frame
@@ -45,12 +47,15 @@ public class EnemyMovement : MonoBehaviour
             transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
           //  transform.rotation = Quaternion.Euler(Vector3.forward * angle);
         }*/
-        findPlayer();
+        pv.RPC("findPlayer", RpcTarget.AllBuffered); 
     }
 
+    [PunRPC]
     private void findPlayer()
     {
-        transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+        player = GameObject.FindGameObjectWithTag("Player");
+        this.transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+        //checkFlipping(transform.position);
     }
 
     /// <summary>
