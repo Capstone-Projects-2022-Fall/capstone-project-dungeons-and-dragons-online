@@ -124,7 +124,7 @@ public class MenuController : MonoBehaviourPunCallbacks
     /// </summary>
     public override void OnJoinedRoom(){
 
-            PhotonNetwork.LoadLevel("CharacterMenu");
+            PhotonNetwork.LoadLevel("MainGame");
 
     }
     /*
