@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 /// <summary>
 /// Enemy health handler
@@ -12,7 +13,7 @@ public class EnemyHealth : MonoBehaviour
     /// Set the initial health value to 100
     /// </summary>
     [SerializeField] private int health = 100;
-
+    public GameObject dropItem;
     // Update is called once per frame
     void Update()
     {
@@ -67,6 +68,7 @@ public class EnemyHealth : MonoBehaviour
     private void Die()
     {
         Debug.Log("dead");
+        PhotonNetwork.Instantiate(dropItem.name, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
         Destroy(gameObject);
     }
 }
