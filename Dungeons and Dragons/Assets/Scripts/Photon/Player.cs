@@ -138,12 +138,10 @@ public class Player : MonoBehaviour
         
             inventory = new Inventory();
             // uiInventory.setInventory(inventory);
-            ItemWorld.SpawnItemWorld(new Vector3 (1, 1), new Item {itemType = Item.ItemType.LongSword, amt = 1});
-            ItemWorld.SpawnItemWorld(new Vector3 (-1, 1), new Item {itemType = Item.ItemType.HPot, amt = 1});
-            ItemWorld.SpawnItemWorld(new Vector3 (0, -1), new Item {itemType = Item.ItemType.RPot, amt = 1});
+            // ItemWorld.SpawnItemWorld(new Vector3 (1, 1), new Item {itemType = Item.ItemType.LongSword, amt = 1});
+            // ItemWorld.SpawnItemWorld(new Vector3 (-1, 1), new Item {itemType = Item.ItemType.HPot, amt = 1});
+            // ItemWorld.SpawnItemWorld(new Vector3 (0, -1), new Item {itemType = Item.ItemType.RPot, amt = 1});
             // ItemWorld.SpawnItemWorld(new Vector3((float)0.98,(float)-0.46, 0), new Item{itemType = Item.ItemType.HPot, amt = 1});
-
-        
     }
     /// <summary>   
     /// Checks if player is moving their character and moves them appropriately.
