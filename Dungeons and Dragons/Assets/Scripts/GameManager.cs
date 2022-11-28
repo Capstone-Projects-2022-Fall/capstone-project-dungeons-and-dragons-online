@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
 	public GameObject GameCanvas;
 	public GameObject SceneCamera;
     public GameObject newSkin;
+	public GameObject pfItemWorld;
 	private Sprite playersprite;
 	private RoomInfo ri;
 	int seed = -1;
@@ -21,7 +22,8 @@ public class GameManager : MonoBehaviour
     {
 		playersprite = newSkin.GetComponent<SpriteRenderer>().sprite;
 		PlayerPrefab.GetComponent<SpriteRenderer>().sprite = playersprite;
-		
+		PhotonNetwork.Instantiate(this.pfItemWorld.name, new Vector3(-10f,1f), Quaternion.identity, 0);
+		Debug.Log("Instantiated Item World");
     }
 
     /// <summary>

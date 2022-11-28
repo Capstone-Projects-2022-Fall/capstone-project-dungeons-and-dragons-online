@@ -81,6 +81,10 @@ public class Player : MonoBehaviour
     /// </summary>
     public static bool chatSelected;
 
+    private Inventory inventory;
+    [SerializeField] private UI_Inventory uiInventory;
+    public GameObject itemworld;
+
     /// <summary>
     /// Detects if the chat is selected
     /// </summary>
@@ -132,6 +136,12 @@ public class Player : MonoBehaviour
             PlayerNameText.color = Color.cyan;
         }
         
+            inventory = new Inventory();
+            // uiInventory.setInventory(inventory);
+            // ItemWorld.SpawnItemWorld(new Vector3 (1, 1), new Item {itemType = Item.ItemType.LongSword, amt = 1});
+            // ItemWorld.SpawnItemWorld(new Vector3 (-1, 1), new Item {itemType = Item.ItemType.HPot, amt = 1});
+            // ItemWorld.SpawnItemWorld(new Vector3 (0, -1), new Item {itemType = Item.ItemType.RPot, amt = 1});
+            // ItemWorld.SpawnItemWorld(new Vector3((float)0.98,(float)-0.46, 0), new Item{itemType = Item.ItemType.HPot, amt = 1});
     }
     /// <summary>   
     /// Checks if player is moving their character and moves them appropriately.
@@ -264,5 +274,15 @@ public class Player : MonoBehaviour
     private void Load()
     {
         selectedOption = PlayerPrefs.GetInt("selectedOption");
+    }
+
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        ItemWorld itemWorld = collider.GetComponent<ItemWorld>();
+        if(itemWorld != null)
+        {
+            inventory.addItem(itemWorld.getItem());
+            itemWorld.destroyItem();
+        }
     }
 }
