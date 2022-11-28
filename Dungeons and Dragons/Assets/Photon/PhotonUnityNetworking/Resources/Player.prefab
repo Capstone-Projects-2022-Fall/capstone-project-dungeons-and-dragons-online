@@ -1215,6 +1215,7 @@ MonoBehaviour:
   characterDB: {fileID: 11400000, guid: c0d314d2b93d2fc49a01d20dbdddb04b, type: 2}
   artworkSprite: {fileID: 6286505278479089536}
   uiInventory: {fileID: 0}
+  itemworld: {fileID: 0}
 --- !u!114 &3544830418932823700
 MonoBehaviour:
   m_ObjectHideFlags: 0

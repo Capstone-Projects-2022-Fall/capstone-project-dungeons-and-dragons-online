@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8663264166859196218}
   - component: {fileID: 8663264166859196219}
   - component: {fileID: 6145125498442646527}
+  - component: {fileID: 8527579800081149379}
   m_Layer: 0
   m_Name: pfItemWorld
   m_TagString: Untagged
@@ -146,3 +147,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d944d872edb778c4d9bbaf03cea3d25f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8527579800081149379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8663264166859196220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
