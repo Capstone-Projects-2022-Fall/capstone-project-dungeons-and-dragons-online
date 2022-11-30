@@ -2,13 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using Random = System.Random;
 
 /// <summary>
 /// Enemy health handler
 /// </summary>
 public class EnemyHealth : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    public GameObject attackArea;
     /// <summary>
     /// Set the initial health value to 100
     /// </summary>
@@ -69,7 +71,92 @@ public class EnemyHealth : MonoBehaviour
     {
         Debug.Log("dead");
         // PhotonNetwork.Instantiate(dropItem.name, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
-        ItemWorld.SpawnItemWorld(new Vector3 (this.transform.position.x, this.transform.position.y), new Item {itemType = Item.ItemType.LongSword, amt = 1});
+        // ItemWorld.SpawnItemWorld(new Vector3 (this.transform.position.x, this.transform.position.y), new Item {itemType = Item.ItemType.LongSword, amt = 1});
+        spawnItem();
         Destroy(gameObject);
+    }
+
+    public void spawnItem()
+    {
+        //player base stats: HP = 100, dmg = 10, move speed = 5
+        Random r = new Random();
+        int rInt = r.Next(0, 50);
+        switch(rInt)
+        {
+            case(0):
+                ItemWorld.SpawnItemWorld(new Vector3 (this.transform.position.x, this.transform.position.y), new Item {itemType = Item.ItemType.LongSword, amt = 1});
+                //attackArea.setDamage(attackArea.getDamage() * 1);
+                
+                //no change to player damage
+                break;
+            case(1):
+                ItemWorld.SpawnItemWorld(new Vector3 (this.transform.position.x, this.transform.position.y), new Item {itemType = Item.ItemType.HPot, amt = 1});
+                
+                //increase health by 25
+                break;
+            case(2):
+                ItemWorld.SpawnItemWorld(new Vector3 (this.transform.position.x, this.transform.position.y), new Item {itemType = Item.ItemType.RPot, amt = 1});
+               
+                //increase health by 100
+                break;
+            case(3):
+                //ItemWorld.SpawnItemWorld(new Vector3 (this.transform.position.x, this.transform.position.y), new Item {itemType = Item.ItemType.G, amt = 1});
+                
+                //do nothing since we didnt implement money
+                break;
+            case(4):
+                ItemWorld.SpawnItemWorld(new Vector3 (this.transform.position.x, this.transform.position.y), new Item {itemType = Item.ItemType.Chestplate, amt = 1});
+                
+                //if player has less than 200hp, increase hp by 80
+                break;
+            case(5):
+                ItemWorld.SpawnItemWorld(new Vector3 (this.transform.position.x, this.transform.position.y), new Item {itemType = Item.ItemType.BHelm, amt = 1});
+                
+                //if player has less than 200hp, increase hp by 20
+                break;
+            case(6):
+                ItemWorld.SpawnItemWorld(new Vector3 (this.transform.position.x, this.transform.position.y), new Item {itemType = Item.ItemType.BBoots, amt = 1});
+                
+                //increase player move speed by .01
+                break;
+            case(7):
+                ItemWorld.SpawnItemWorld(new Vector3 (this.transform.position.x, this.transform.position.y), new Item {itemType = Item.ItemType.DManPlate, amt = 1});
+                
+                //increase player move speed by .1, and increase health by 40
+                break;
+            case(8):
+                ItemWorld.SpawnItemWorld(new Vector3 (this.transform.position.x, this.transform.position.y), new Item {itemType = Item.ItemType.BORK, amt = 1});
+                
+                //increase player damage by *1.3, take floor
+                break;
+            case(9):
+                ItemWorld.SpawnItemWorld(new Vector3 (this.transform.position.x, this.transform.position.y), new Item {itemType = Item.ItemType.DBlade, amt = 1});
+                
+                //increase player damage by +1
+                break;
+            case(10):
+                ItemWorld.SpawnItemWorld(new Vector3 (this.transform.position.x, this.transform.position.y), new Item {itemType = Item.ItemType.Dagger, amt = 1});
+                
+                //increase player damage by +1, increase player speed by 0.05
+                break;
+            case(11):
+                ItemWorld.SpawnItemWorld(new Vector3 (this.transform.position.x, this.transform.position.y), new Item {itemType = Item.ItemType.Swifties, amt = 1});
+                
+                //increase player speed by 0.4
+                break;
+            case(12):
+                ItemWorld.SpawnItemWorld(new Vector3 (this.transform.position.x, this.transform.position.y), new Item {itemType = Item.ItemType.Sallet, amt = 1});
+                
+                //increase player health by 20
+                break;
+            case(13):
+                ItemWorld.SpawnItemWorld(new Vector3 (this.transform.position.x, this.transform.position.y), new Item {itemType = Item.ItemType.AshenBow, amt = 1});
+                
+                //increase player damage by +1
+                break;
+            default:
+                Debug.Log(rInt);
+                return;
+        }
     }
 }

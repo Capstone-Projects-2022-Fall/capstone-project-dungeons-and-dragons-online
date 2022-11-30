@@ -10,6 +10,7 @@ using Photon.Pun;
 /// </summary>
 public class AttackArea : MonoBehaviour
 {
+    
     /// <summary>
     /// the default damage
     /// </summary>
@@ -37,5 +38,16 @@ public class AttackArea : MonoBehaviour
             health.Damage(damage);
         }
 
+
     }
+
+    public int getDamage()
+    {
+        return damage;
+    }
+    public void setDamage(int newDamage)
+    {
+        damage = newDamage;
+    }
+
 }
