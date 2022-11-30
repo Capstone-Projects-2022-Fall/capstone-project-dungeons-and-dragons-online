@@ -185,11 +185,9 @@ public class Player : MonoBehaviour
     private void moveTowardsPlayer()
     {
         otherPlayers = GameObject.FindGameObjectsWithTag("Player");
-        if(otherPlayers[0].activeSelf){
-            transform.position = Vector2.MoveTowards(transform.position, otherPlayers[1].transform.position, moveSpeed * Time.deltaTime);
-        } else {
-           
-            transform.position = Vector2.MoveTowards(transform.position, otherPlayers[0].transform.position, moveSpeed * Time.deltaTime);
+        for (int i = 0; i < otherPlayers.Length; i++)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, otherPlayers[i].transform.position, moveSpeed * Time.deltaTime);
         }
     }
 
