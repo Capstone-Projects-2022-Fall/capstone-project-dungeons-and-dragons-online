@@ -27,6 +27,18 @@ public class AttackArea : MonoBehaviour
             Health health = collider.GetComponent<Health>();
             health.Damage(damage);
         }
+        else if (collider.GetComponent<BOSSHealth>() != null)
+        {
+            BOSSHealth health = collider.GetComponent<BOSSHealth>();
+            health.Damage(damage);
+        }
+        else if (collider.GetComponent<EnemyHealth>() != null)
+        {
+            EnemyHealth health = collider.GetComponent<EnemyHealth>();
+            health.Damage(damage);
+        }
+
+
     }
 
     public int getDamage()
