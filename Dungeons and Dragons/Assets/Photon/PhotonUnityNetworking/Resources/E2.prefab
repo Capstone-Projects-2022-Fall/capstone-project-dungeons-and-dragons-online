@@ -176,6 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c646deba0797a564a8fc92812b0ae13a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackArea: {fileID: 0}
   health: 10
   dropItem: {fileID: 5995177961870116931, guid: 73198a7193815e245a2e0f128ea79e11, type: 3}
 --- !u!114 &7787739822834034923

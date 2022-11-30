@@ -52,20 +52,6 @@ public class GameManager : MonoBehaviour
 		GameCanvas.SetActive(false);
 		SceneCamera.SetActive(false);
 
-		//Debug.Log(this.transform.position.x);
-
-		// ItemWorld inst = ItemWorld.SpawnItemWorld(new Vector3(3, -3), new Item{itemType = Item.ItemType.LongSword, amt = 1});
-		// phItemWorld(inst);
-	}
-
-	public void phItemWorld(ItemWorld i)
-	{
-		// float randVal = Random.Range(-1f,1f);
-		// Instantiate(i, new Vector2(this.transform.position.x * randVal, this.transform.position.y), Quaternion.identity);
-        // ItemWorld itemWorld = transform.GetComponent<ItemWorld>();
-        // itemWorld.setItem(item);
-        // return itemWorld;
-
 	}
 
 	public void checkPlayer()

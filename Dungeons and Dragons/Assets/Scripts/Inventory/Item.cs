@@ -48,5 +48,18 @@ public class Item
         }
     }
 
+    // public Item randomItem()
+    // {
+    //     ItemType obj = ranEnum();
+    //     return new Item {itemType = obj, amt = 1};
+    // }
+    
+    // public ItemType ranEnum()
+    // {
+    //     Array values = Enum.GetValues(typeof(ItemType));
+    //     Random random = new Random();
+    //     return (ItemType)values.GetValue(random.Next(values.Length));
+    // }
+
 
 }
