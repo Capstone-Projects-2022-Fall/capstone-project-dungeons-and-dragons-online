@@ -51981,17 +51981,17 @@ MonoBehaviour:
   LongSword: {fileID: 21300000, guid: 5b65a747ca9d7314db19e3d5fd14d589, type: 3}
   HPot: {fileID: 21300000, guid: faaf8600a80bc3c4595d95e98963f12e, type: 3}
   RPot: {fileID: 21300000, guid: 1e442b0b17b76214f847ac11e8414298, type: 3}
-  G: {fileID: 0}
-  Chestplate: {fileID: 0}
-  BHelm: {fileID: 0}
-  BBoots: {fileID: 0}
-  DManPlate: {fileID: 0}
-  BORK: {fileID: 0}
-  DBlade: {fileID: 0}
-  Dagger: {fileID: 0}
-  Swifties: {fileID: 0}
-  Sallet: {fileID: 0}
-  AshenBow: {fileID: 0}
+  G: {fileID: 21300000, guid: 1d44cd500eb63f44ba980bb432f798d5, type: 3}
+  Chestplate: {fileID: 21300000, guid: a43d5726ae958fe41ba67063b7a773e8, type: 3}
+  BHelm: {fileID: 21300000, guid: b8e755d2b45df084791535031c9b4ddf, type: 3}
+  BBoots: {fileID: 21300000, guid: ea8f6f24d4104f244a2ba2ea072d3164, type: 3}
+  DManPlate: {fileID: 21300000, guid: 4a8e40e3e89eee04fb8a321cd4113efb, type: 3}
+  BORK: {fileID: 21300000, guid: c5c16c4a4ca43b34d88b9654346a6b64, type: 3}
+  DBlade: {fileID: 21300000, guid: 9ca69adabfa7ea141b5f0664a3f99caa, type: 3}
+  Dagger: {fileID: 21300000, guid: e993b8dd66b31304a9ee519643c75bf9, type: 3}
+  Swifties: {fileID: 21300000, guid: 675e39d3a372f91468ac98533c08c0d4, type: 3}
+  Sallet: {fileID: 21300000, guid: 0c88fc2caa30db54597d82acc5940ee2, type: 3}
+  AshenBow: {fileID: 21300000, guid: 04c416e74c1a50a4db24949c953faea2, type: 3}
 --- !u!4 &1835357749
 Transform:
   m_ObjectHideFlags: 0
