@@ -17,11 +17,10 @@ public class GameManager : MonoBehaviour
 	private RoomInfo ri;
 	int seed = -1;
 
+	private int maximumPlayer = 0;
 
 	private void Start()
     {
-		playersprite = newSkin.GetComponent<SpriteRenderer>().sprite;
-		PlayerPrefab.GetComponent<SpriteRenderer>().sprite = playersprite;
 		PhotonNetwork.Instantiate(this.pfItemWorld.name, new Vector3(-10f,1f), Quaternion.identity, 0);
 		Debug.Log("Instantiated Item World");
     }
@@ -38,7 +37,7 @@ public class GameManager : MonoBehaviour
 
     public void FixedUpdate()
     {
-		//checkPlayer();
+		checkPlayer();
 		//print("Current players" + ri.PlayerCount);
 		//checkWinning();
 
@@ -71,6 +70,31 @@ public class GameManager : MonoBehaviour
 	public void checkPlayer()
     {
 		Debug.Log(PhotonNetwork.CountOfPlayers.ToString());
+        if (maximumPlayer < PhotonNetwork.CountOfPlayers)
+        {
+			maximumPlayer = PhotonNetwork.CountOfPlayers;
+		}
+
+
+		//Win condition in PVP
+        if (PhotonNetwork.CountOfPlayers == 1 && SceneManager.GetActiveScene().name == "BattleMap")
+        {
+			Debug.Log("You win");
+			PhotonNetwork.LoadLevel("LoseScene");
+		}
+
+		//Lose condition in D
+		if (PhotonNetwork.CountOfPlayers == 0 && SceneManager.GetActiveScene().name == "RandomMap")
+		{
+			Debug.Log("Lose");
+			PhotonNetwork.LoadLevel("MainGame");
+		}
+
+        //Reload the game when players come back
+        if (maximumPlayer < PhotonNetwork.CountOfPlayers && SceneManager.GetActiveScene().name == "RandomMap")
+        {
+			PhotonNetwork.LoadLevel("RandomMap");
+		}
 	}
 
 	/*public void checkWinning()

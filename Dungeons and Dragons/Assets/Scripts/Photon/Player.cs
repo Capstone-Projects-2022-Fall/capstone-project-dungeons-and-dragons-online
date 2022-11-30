@@ -70,11 +70,11 @@ public class Player : MonoBehaviour
     /// <summary>
     /// Renderer
     /// </summary>
-    public SpriteRenderer artworkSprite;
+    //public SpriteRenderer artworkSprite;
     /// <summary>
     /// What character they have selected
     /// </summary>
-    private int selectedOption = 0;
+   // private int selectedOption = 0;
 
     /// <summary>
     /// Chat
@@ -106,15 +106,6 @@ public class Player : MonoBehaviour
     /// </summary>
     private void Start()
     {
-        if (!PlayerPrefs.HasKey("selectedOption"))
-        {
-            selectedOption = 0;
-        }
-        else
-        {
-            Load();
-        }
-        UpdateCharacter(selectedOption);
         
     }
      /// <summary>
@@ -158,9 +149,15 @@ public class Player : MonoBehaviour
     {
         if (photonView.IsMine && !chatSelected)
         {
-            if (Input.GetKeyDown(KeyCode.J))
+            if (Input.GetKeyDown(KeyCode.J) && sr.sprite.name == "skinSelection_0"|| Input.GetKeyDown(KeyCode.J) && sr.sprite.name == "skinSelection_2")
             {
                 photonView.RPC("Attack", RpcTarget.AllBuffered);
+            }
+
+            //Archor
+            if (Input.GetMouseButtonDown(0) && sr.sprite.name == "skinSelection_1" )
+            {
+                //Code to do
             }
         }
         Move();
@@ -262,20 +259,6 @@ public class Player : MonoBehaviour
      /// <summary>
     /// Sets the players selected class.
     /// </summary>
-    public void UpdateCharacter(int selectedOption)
-    {
-        Character character = characterDB.GetCharacter(selectedOption);
-        artworkSprite.sprite = character.CharacterSprtie;
-    }
-
-    /// <summary>
-    /// Sets the players selected class.
-    /// </summary>
-    private void Load()
-    {
-        selectedOption = PlayerPrefs.GetInt("selectedOption");
-    }
-
     private void OnTriggerEnter2D(Collider2D collider)
     {
         ItemWorld itemWorld = collider.GetComponent<ItemWorld>();
@@ -285,19 +268,19 @@ public class Player : MonoBehaviour
             itemWorld.destroyItem();
         }
 
-        if (collider.GetComponent<SpriteRenderer>() != null && collider.GetComponent<SpriteRenderer>().sprite.name == "skinSelection_0")
+        if (collider.GetComponent<SpriteRenderer>() != null && collider.GetComponent<SpriteRenderer>().sprite.name == "skinSelection_0" && collider.gameObject.tag != "Player")
         {
             Character character = characterDB.GetCharacter(0);
             sr.sprite = character.CharacterSprtie;
         }
 
-        if (collider.GetComponent<SpriteRenderer>() != null && collider.GetComponent<SpriteRenderer>().sprite.name == "skinSelection_1")
+        if (collider.GetComponent<SpriteRenderer>() != null && collider.GetComponent<SpriteRenderer>().sprite.name == "skinSelection_1" && collider.gameObject.tag != "Player")
         {
             Character character = characterDB.GetCharacter(1);
             sr.sprite = character.CharacterSprtie;
         }
 
-        if (collider.GetComponent<SpriteRenderer>() != null && collider.GetComponent<SpriteRenderer>().sprite.name == "skinSelection_2")
+        if (collider.GetComponent<SpriteRenderer>() != null && collider.GetComponent<SpriteRenderer>().sprite.name == "skinSelection_2" && collider.gameObject.tag != "Player")
         {
             Character character = characterDB.GetCharacter(2);
             sr.sprite = character.CharacterSprtie;

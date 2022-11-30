@@ -15,7 +15,7 @@ public class GotoPVP : MonoBehaviour
     /// </summary>
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (PhotonNetwork.IsMasterClient)
+        if (PhotonNetwork.IsMasterClient && PhotonNetwork.CountOfPlayers >= 2)
         {
             PhotonNetwork.LoadLevel("BattleMap");
         }

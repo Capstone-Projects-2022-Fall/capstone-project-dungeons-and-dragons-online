@@ -21,6 +21,8 @@ public class Health : MonoBehaviour
     [SerializeField] private HealthBar healthBar;
     [SerializeField] private GameObject BacktoMain;
 
+    public SpriteRenderer sr;
+
     //chat
     public static bool chatSelected;
 
@@ -36,25 +38,12 @@ public class Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!chatSelected)
-        {
-            // Testing Onlys
-            if (Input.GetKeyDown(KeyCode.O))
-            {
-                Damage(10);
-                // healthBar.SetSize();
-                
-            }
-            if (Input.GetKeyDown(KeyCode.H))
-            {
-                Heal(10);
-            }
-        }
+        
     }
 
     public void FixedUpdate()
     {
-
+        specialAttack();
     }
     /// <summary>
     /// Damage and health visualization
@@ -66,12 +55,28 @@ public class Health : MonoBehaviour
         GetComponent<SpriteRenderer>().color = Color.white;
     }
 
+    private void specialAttack()
+    {
+        if (!chatSelected)
+        {
+            // Testing Onlys
+            if (Input.GetKeyDown(KeyCode.O))
+            { 
+                Damage(10);
+            }
+            if (Input.GetKeyDown(KeyCode.H) && sr.sprite.name == "skinSelection_2")
+            {
+                Heal(10);
+            }
+        }
+    }
     /// <summary>
     /// Calculate the damage
     /// </summary>
     /// <includesource>
     /// ArgumentOutOfRangeException
     /// </includesource>
+    [PunRPC]
     public void Damage(int amount)
     {
         // throw new System.ArgumentOutOfRangeException("Cannot have a negative damage");
@@ -95,6 +100,7 @@ public class Health : MonoBehaviour
     /// <summary>
     /// Calculate the heal
     /// </summary>
+    [PunRPC]
     public void Heal(int amount)
     {
         if (amount < 0)
@@ -124,7 +130,7 @@ public class Health : MonoBehaviour
         if (photonView.IsMine)
         {
             PhotonNetwork.LeaveRoom();
-            PhotonNetwork.LoadLevel("VictoryScene");
+            PhotonNetwork.LoadLevel("LoseScene");
         }
 
         //SceneManager.LoadScene("MainMenu");

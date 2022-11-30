@@ -1213,7 +1213,6 @@ MonoBehaviour:
   attackArea: {fileID: 8778392516070197106}
   moveSpeed: 5
   characterDB: {fileID: 11400000, guid: c0d314d2b93d2fc49a01d20dbdddb04b, type: 2}
-  artworkSprite: {fileID: 6286505278479089536}
   uiInventory: {fileID: 0}
   itemworld: {fileID: 0}
 --- !u!114 &3544830418932823700
@@ -1232,6 +1231,7 @@ MonoBehaviour:
   health: 100
   healthBar: {fileID: 2388805385300486596}
   BacktoMain: {fileID: 278339255189718948}
+  sr: {fileID: 6286505278479089536}
 --- !u!114 &3377049965958551255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1794,6 +1794,7 @@ GameObject:
   - component: {fileID: 2459315385374607665}
   - component: {fileID: 5371211107291822360}
   - component: {fileID: 6327957986348601008}
+  - component: {fileID: 5911386785390550837}
   m_Layer: 0
   m_Name: weapon
   m_TagString: Untagged
@@ -2128,6 +2129,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 364bfbe8268fd674b8140b124e03187f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sr: {fileID: 6286505278479089536}
+  photonView: {fileID: 5911386785390550837}
+--- !u!114 &5911386785390550837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8778392516070197106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &8835557949102676303
 GameObject:
   m_ObjectHideFlags: 0

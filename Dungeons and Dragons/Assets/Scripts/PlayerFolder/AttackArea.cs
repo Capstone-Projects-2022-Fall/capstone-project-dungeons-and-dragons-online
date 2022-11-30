@@ -14,7 +14,8 @@ public class AttackArea : MonoBehaviour
     /// the default damage
     /// </summary>
     private int damage = 10;
-
+    public SpriteRenderer sr;
+    public PhotonView photonView;
     /// <summary>
     /// Attack trigger
     /// </summary>
@@ -24,7 +25,11 @@ public class AttackArea : MonoBehaviour
         if (collider.GetComponent<Health>() != null)
         {
             Health health = collider.GetComponent<Health>();
-            health.Damage(damage);
+            if (sr.sprite.name == "skinSelection_2")
+            {
+                damage = 2;
+            }
+            photonView.RPC("health.Damage", RpcTarget.AllBuffered, damage);
         }
        
     }
