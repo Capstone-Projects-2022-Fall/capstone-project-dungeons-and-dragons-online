@@ -239,7 +239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pv: {fileID: 7956920172831339526}
-  speed: 0.7
+  speed: 1.5
 --- !u!114 &6632357282232111630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,7 +252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3431bf7972e665d4b8b2628e31a60beb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 20
+  health: 300
   dropItem: {fileID: 1914231599397466447, guid: edc26ffd84d5be64c8d4700c9634ece2, type: 3}
 --- !u!114 &4708611291183768047
 MonoBehaviour:
