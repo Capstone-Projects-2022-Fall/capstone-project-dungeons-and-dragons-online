@@ -118,7 +118,7 @@ public class Player : MonoBehaviour
     /// Checks if player is moving their character and moves them appropriately.
     /// </summary>
     private void Update(){
-        if(photonView.IsMine){
+        if(photonView.IsMine && !UIPause.isPaused && !UIPause.isAI && !chatSelected){
             checkInput();
         } else if (photonView.IsMine && UIPause.isAI){
             moveTowardsPlayer();
@@ -127,7 +127,7 @@ public class Player : MonoBehaviour
 
     public void FixedUpdate()
     {
-        if (photonView.IsMine)
+        if (photonView.IsMine && !UIPause.isPaused && !UIPause.isAI && !chatSelected)
         {
             if (Input.GetKeyDown(KeyCode.J))
             {
