@@ -5,6 +5,10 @@ using UnityEngine.UI;
 using Photon.Pun;
 using ExitGames.Client.Photon;
 
+/// <summary>
+/// This is the object for all users.
+/// </summary>
+
 public class Player : MonoBehaviour
 {
     /// <summary>
@@ -74,6 +78,35 @@ public class Player : MonoBehaviour
     /// </summary>
     private int selectedOption = 0;
 
+      /// <summary>
+    /// Chat
+    /// </summary>
+    public static bool chatSelected;
+
+    private Inventory inventory;
+    [SerializeField] private UI_Inventory uiInventory;
+    public GameObject itemworld;
+
+    /// <summary>
+    /// Detects if the chat is selected
+    /// </summary>
+    public void selectChat()
+    {
+        chatSelected = true;
+    }
+
+    /// <summary>
+    /// Detects if the chat isn't selected
+    /// </summary>
+    public void deselectChat()
+    {
+        chatSelected = false;
+    }
+
+    /// <summary>
+    /// Set the characters class and spawn them
+    /// </summary>
+
     private void Start()
     {
         if (!PlayerPrefs.HasKey("selectedOption"))
@@ -125,6 +158,9 @@ public class Player : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Detects if a player is attacking.
+    /// </summary>
     public void FixedUpdate()
     {
         if (photonView.IsMine && !UIPause.isPaused && !UIPause.isAI && !chatSelected)
@@ -247,4 +283,31 @@ public class Player : MonoBehaviour
         selectedOption = PlayerPrefs.GetInt("selectedOption");
     }
 
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        ItemWorld itemWorld = collider.GetComponent<ItemWorld>();
+        if(itemWorld != null)
+        {
+            inventory.addItem(itemWorld.getItem());
+            itemWorld.destroyItem();
+        }
+
+        if (collider.GetComponent<SpriteRenderer>() != null && collider.GetComponent<SpriteRenderer>().sprite.name == "skinSelection_0")
+        {
+            Character character = characterDB.GetCharacter(0);
+            sr.sprite = character.CharacterSprtie;
+        }
+
+        if (collider.GetComponent<SpriteRenderer>() != null && collider.GetComponent<SpriteRenderer>().sprite.name == "skinSelection_1")
+        {
+            Character character = characterDB.GetCharacter(1);
+            sr.sprite = character.CharacterSprtie;
+        }
+
+        if (collider.GetComponent<SpriteRenderer>() != null && collider.GetComponent<SpriteRenderer>().sprite.name == "skinSelection_2")
+        {
+            Character character = characterDB.GetCharacter(2);
+            sr.sprite = character.CharacterSprtie;
+        }
+    }
 }
