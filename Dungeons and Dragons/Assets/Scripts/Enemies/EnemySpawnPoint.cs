@@ -18,7 +18,7 @@ public class EnemySpawnPoint : MonoBehaviour
     // Update is called once per frame
     IEnumerator SpawnEnemis()
     {
-        while(enemyCount < 3)
+        while(enemyCount < 2)
         {
             xPos = (Random.Range(-2, 2)/5f);
             yPos = Random.Range(-2, 2)/5f;
