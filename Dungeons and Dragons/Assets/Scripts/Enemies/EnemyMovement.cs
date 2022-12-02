@@ -32,7 +32,7 @@ public class EnemyMovement : MonoBehaviour
     /// <summary>
     /// Getting the distance between enemy and player object
     /// </summary>
-    void Update()
+    void FixedUpdate()
     {
         // Getting the distance between enemy and player object
         /*distance = Vector2.Distance(transform.position, player.transform.position);

@@ -7,7 +7,7 @@ public class BOSSAttackArea : MonoBehaviour
     /// <summary>
     /// the default damage
     /// </summary>
-    private int damage = 10;
+    private int damage = 30;
 
     /// <summary>
     /// Attack trigger
