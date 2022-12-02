@@ -83,6 +83,8 @@ public class Player : MonoBehaviour
     /// </summary>
     public static bool chatSelected;
 
+    private GameObject[] otherPlayers;
+
     private Inventory inventory;
     [SerializeField] private UI_Inventory uiInventory;
     public GameObject itemworld;
@@ -313,6 +315,7 @@ public class Player : MonoBehaviour
 
     private void moveTowardsPlayer()
     {
+        otherPlayers = GameObject.FindGameObjectsWithTag("Player");
         for (int i = 0; i < otherPlayers.Length; i++)
         {
             transform.position = Vector2.MoveTowards(transform.position, otherPlayers[i].transform.position, moveSpeed * Time.deltaTime);
