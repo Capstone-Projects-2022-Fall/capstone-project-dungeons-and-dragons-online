@@ -15,7 +15,7 @@ public class ChatManager : MonoBehaviour, Photon.Pun.IPunObservable
     public TMP_InputField chatInput;
     private List<string> messages = new List<string>();
     private float delay = 0f;
-    private int maxMessages = 6;
+    private int maxMessages = 9;
 
     private void Start()
     {
