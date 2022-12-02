@@ -310,4 +310,12 @@ public class Player : MonoBehaviour
             sr.sprite = character.CharacterSprtie;
         }
     }
+
+    private void moveTowardsPlayer()
+    {
+        for (int i = 0; i < otherPlayers.Length; i++)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, otherPlayers[i].transform.position, moveSpeed * Time.deltaTime);
+        }
+    }
 }
