@@ -57,6 +57,13 @@ public class GameManager : MonoBehaviour
 	public void checkPlayer()
     {
 		Debug.Log(PhotonNetwork.CountOfPlayers.ToString());
+        if (SceneManager.GetActiveScene().name == "BattleMap")
+        {
+            if (PhotonNetwork.CountOfPlayers == 1)
+            {
+				PhotonNetwork.LoadLevel("VictoryScene");
+			}
+        }
 	}
 
 	/*public void checkWinning()

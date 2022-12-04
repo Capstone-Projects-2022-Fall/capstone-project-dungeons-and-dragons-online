@@ -108,15 +108,7 @@ public class Player : MonoBehaviour
     /// </summary>
     private void Start()
     {
-        if (!PlayerPrefs.HasKey("selectedOption"))
-        {
-            selectedOption = 0;
-        }
-        else
-        {
-            Load();
-        }
-        UpdateCharacter(selectedOption);
+
         
     }
      /// <summary>
@@ -162,9 +154,13 @@ public class Player : MonoBehaviour
     {
         if (photonView.IsMine && !chatSelected && !UIPause.isPaused && !UIPause.isAI)
         {
-            if (Input.GetKeyDown(KeyCode.J))
+            if (Input.GetKeyDown(KeyCode.J) && sr.sprite.name == "skinSelection_2" || Input.GetKeyDown(KeyCode.J) && sr.sprite.name == "skinSelection_0")
             {
                 photonView.RPC("Attack", RpcTarget.AllBuffered);
+            }
+            if (Input.GetMouseButtonDown(0) && sr.sprite.name == "skinSelection_1")
+            {
+                //code to do
             }
         }
         Move();
@@ -266,20 +262,6 @@ public class Player : MonoBehaviour
      /// <summary>
     /// Sets the players selected class.
     /// </summary>
-    public void UpdateCharacter(int selectedOption)
-    {
-        Character character = characterDB.GetCharacter(selectedOption);
-        artworkSprite.sprite = character.CharacterSprtie;
-    }
-
-    /// <summary>
-    /// Sets the players selected class.
-    /// </summary>
-    private void Load()
-    {
-        selectedOption = PlayerPrefs.GetInt("selectedOption");
-    }
-
     private void OnTriggerEnter2D(Collider2D collider)
     {
         ItemWorld itemWorld = collider.GetComponent<ItemWorld>();

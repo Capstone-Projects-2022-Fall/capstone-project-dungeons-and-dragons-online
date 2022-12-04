@@ -1232,6 +1232,7 @@ MonoBehaviour:
   health: 100
   healthBar: {fileID: 2388805385300486596}
   BacktoMain: {fileID: 278339255189718948}
+  sr: {fileID: 6286505278479089536}
 --- !u!114 &3377049965958551255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2128,6 +2129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 364bfbe8268fd674b8140b124e03187f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sr: {fileID: 6286505278479089536}
 --- !u!1 &8835557949102676303
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GAME.unity
     guid: e04a8186bd7addd4db8dab1a7b41e5e8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/CharacterMenu.unity
     guid: 28e75bfcf8ca731478f1d734df294d1f
   - enabled: 1
@@ -21,6 +21,6 @@ EditorBuildSettings:
     path: Assets/Scenes/BattleMap.unity
     guid: 140373525dcf93c43a60cc8574e95264
   - enabled: 1
-    path: Assets/Scenes/VictoryScene.unity
+    path: Assets/Scenes/LoseScene.unity
     guid: 08b6734a4de3a3443aa8ad4217fcbab7
   m_configObjects: {}
