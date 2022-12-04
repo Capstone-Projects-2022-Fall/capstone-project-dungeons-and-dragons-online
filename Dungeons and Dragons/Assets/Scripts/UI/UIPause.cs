@@ -7,9 +7,9 @@ public class UIPause : MonoBehaviour
     public GameObject PauseCanvas;
     public TMP_Text AIToggleText;
 
-    private bool isPaused = false;
+    public static bool isPaused = false;
 
-    private bool isAI = false;
+    public static bool isAI = false;
 
     [SerializeField] private GameObject ResumeButton;
     [SerializeField] private GameObject AIToggleButton;

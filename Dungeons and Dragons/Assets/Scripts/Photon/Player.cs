@@ -85,6 +85,8 @@ public class Player : MonoBehaviour
     [SerializeField] private UI_Inventory uiInventory;
     public GameObject itemworld;
 
+    private GameObject[] otherPlayers;
+
     /// <summary>
     /// Detects if the chat is selected
     /// </summary>
@@ -147,8 +149,10 @@ public class Player : MonoBehaviour
     /// Checks if player is moving their character and moves them appropriately.
     /// </summary>
     private void Update(){
-        if(photonView.IsMine && !chatSelected){
+        if(photonView.IsMine && !chatSelected && !UIPause.isPaused && !UIPause.isAI){
             checkInput();
+        } else if (photonView.IsMine && UIPause.isAI){
+            moveTowardsPlayer();
         }
     }
     /// <summary>
@@ -156,7 +160,7 @@ public class Player : MonoBehaviour
     /// </summary>
     public void FixedUpdate()
     {
-        if (photonView.IsMine && !chatSelected)
+        if (photonView.IsMine && !chatSelected && !UIPause.isPaused && !UIPause.isAI)
         {
             if (Input.GetKeyDown(KeyCode.J))
             {
@@ -301,6 +305,23 @@ public class Player : MonoBehaviour
         {
             Character character = characterDB.GetCharacter(2);
             sr.sprite = character.CharacterSprtie;
+        }
+    }
+
+    private void moveTowardsPlayer()
+    {
+        otherPlayers = GameObject.FindGameObjectsWithTag("Player");
+        
+        for (int i = 0; i < otherPlayers.Length; i++)
+        {
+            float tempx = otherPlayers[i].transform.position.x-transform.position.x;
+            float tempy = otherPlayers[i].transform.position.x-transform.position.x;
+            if (tempx>0.2 || tempx < -0.2 || tempy < -0.2 || tempy > 0.2) {
+                Debug.Log("x" + tempx);
+                Debug.Log("y" + tempy);
+                transform.position = Vector2.MoveTowards(transform.position, otherPlayers[i].transform.position, moveSpeed * Time.deltaTime);
+            }
+            
         }
     }
 
