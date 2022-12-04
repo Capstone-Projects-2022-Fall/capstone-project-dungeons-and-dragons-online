@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 4007253661967513605}
   - component: {fileID: 1986504964180294587}
   - component: {fileID: 151038986947627003}
+  - component: {fileID: 3474681977134015100}
+  - component: {fileID: 5381010616115321605}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -164,3 +166,31 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 0
+--- !u!114 &3474681977134015100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5598958774903517148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f072e277f55a5ec4f9dcd36419b5eb83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5381010616115321605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5598958774903517148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c646deba0797a564a8fc92812b0ae13a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackArea: {fileID: 0}
+  health: 10
+  dropItem: {fileID: 5995177961870116931, guid: 73198a7193815e245a2e0f128ea79e11, type: 3}
+  player: {fileID: 6286505278479089537, guid: feacaf17a9d31854db859ceb10896944, type: 3}

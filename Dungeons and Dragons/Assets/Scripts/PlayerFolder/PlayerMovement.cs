@@ -42,6 +42,9 @@ public class PlayerMovement : MonoBehaviour
         healthBar.SetSize(1.21f);
     }
 
+    public void increaseSpeed(float amount){
+        moveSpeed += amount;
+    }
     
 
 /// <summary>
