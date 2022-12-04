@@ -52,6 +52,9 @@ MonoBehaviour:
   - RPC_AddNewMessage
   - SubmitMessage
   - SendMessage
+  - ChangeDir_left
+  - DestoryObject
+  - DestroyObject
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1

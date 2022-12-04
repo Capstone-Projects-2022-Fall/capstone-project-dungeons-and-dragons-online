@@ -1089,6 +1089,7 @@ Transform:
   - {fileID: 6286505278166741268}
   - {fileID: 2453743924847153508}
   - {fileID: 5764024202227141574}
+  - {fileID: 1468836036202340597}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1216,6 +1217,9 @@ MonoBehaviour:
   artworkSprite: {fileID: 6286505278479089536}
   uiInventory: {fileID: 0}
   itemworld: {fileID: 0}
+  arrowPower: 5
+  bulletObject: {fileID: 2957764436891269525, guid: e259de66b96c5a444be574d7cdea3d65, type: 3}
+  firePos: {fileID: 1468836036202340597}
 --- !u!114 &3544830418932823700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1783,6 +1787,37 @@ MonoBehaviour:
   m_isRichTextEditingAllowed: 0
   m_LineLimit: 0
   m_InputValidator: {fileID: 0}
+--- !u!1 &8696485282714258377
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1468836036202340597}
+  m_Layer: 0
+  m_Name: FirePos
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1468836036202340597
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8696485282714258377}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.3, y: 0, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6286505278479089539}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8778392516070197106
 GameObject:
   m_ObjectHideFlags: 0
