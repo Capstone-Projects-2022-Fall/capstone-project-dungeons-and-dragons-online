@@ -16,6 +16,8 @@ public class EnemyHealth : MonoBehaviour
     /// </summary>
     [SerializeField] private int health = 100;
     public GameObject dropItem;
+
+    public GameObject player;
     // Update is called once per frame
     void Update()
     {

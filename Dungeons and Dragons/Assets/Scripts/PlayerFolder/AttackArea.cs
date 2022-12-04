@@ -16,7 +16,7 @@ public class AttackArea : MonoBehaviour
     /// the default damage
     /// </summary>
     private int damage = 10;
-
+    public SpriteRenderer sr;
     /// <summary>
     /// Attack trigger
     /// </summary>
@@ -26,7 +26,7 @@ public class AttackArea : MonoBehaviour
         if (collider.GetComponent<Health>() != null &&  SceneManager.GetActiveScene().name == "BattleMap")
         {
             Health health = collider.GetComponent<Health>();
-            if (collider.GetComponent<SpriteRenderer>().sprite.name == "skinSelection_2")
+            if (sr.sprite.name == "skinSelection_2")
             {
                 damage = 2;
             }
@@ -35,7 +35,7 @@ public class AttackArea : MonoBehaviour
         else if (collider.GetComponent<BOSSHealth>() != null)
         {
             BOSSHealth health = collider.GetComponent<BOSSHealth>();
-            if (collider.GetComponent<SpriteRenderer>().sprite.name == "skinSelection_2")
+            if (sr.sprite.name == "skinSelection_2")
             {
                 damage = 2;
             }
@@ -44,7 +44,7 @@ public class AttackArea : MonoBehaviour
         else if (collider.GetComponent<EnemyHealth>() != null)
         {
             EnemyHealth health = collider.GetComponent<EnemyHealth>();
-            if (collider.GetComponent<SpriteRenderer>().sprite.name == "skinSelection_2")
+            if (sr.sprite.name == "skinSelection_2")
             {
                 damage = 2;
             }

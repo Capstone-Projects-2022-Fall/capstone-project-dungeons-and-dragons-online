@@ -21,6 +21,8 @@ public class Health : MonoBehaviour
     [SerializeField] private HealthBar healthBar;
     [SerializeField] private GameObject BacktoMain;
 
+    public SpriteRenderer sr;
+
     //chat
     public static bool chatSelected;
 
@@ -39,13 +41,14 @@ public class Health : MonoBehaviour
         if(!chatSelected)
         {
             // Testing Onlys
+            /*
             if (Input.GetKeyDown(KeyCode.O))
             {
                 Damage(10);
                 // healthBar.SetSize();
                 
-            }
-            if (Input.GetKeyDown(KeyCode.H))
+            }*/
+            if (Input.GetKeyDown(KeyCode.H) && sr.sprite.name == "skinSelection_2")
             {
                 Heal(10);
             }
@@ -109,8 +112,12 @@ public class Health : MonoBehaviour
         }
         else
         {
-            this.health += amount;
-            healthBar.SetSize((float)(this.health * 0.01 * 0.1169186f));
+            if (sr.gameObject.tag == "Player")
+            {
+                this.health += amount;
+                healthBar.SetSize((float)(this.health * 0.01 * 0.1169186f));
+            }
+
         }
     }
 
