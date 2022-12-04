@@ -289,19 +289,19 @@ public class Player : MonoBehaviour
             itemWorld.destroyItem();
         }
 
-        if (collider.GetComponent<SpriteRenderer>() != null && collider.GetComponent<SpriteRenderer>().sprite.name == "skinSelection_0")
+        if (collider.GetComponent<SpriteRenderer>() != null && collider.GetComponent<SpriteRenderer>().sprite.name == "skinSelection_0" && collider.gameObject.tag != "Player")
         {
             Character character = characterDB.GetCharacter(0);
             sr.sprite = character.CharacterSprtie;
         }
 
-        if (collider.GetComponent<SpriteRenderer>() != null && collider.GetComponent<SpriteRenderer>().sprite.name == "skinSelection_1")
+        if (collider.GetComponent<SpriteRenderer>() != null && collider.GetComponent<SpriteRenderer>().sprite.name == "skinSelection_1" && collider.gameObject.tag != "Player")
         {
             Character character = characterDB.GetCharacter(1);
             sr.sprite = character.CharacterSprtie;
         }
 
-        if (collider.GetComponent<SpriteRenderer>() != null && collider.GetComponent<SpriteRenderer>().sprite.name == "skinSelection_2")
+        if (collider.GetComponent<SpriteRenderer>() != null && collider.GetComponent<SpriteRenderer>().sprite.name == "skinSelection_2" && collider.gameObject.tag != "Player")
         {
             Character character = characterDB.GetCharacter(2);
             sr.sprite = character.CharacterSprtie;
