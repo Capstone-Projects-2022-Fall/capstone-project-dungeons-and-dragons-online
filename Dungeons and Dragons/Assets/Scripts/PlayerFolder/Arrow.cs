@@ -8,8 +8,7 @@ public class Arrow : MonoBehaviour
     private Rigidbody2D rb;
     private float timer;
     public PhotonView pv;
-
-    public int damage;
+    public int damage = 5;
 
 
     // Start is called before the first frame update
@@ -58,5 +57,6 @@ public class Arrow : MonoBehaviour
             health.Damage(damage);
         }
     }
+
 
 }
