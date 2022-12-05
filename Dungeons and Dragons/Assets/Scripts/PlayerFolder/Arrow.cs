@@ -8,7 +8,7 @@ public class Arrow : MonoBehaviour
     private Rigidbody2D rb;
     private float timer;
     public PhotonView pv;
-
+    public int damage = 5;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +33,15 @@ public class Arrow : MonoBehaviour
             {
                 PhotonNetwork.Destroy(this.gameObject);//when it pass 1 sec, destroy this arrow on photon.
             }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.GetComponent<Health>() != null)
+        {
+            Health health = collider.GetComponent<Health>();
+            health.Damage(damage);
         }
     }
 }

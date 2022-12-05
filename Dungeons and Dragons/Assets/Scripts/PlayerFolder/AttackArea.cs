@@ -23,13 +23,15 @@ public class AttackArea : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collider)
     {
         // If the target has EnemyHealth compnent then is triggered
-        if (collider.GetComponent<Health>() != null &&  SceneManager.GetActiveScene().name == "BattleMap")
+        //
+        if (collider.GetComponent<Health>() != null && SceneManager.GetActiveScene().name == "BattleMap")
         {
             Health health = collider.GetComponent<Health>();
             if (sr.sprite.name == "skinSelection_2")
             {
                 damage = 2;
             }
+           
             health.Damage(damage);
         }
         else if (collider.GetComponent<BOSSHealth>() != null)
@@ -39,6 +41,7 @@ public class AttackArea : MonoBehaviour
             {
                 damage = 2;
             }
+
             health.Damage(damage);
         }
         else if (collider.GetComponent<EnemyHealth>() != null)
@@ -48,10 +51,9 @@ public class AttackArea : MonoBehaviour
             {
                 damage = 2;
             }
+
             health.Damage(damage);
         }
-
-
     }
 
     public int getDamage()
