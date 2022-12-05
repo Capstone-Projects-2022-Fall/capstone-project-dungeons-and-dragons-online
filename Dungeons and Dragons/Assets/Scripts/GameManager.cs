@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
 
     public void FixedUpdate()
     {
-		//checkPlayer();
+		checkPlayer();
 		//print("Current players" + ri.PlayerCount);
 		//checkWinning();
 
