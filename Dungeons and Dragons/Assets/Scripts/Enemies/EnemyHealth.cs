@@ -12,9 +12,9 @@ public class EnemyHealth : MonoBehaviour
 
     public GameObject attackArea;
     /// <summary>
-    /// Set the initial health value to 10
+    /// Set the initial health value to 100
     /// </summary>
-    [SerializeField] private int health = 10;
+    [SerializeField] private int health = 100;
     public GameObject dropItem;
 
     public GameObject player;
@@ -47,7 +47,7 @@ public class EnemyHealth : MonoBehaviour
     /// <includesource>
     /// ArgumentOutOfRangeException
     /// </includesource>
-    public void Damage(int amount) 
+    public void Damage(int amount)
     {
         // the damage is negative number will cause an error
         if (amount < 0)
@@ -93,6 +93,7 @@ public class EnemyHealth : MonoBehaviour
                 break;
             case(1):
                 ItemWorld.SpawnItemWorld(new Vector3 (this.transform.position.x, this.transform.position.y), new Item {itemType = Item.ItemType.HPot, amt = 1});
+
                 player.GetComponent<Health>().Heal(25);
 
                 Debug.Log(player.GetComponent<Health>().getHealth());
@@ -101,10 +102,10 @@ public class EnemyHealth : MonoBehaviour
                 break;
             case(2):
                 ItemWorld.SpawnItemWorld(new Vector3 (this.transform.position.x, this.transform.position.y), new Item {itemType = Item.ItemType.RPot, amt = 1});
+
                 player.GetComponent<Health>().Heal(100);
 
                 Debug.Log(player.GetComponent<Health>().getHealth());
-
                 //increase health by 100
                 break;
             case(3):
@@ -114,68 +115,79 @@ public class EnemyHealth : MonoBehaviour
                 break;
             case(4):
                 ItemWorld.SpawnItemWorld(new Vector3 (this.transform.position.x, this.transform.position.y), new Item {itemType = Item.ItemType.Chestplate, amt = 1});
+
                 if (player.GetComponent<Health>().getHP() < 200){
                     player.GetComponent<Health>().HPincrease(80);
                 }
 
                 Debug.Log(player.GetComponent<Health>().getHP());
-
                 //if player has less than 200hp, increase hp by 80
                 break;
             case(5):
                 ItemWorld.SpawnItemWorld(new Vector3 (this.transform.position.x, this.transform.position.y), new Item {itemType = Item.ItemType.BHelm, amt = 1});
+
                 if (player.GetComponent<Health>().getHP() < 200){
                     player.GetComponent<Health>().HPincrease(20);
                 }
 
                 Debug.Log(player.GetComponent<Health>().getHP());
-
                 //if player has less than 200hp, increase hp by 20
                 break;
             case(6):
                 ItemWorld.SpawnItemWorld(new Vector3 (this.transform.position.x, this.transform.position.y), new Item {itemType = Item.ItemType.BBoots, amt = 1});
+
                 player.GetComponent<PlayerMovement>().increaseSpeed(.01);
 
                 Debug.Log(player.GetComponent<PlayerMovement>().getSpeed());
+
                 //increase player move speed by .01
                 break;
             case(7):
                 ItemWorld.SpawnItemWorld(new Vector3 (this.transform.position.x, this.transform.position.y), new Item {itemType = Item.ItemType.DManPlate, amt = 1});
+
                 player.GetComponent<Health>().Heal(40);
                 player.GetComponent<PlayerMovement>().increaseSpeed(.1);
 
                 Debug.Log(player.GetComponent<Health>().getHealth());
                 Debug.Log(player.GetComponent<PlayerMovement>().getSpeed());
+
                 //increase player move speed by .1, and increase health by 40
                 break;
             case(8):
                 ItemWorld.SpawnItemWorld(new Vector3 (this.transform.position.x, this.transform.position.y), new Item {itemType = Item.ItemType.BORK, amt = 1});
+
                 int temp1 =player.GetComponent<AttackArea>().getDamage();
                 player.GetComponent<AttackArea>().setDamage(temp1+1);
 
                 Debug.Log(player.GetComponent<AttackArea>().getDamage());
+
                 //increase player damage by *1.3, take floor
                 break;
             case(9):
                 ItemWorld.SpawnItemWorld(new Vector3 (this.transform.position.x, this.transform.position.y), new Item {itemType = Item.ItemType.DBlade, amt = 1});
+
                 int temp2 =player.GetComponent<AttackArea>().getDamage();
                 player.GetComponent<AttackArea>().setDamage(temp2+1);
 
                 Debug.Log(player.GetComponent<AttackArea>().getDamage());
+
                 //increase player damage by +1
                 break;
             case(10):
                 ItemWorld.SpawnItemWorld(new Vector3 (this.transform.position.x, this.transform.position.y), new Item {itemType = Item.ItemType.Dagger, amt = 1});
+
                 player.GetComponent<PlayerMovement>().increaseSpeed(.05);
                 int temp3 =player.GetComponent<AttackArea>().getDamage();
                 player.GetComponent<AttackArea>().setDamage(temp3+1);
 
                 Debug.Log(player.GetComponent<PlayerMovement>().getSpeed());
                 Debug.Log(player.GetComponent<AttackArea>().getDamage());
+
                 //increase player damage by +1, increase player speed by 0.05
                 break;
             case(11):
                 ItemWorld.SpawnItemWorld(new Vector3 (this.transform.position.x, this.transform.position.y), new Item {itemType = Item.ItemType.Swifties, amt = 1});
+
                 player.GetComponent<PlayerMovement>().increaseSpeed(.4);
 
                 Debug.Log(player.GetComponent<PlayerMovement>().getSpeed());
@@ -183,17 +195,21 @@ public class EnemyHealth : MonoBehaviour
                 break;
             case(12):
                 ItemWorld.SpawnItemWorld(new Vector3 (this.transform.position.x, this.transform.position.y), new Item {itemType = Item.ItemType.Sallet, amt = 1});
+
                 player.GetComponent<Health>().Heal(20);
 
                 Debug.Log(player.GetComponent<Health>().getHealth());
+
                 //increase player health by 20
                 break;
             case(13):
                 ItemWorld.SpawnItemWorld(new Vector3 (this.transform.position.x, this.transform.position.y), new Item {itemType = Item.ItemType.AshenBow, amt = 1});
+
                 int temp4 =player.GetComponent<AttackArea>().getDamage();
                 player.GetComponent<AttackArea>().setDamage(temp4+1);
 
                 Debug.Log(player.GetComponent<AttackArea>().getDamage());
+
                 //increase player damage by +1
                 break;
             default:

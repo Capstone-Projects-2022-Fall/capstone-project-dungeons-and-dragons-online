@@ -122,6 +122,7 @@ public class Health : MonoBehaviour
     }
 
     /// <summary>
+
     ///increase the maximum health
     /// </summary>
     public void HPincrease(int amount){
@@ -136,7 +137,7 @@ public class Health : MonoBehaviour
     }
 
     /// <summary>
-    /// return the HP
+    /// return the Health
     /// </summary>
     public int getHealth(){
         return health;
