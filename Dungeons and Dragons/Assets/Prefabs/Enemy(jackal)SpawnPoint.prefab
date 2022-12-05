@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1262769260959424505}
   - component: {fileID: 1749379167071328250}
   m_Layer: 0
-  m_Name: EnemySpawnPoint
+  m_Name: Enemy(jackal)SpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -44,5 +44,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dac8275aa2fe672489fbef063cff770e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 7544531732498782920, guid: 701718832e7af764fafd2e0958af173b, type: 3}
-  enemyCount: 1
+  enemy: {fileID: 7544531732498782920, guid: 14197f98df441ff419ce68c4443002bc, type: 3}
