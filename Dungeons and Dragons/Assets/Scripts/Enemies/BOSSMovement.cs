@@ -47,11 +47,11 @@ public class BOSSMovement : MonoBehaviour
             transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
           //  transform.rotation = Quaternion.Euler(Vector3.forward * angle);
         }*/
-        pv.RPC("findPlayer", RpcTarget.AllBuffered);
+        //pv.RPC("findPlayer", RpcTarget.AllBuffered);
         findPlayer();
     }
 
-    [PunRPC]
+    //[PunRPC]
     private void findPlayer()
     {
         for (int i = 0; i < player.Length; i++)
