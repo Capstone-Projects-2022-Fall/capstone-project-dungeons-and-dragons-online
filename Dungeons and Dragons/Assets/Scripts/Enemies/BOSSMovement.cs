@@ -10,14 +10,13 @@ using Photon.Pun;
 public class BOSSMovement : MonoBehaviour
 {
     /// Get the chasing object
-    private GameObject[] otherPlayers;
+    private GameObject[] player;
     public PhotonView pv;
 
     /// the speed of the enemy
     public float speed;
 
     /// the chasing distance detector 
-
     //public float distancBetween;
 
     /// the distance between the enemy and player
@@ -26,7 +25,7 @@ public class BOSSMovement : MonoBehaviour
 
     void Start()
     {
-        
+        player = GameObject.FindGameObjectsWithTag("Player");
     }
 
     // Update is called once per frame
@@ -48,26 +47,16 @@ public class BOSSMovement : MonoBehaviour
             transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
           //  transform.rotation = Quaternion.Euler(Vector3.forward * angle);
         }*/
-        //pv.RPC("findPlayer", RpcTarget.AllBuffered);
+        pv.RPC("findPlayer", RpcTarget.AllBuffered);
         findPlayer();
     }
 
-    //[PunRPC]
+    [PunRPC]
     private void findPlayer()
     {
-        otherPlayers = GameObject.FindGameObjectsWithTag("Player");
-
-        for (int i = 0; i < otherPlayers.Length; i++)
+        for (int i = 0; i < player.Length; i++)
         {
-            float tempx = otherPlayers[i].transform.position.x-transform.position.x;
-            float tempy = otherPlayers[i].transform.position.y-transform.position.y;
-            if (!(tempx>5.2 || tempx < -5.2 || tempy < -5.2 || tempy > 5.2)) 
-            {
-                Debug.Log("x" + tempx);
-                Debug.Log("y" + tempy);
-                this.transform.position = Vector2.MoveTowards(transform.position, otherPlayers[i].transform.position, speed * Time.deltaTime);
-            }
-            
+            transform.position = Vector2.MoveTowards(transform.position, player[i].transform.position, speed * Time.deltaTime);
         }
     }
 

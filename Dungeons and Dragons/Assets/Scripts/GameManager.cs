@@ -5,6 +5,7 @@ using UnityEditor;
 using System.Collections.Generic;
 using Photon.Realtime;
 using ExitGames.Client.Photon;
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
@@ -18,13 +19,16 @@ public class GameManager : MonoBehaviour
 	int seed = -1;
 
 
+
 	private void Start()
     {
 		playersprite = newSkin.GetComponent<SpriteRenderer>().sprite;
 		PlayerPrefab.GetComponent<SpriteRenderer>().sprite = playersprite;
 		PhotonNetwork.Instantiate(this.pfItemWorld.name, new Vector3(-10f,1f), Quaternion.identity, 0);
 		Debug.Log("Instantiated Item World");
-    }
+
+
+	}
 
     /// <summary>
     /// Displays the game map when the user loads in
@@ -38,10 +42,12 @@ public class GameManager : MonoBehaviour
 
     public void FixedUpdate()
     {
-		checkPlayer();
-		//print("Current players" + ri.PlayerCount);
-		//checkWinning();
 
+		Debug.Log(PhotonNetwork.CountOfPlayers.ToString());
+		if (Input.GetKeyDown(KeyCode.J))
+		{
+			StartCoroutine(checkPlayer());
+		}
 	}
 
     public void SpawnPlayer(){
@@ -54,16 +60,14 @@ public class GameManager : MonoBehaviour
 
 	}
 
-	public void checkPlayer()
+	IEnumerator checkPlayer()
     {
-		Debug.Log(PhotonNetwork.CountOfPlayers.ToString());
-        if (SceneManager.GetActiveScene().name == "BattleMap")
+		yield return new WaitForSeconds(5);
+		if (SceneManager.GetActiveScene().name == "BattleMap" && PhotonNetwork.CountOfPlayers == 1)
         {
-            if (PhotonNetwork.CountOfPlayers == 1)
-            {
-				PhotonNetwork.LoadLevel("VictoryScene");
-			}
-        }
+			PhotonNetwork.LoadLevel("VictoryScene");
+		}
+
 	}
 
 	/*public void checkWinning()
