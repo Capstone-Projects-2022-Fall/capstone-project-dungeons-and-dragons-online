@@ -18,12 +18,12 @@ public class EnemySpawnPoint : MonoBehaviour
     // Update is called once per frame
     IEnumerator SpawnEnemis()
     {
-        while(enemyCount < 1)
+        while(enemyCount < 2)
         {
             xPos = (Random.Range(-2, 2)/5f);
             yPos = Random.Range(-2, 2)/5f;
             PhotonNetwork.Instantiate(enemy.name, new Vector2(this.transform.position.x + xPos, this.transform.position.y + yPos), Quaternion.identity);
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(80f);
             enemyCount += 1;
         }
     }
