@@ -165,8 +165,8 @@ public class Player : MonoBehaviour
             }
             if (Input.GetMouseButtonDown(0) && sr.sprite.name == "skinSelection_1")
             {
-                float force = sr.flipX ? -arrowPower : arrowPower;
-                float _offset = sr.flipX ? -0.1f : 0.1f;
+                float force = moveDirection.x < 0 ? -arrowPower : arrowPower;
+                float _offset = moveDirection.x < 0 ? -0.1f : 0.1f;
                 Vector3 offset = new Vector3(_offset, 0, 0);
                 GameObject arrowObj = PhotonNetwork.Instantiate("PhotonArrow", tr.position + offset, Quaternion.identity);
                 Rigidbody2D arb = arrowObj.GetComponent<Rigidbody2D>();
@@ -210,12 +210,14 @@ public class Player : MonoBehaviour
 
         if (moveDirection.x < 0)
         {
-                photonView.RPC("FlipFalse", RpcTarget.AllBuffered);
+            //sr.flipX = true;//when go to leftside, flip x of renderer
+            photonView.RPC("FlipFalse", RpcTarget.AllBuffered);
                 //FlipFalse();
         }
         if (moveDirection.x > 0)
         {
-                photonView.RPC("FlipTrue", RpcTarget.AllBuffered);
+            //sr.flipX = false;//when go to rightside, flip x of renderer
+            photonView.RPC("FlipTrue", RpcTarget.AllBuffered);
                 //FlipTrue();
         }
 
@@ -266,7 +268,7 @@ public class Player : MonoBehaviour
         }
     }
     */
-     /// <summary>
+    /// <summary>
     /// Handles the players animation and which way it is facing.
     /// </summary>
     [PunRPC]

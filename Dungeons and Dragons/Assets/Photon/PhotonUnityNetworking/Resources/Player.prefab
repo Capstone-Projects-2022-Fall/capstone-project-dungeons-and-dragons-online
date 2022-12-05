@@ -1217,9 +1217,7 @@ MonoBehaviour:
   artworkSprite: {fileID: 6286505278479089536}
   uiInventory: {fileID: 0}
   itemworld: {fileID: 0}
-  arrowPower: 5
-  bulletObject: {fileID: 2957764436891269525, guid: e259de66b96c5a444be574d7cdea3d65, type: 3}
-  firePos: {fileID: 1468836036202340597}
+  arrowPower: 50
 --- !u!114 &3544830418932823700
 MonoBehaviour:
   m_ObjectHideFlags: 0
