@@ -10,13 +10,14 @@ using Photon.Pun;
 public class BOSSMovement : MonoBehaviour
 {
     /// Get the chasing object
-    private GameObject[] player;
+    private GameObject[] otherPlayers;
     public PhotonView pv;
 
     /// the speed of the enemy
     public float speed;
 
     /// the chasing distance detector 
+
     //public float distancBetween;
 
     /// the distance between the enemy and player
@@ -25,7 +26,7 @@ public class BOSSMovement : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.FindGameObjectsWithTag("Player");
+        
     }
 
     // Update is called once per frame
@@ -54,9 +55,19 @@ public class BOSSMovement : MonoBehaviour
     [PunRPC]
     private void findPlayer()
     {
-        for (int i = 0; i < player.Length; i++)
+        otherPlayers = GameObject.FindGameObjectsWithTag("Player");
+
+        for (int i = 0; i < otherPlayers.Length; i++)
         {
-            transform.position = Vector2.MoveTowards(transform.position, player[i].transform.position, speed * Time.deltaTime);
+            float tempx = otherPlayers[i].transform.position.x-transform.position.x;
+            float tempy = otherPlayers[i].transform.position.y-transform.position.y;
+            if (!(tempx>5.2 || tempx < -5.2 || tempy < -5.2 || tempy > 5.2)) 
+            {
+                Debug.Log("x" + tempx);
+                Debug.Log("y" + tempy);
+                this.transform.position = Vector2.MoveTowards(transform.position, otherPlayers[i].transform.position, speed * Time.deltaTime);
+            }
+            
         }
     }
 
