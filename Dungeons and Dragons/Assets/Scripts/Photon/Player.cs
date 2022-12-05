@@ -326,7 +326,7 @@ public class Player : MonoBehaviour
         for (int i = 0; i < otherPlayers.Length; i++)
         {
             float tempx = otherPlayers[i].transform.position.x-transform.position.x;
-            float tempy = otherPlayers[i].transform.position.x-transform.position.x;
+            float tempy = otherPlayers[i].transform.position.y-transform.position.y;
             if (tempx>0.2 || tempx < -0.2 || tempy < -0.2 || tempy > 0.2) {
                 Debug.Log("x" + tempx);
                 Debug.Log("y" + tempy);
