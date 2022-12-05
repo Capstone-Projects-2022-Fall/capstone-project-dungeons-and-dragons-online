@@ -45,6 +45,11 @@ public class PlayerMovement : MonoBehaviour
     public void increaseSpeed(double amount){
         moveSpeed += (float)amount;
     }
+
+    public float getSpeed()
+    {
+        return moveSpeed;
+    }
     
 
 /// <summary>

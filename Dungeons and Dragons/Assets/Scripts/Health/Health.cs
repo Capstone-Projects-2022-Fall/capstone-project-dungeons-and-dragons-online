@@ -136,6 +136,14 @@ public class Health : MonoBehaviour
     }
 
     /// <summary>
+    /// return the HP
+    /// </summary>
+    public int getHealth(){
+        return health;
+    }
+
+
+    /// <summary>
     /// Destory the player when the health is less then 0
     /// </summary>
     private void Die()
