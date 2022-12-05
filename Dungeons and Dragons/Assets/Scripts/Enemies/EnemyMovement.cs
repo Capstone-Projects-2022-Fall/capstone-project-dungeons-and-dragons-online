@@ -16,10 +16,10 @@ public class EnemyMovement : MonoBehaviour
     /// the speed of the enemy
     public float speed;
 
-    private GameObject[] otherPlayers;
-
     /// the chasing distance detector 
     //public float distancBetween;
+
+    private GameObject[] otherPlayers;
 
     /// the distance between the enemy and player
 
@@ -49,15 +49,13 @@ public class EnemyMovement : MonoBehaviour
             transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
           //  transform.rotation = Quaternion.Euler(Vector3.forward * angle);
         }*/
-        pv.RPC("findPlayer", RpcTarget.AllBuffered); 
+        //pv.RPC("findPlayer", RpcTarget.AllBuffered); 
+        findPlayer();
     }
 
-    [PunRPC]
+    //[PunRPC]
     private void findPlayer()
     {
-        // player = GameObject.FindGameObjectWithTag("Player");
-        // this.transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
-        //checkFlipping(transform.position);
         otherPlayers = GameObject.FindGameObjectsWithTag("Player");
 
         for (int i = 0; i < otherPlayers.Length; i++)
@@ -70,8 +68,10 @@ public class EnemyMovement : MonoBehaviour
                 Debug.Log("y" + tempy);
                 this.transform.position = Vector2.MoveTowards(transform.position, otherPlayers[i].transform.position, speed * Time.deltaTime);
             }
-
+            
         }
+        // this.transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+        //checkFlipping(transform.position);
     }
 
     /// <summary>

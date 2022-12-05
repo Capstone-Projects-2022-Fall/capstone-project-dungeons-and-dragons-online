@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 7787739822834034923}
   - component: {fileID: 4668099311003602148}
   m_Layer: 0
-  m_Name: PhotonEnemy
+  m_Name: PhotonEnemy(wolf)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -196,7 +196,7 @@ MonoBehaviour:
   attackArea: {fileID: 0}
   health: 10
   dropItem: {fileID: 5995177961870116931, guid: 73198a7193815e245a2e0f128ea79e11, type: 3}
-  player: {fileID: 0}
+  player: {fileID: 6286505278479089537, guid: feacaf17a9d31854db859ceb10896944, type: 3}
 --- !u!114 &7787739822834034923
 MonoBehaviour:
   m_ObjectHideFlags: 0

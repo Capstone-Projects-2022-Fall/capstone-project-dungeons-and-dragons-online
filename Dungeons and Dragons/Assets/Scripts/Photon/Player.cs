@@ -46,7 +46,7 @@ public class Player : MonoBehaviour
     /// Wether they area attacking
     /// </summary>
     private bool attacking = false;
-     /// <summary>
+    /// <summary>
     /// Timer to end attack
     /// </summary>
     private float timeToAttack = 0.05f;
@@ -57,7 +57,7 @@ public class Player : MonoBehaviour
     /// </summary>
     private Vector2 moveDirection;
 
-     /// <summary>
+    /// <summary>
     /// Speed at which they are moving.
     /// </summary>
     public float moveSpeed;
@@ -74,7 +74,7 @@ public class Player : MonoBehaviour
     /// <summary>
     /// What character they have selected
     /// </summary>
-    private int selectedOption = 0;
+    //private int selectedOption = 0;
 
     /// <summary>
     /// Chat
@@ -116,11 +116,13 @@ public class Player : MonoBehaviour
         tr = this.gameObject.GetComponent<Transform>();
 
     }
-     /// <summary>
+    /// <summary>
     /// When player spawns, turn on their camera and set their username.
     /// </summary>
-    private void Awake(){
-        if (photonView.IsMine){
+    private void Awake()
+    {
+        if (photonView.IsMine)
+        {
             PlayerCamera.SetActive(true);
             PlayerNameText.text = PhotonNetwork.NickName;
             //Player picks class
@@ -128,27 +130,33 @@ public class Player : MonoBehaviour
             //PlayerProps.Add("Class", whatever class they chose);
             //Player.SetCustomProperties(PlayerProps);
 
-        } else {
+        }
+        else
+        {
             //class = photonView.GetCustomProperty("Class");
             //sprite = class;
             PlayerNameText.text = photonView.Owner.NickName;
             PlayerNameText.color = Color.cyan;
         }
-        
-            inventory = new Inventory();
-            // uiInventory.setInventory(inventory);
-            // ItemWorld.SpawnItemWorld(new Vector3 (1, 1), new Item {itemType = Item.ItemType.LongSword, amt = 1});
-            // ItemWorld.SpawnItemWorld(new Vector3 (-1, 1), new Item {itemType = Item.ItemType.HPot, amt = 1});
-            // ItemWorld.SpawnItemWorld(new Vector3 (0, -1), new Item {itemType = Item.ItemType.RPot, amt = 1});
-            // ItemWorld.SpawnItemWorld(new Vector3((float)0.98,(float)-0.46, 0), new Item{itemType = Item.ItemType.HPot, amt = 1});
+
+        inventory = new Inventory();
+        // uiInventory.setInventory(inventory);
+        // ItemWorld.SpawnItemWorld(new Vector3 (1, 1), new Item {itemType = Item.ItemType.LongSword, amt = 1});
+        // ItemWorld.SpawnItemWorld(new Vector3 (-1, 1), new Item {itemType = Item.ItemType.HPot, amt = 1});
+        // ItemWorld.SpawnItemWorld(new Vector3 (0, -1), new Item {itemType = Item.ItemType.RPot, amt = 1});
+        // ItemWorld.SpawnItemWorld(new Vector3((float)0.98,(float)-0.46, 0), new Item{itemType = Item.ItemType.HPot, amt = 1});
     }
     /// <summary>   
     /// Checks if player is moving their character and moves them appropriately.
     /// </summary>
-    private void Update(){
-        if(photonView.IsMine && !chatSelected && !UIPause.isPaused && !UIPause.isAI){
+    private void Update()
+    {
+        if (photonView.IsMine && !chatSelected && !UIPause.isPaused && !UIPause.isAI)
+        {
             checkInput();
-        } else if (photonView.IsMine && UIPause.isAI){
+        }
+        else if (photonView.IsMine && UIPause.isAI)
+        {
             moveTowardsPlayer();
         }
     }
@@ -212,16 +220,16 @@ public class Player : MonoBehaviour
         {
             //sr.flipX = true;//when go to leftside, flip x of renderer
             photonView.RPC("FlipFalse", RpcTarget.AllBuffered);
-                //FlipFalse();
+            //FlipFalse();
         }
         if (moveDirection.x > 0)
         {
             //sr.flipX = false;//when go to rightside, flip x of renderer
             photonView.RPC("FlipTrue", RpcTarget.AllBuffered);
-                //FlipTrue();
+            //FlipTrue();
         }
 
-        
+
         //checkFlipping();
         //Debug.Log("here");
         //Debug.Log(PhotonNetwork.CountOfPlayers.ToString());
@@ -237,7 +245,7 @@ public class Player : MonoBehaviour
         // Key J for normal attack the attack status will become ture
         attacking = true;
         attackArea.SetActive(attacking);
-        
+
         // Attack status is true then will call the attackArea class to start attacking
         if (attacking)
         {
@@ -250,7 +258,7 @@ public class Player : MonoBehaviour
                 attackArea.SetActive(attacking);
             }
         }
-        
+
     }
 
     /*
@@ -275,26 +283,26 @@ public class Player : MonoBehaviour
     void FlipFalse()
     {
         //attackArea.transform.position = new Vector3(attackArea.transform.position.x - 0.29f, attackArea.transform.position.y, 0);
-        player.transform.localScale = new Vector3(-0.5f, player.transform.localScale.y,1);
+        player.transform.localScale = new Vector3(-0.5f, player.transform.localScale.y, 1);
     }
-    
-     /// <summary>
+
+    /// <summary>
     /// Handles the players animation and which way it is facing.
     /// </summary>
     [PunRPC]
     void FlipTrue()
     {
         //attackArea.transform.position = new Vector3(attackArea.transform.position.x, attackArea.transform.position.y, 0);
-        player.transform.localScale = new Vector3(0.5f, player.transform.localScale.y,1);
+        player.transform.localScale = new Vector3(0.5f, player.transform.localScale.y, 1);
     }
 
-     /// <summary>
+    /// <summary>
     /// Sets the players selected class.
     /// </summary>
     private void OnTriggerEnter2D(Collider2D collider)
     {
         ItemWorld itemWorld = collider.GetComponent<ItemWorld>();
-        if(itemWorld != null)
+        if (itemWorld != null)
         {
             inventory.addItem(itemWorld.getItem());
             itemWorld.destroyItem();
@@ -322,17 +330,18 @@ public class Player : MonoBehaviour
     private void moveTowardsPlayer()
     {
         otherPlayers = GameObject.FindGameObjectsWithTag("Player");
-        
+
         for (int i = 0; i < otherPlayers.Length; i++)
         {
-            float tempx = otherPlayers[i].transform.position.x-transform.position.x;
-            float tempy = otherPlayers[i].transform.position.y-transform.position.y;
-            if (tempx>0.2 || tempx < -0.2 || tempy < -0.2 || tempy > 0.2) {
+            float tempx = otherPlayers[i].transform.position.x - transform.position.x;
+            float tempy = otherPlayers[i].transform.position.x - transform.position.x;
+            if (tempx > 0.2 || tempx < -0.2 || tempy < -0.2 || tempy > 0.2)
+            {
                 Debug.Log("x" + tempx);
                 Debug.Log("y" + tempy);
                 transform.position = Vector2.MoveTowards(transform.position, otherPlayers[i].transform.position, moveSpeed * Time.deltaTime);
             }
-            
+
         }
     }
 

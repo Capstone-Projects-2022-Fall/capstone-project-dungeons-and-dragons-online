@@ -8,7 +8,8 @@ public class Arrow : MonoBehaviour
     private Rigidbody2D rb;
     private float timer;
     public PhotonView pv;
-    public int damage = 5;
+    public int damage;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,12 +36,22 @@ public class Arrow : MonoBehaviour
             }
         }
     }
-
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.GetComponent<Health>() != null)
         {
             Health health = collider.GetComponent<Health>();
+            health.Damage(damage);
+        }
+        if (collider.GetComponent<EnemyHealth>() != null)
+        {
+            EnemyHealth health = collider.GetComponent<EnemyHealth>();
+            health.Damage(damage);
+        }
+
+        if (collider.GetComponent<BOSSHealth>() != null)
+        {
+            BOSSHealth health = collider.GetComponent<BOSSHealth>();
             health.Damage(damage);
         }
     }

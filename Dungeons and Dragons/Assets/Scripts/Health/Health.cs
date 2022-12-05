@@ -50,7 +50,7 @@ public class Health : MonoBehaviour
             }*/
             if (Input.GetKeyDown(KeyCode.H) && sr.sprite.name == "skinSelection_2")
             {
-                Heal(5);
+                Heal(10);
             }
         }
     }
@@ -120,6 +120,29 @@ public class Health : MonoBehaviour
 
         }
     }
+
+    /// <summary>
+
+    ///increase the maximum health
+    /// </summary>
+    public void HPincrease(int amount){
+        MAX_HEALTH += amount;
+    }
+
+    /// <summary>
+    /// return the HP
+    /// </summary>
+    public int getHP(){
+        return MAX_HEALTH;
+    }
+
+    /// <summary>
+    /// return the Health
+    /// </summary>
+    public int getHealth(){
+        return health;
+    }
+
 
     /// <summary>
     /// Destory the player when the health is less then 0

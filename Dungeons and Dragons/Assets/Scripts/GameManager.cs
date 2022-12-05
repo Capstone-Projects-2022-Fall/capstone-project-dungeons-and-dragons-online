@@ -19,38 +19,35 @@ public class GameManager : MonoBehaviour
 	int seed = -1;
 
 
-
 	private void Start()
     {
 		playersprite = newSkin.GetComponent<SpriteRenderer>().sprite;
 		PlayerPrefab.GetComponent<SpriteRenderer>().sprite = playersprite;
 		PhotonNetwork.Instantiate(this.pfItemWorld.name, new Vector3(-10f,1f), Quaternion.identity, 0);
 		Debug.Log("Instantiated Item World");
-
-
-	}
+    }
 
     /// <summary>
     /// Displays the game map when the user loads in
     /// </summary>
     private void Awake(){
 		GameCanvas.SetActive(true);
-		//Debug.Log((int)PhotonNetwork.CurrentRoom.CustomProperties["Seed"]);
+		Debug.Log((int)PhotonNetwork.CurrentRoom.CustomProperties["Seed"]);
 		Random.InitState((int)PhotonNetwork.CurrentRoom.CustomProperties["Seed"]);
 		
 	}
 
-    public void FixedUpdate()
-    {
+	public void FixedUpdate()
+	{
 
-		//Debug.Log(PhotonNetwork.CountOfPlayers.ToString());
+		Debug.Log(PhotonNetwork.CountOfPlayers.ToString());
 		if (Input.GetKeyDown(KeyCode.J))
 		{
 			StartCoroutine(checkPlayer());
 		}
 	}
 
-    public void SpawnPlayer(){
+	public void SpawnPlayer(){
 		float randVal = Random.Range(-1f,1f);
 		//PlayerPrefab.name
 		PhotonNetwork.Instantiate("Player", new Vector2(this.transform.position.x *-0.2f, this.transform.position.y *0.2f), Quaternion.identity, 0);
@@ -61,10 +58,10 @@ public class GameManager : MonoBehaviour
 	}
 
 	IEnumerator checkPlayer()
-    {
+	{
 		yield return new WaitForSeconds(5);
 		if (SceneManager.GetActiveScene().name == "BattleMap" && PhotonNetwork.CountOfPlayers == 1)
-        {
+		{
 			PhotonNetwork.LoadLevel("VictoryScene");
 		}
 

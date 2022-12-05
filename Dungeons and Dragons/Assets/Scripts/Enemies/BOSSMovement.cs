@@ -16,8 +16,8 @@ public class BOSSMovement : MonoBehaviour
     /// the speed of the enemy
     public float speed;
 
-
     /// the chasing distance detector 
+
     //public float distancBetween;
 
     /// the distance between the enemy and player
@@ -26,6 +26,7 @@ public class BOSSMovement : MonoBehaviour
 
     void Start()
     {
+        
     }
 
     // Update is called once per frame
@@ -66,7 +67,7 @@ public class BOSSMovement : MonoBehaviour
                 Debug.Log("y" + tempy);
                 this.transform.position = Vector2.MoveTowards(transform.position, otherPlayers[i].transform.position, speed * Time.deltaTime);
             }
-
+            
         }
     }
 
