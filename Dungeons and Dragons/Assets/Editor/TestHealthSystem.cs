@@ -50,4 +50,39 @@ public class TestHealthSystem
         // Use yield to skip a frame.
         yield return null;
     }
+
+    [UnityTest]
+    public IEnumerator TestPlayerAttack()
+    {
+        yield return null;
+    }
+
+
+    [UnityTest] public IEnumerator TestEnemyAttack()
+    {
+        yield return null;
+    }
+
+    [UnityTest]
+    public IEnumerator PlayerMovement()
+    {
+        yield return null;
+    }
+
+    [UnityTest]
+    public IEnumerator EnemyMovement()
+    {
+        yield return null;
+    }
+
+    [Test]
+    public void TestHealthVisual()
+    {
+        var healthSystem = new GameObject().AddComponent<Health>();
+
+        Assert.Throws<ArgumentOutOfRangeException>(() => healthSystem.Damage(
+                    -10
+            )
+        );
+    }
 }
