@@ -8,7 +8,9 @@ public class Arrow : MonoBehaviour
     private Rigidbody2D rb;
     private float timer;
     public PhotonView pv;
+
     public int damage;
+
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +38,7 @@ public class Arrow : MonoBehaviour
             }
         }
     }
+
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.GetComponent<Health>() != null)
@@ -55,4 +58,5 @@ public class Arrow : MonoBehaviour
             health.Damage(damage);
         }
     }
+
 }

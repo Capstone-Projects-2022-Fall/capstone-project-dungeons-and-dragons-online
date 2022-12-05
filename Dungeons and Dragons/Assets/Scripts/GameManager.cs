@@ -12,17 +12,17 @@ public class GameManager : MonoBehaviour
 	public GameObject PlayerPrefab;
 	public GameObject GameCanvas;
 	public GameObject SceneCamera;
-    public GameObject newSkin;
+    //public GameObject newSkin;
 	public GameObject pfItemWorld;
-	private Sprite playersprite;
+	//private Sprite playersprite;
 	private RoomInfo ri;
 	int seed = -1;
 
 
 	private void Start()
     {
-		playersprite = newSkin.GetComponent<SpriteRenderer>().sprite;
-		PlayerPrefab.GetComponent<SpriteRenderer>().sprite = playersprite;
+		//playersprite = newSkin.GetComponent<SpriteRenderer>().sprite;
+		//PlayerPrefab.GetComponent<SpriteRenderer>().sprite = playersprite;
 		PhotonNetwork.Instantiate(this.pfItemWorld.name, new Vector3(-10f,1f), Quaternion.identity, 0);
 		Debug.Log("Instantiated Item World");
     }
@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour
 		Random.InitState((int)PhotonNetwork.CurrentRoom.CustomProperties["Seed"]);
 		
 	}
+
 
 	public void FixedUpdate()
 	{
@@ -57,6 +58,7 @@ public class GameManager : MonoBehaviour
 
 	}
 
+
 	IEnumerator checkPlayer()
 	{
 		yield return new WaitForSeconds(5);
@@ -64,6 +66,7 @@ public class GameManager : MonoBehaviour
 		{
 			PhotonNetwork.LoadLevel("VictoryScene");
 		}
+
 
 	}
 

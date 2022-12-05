@@ -154,7 +154,7 @@ public class Health : MonoBehaviour
         if (photonView.IsMine)
         {
             PhotonNetwork.LeaveRoom();
-            PhotonNetwork.LoadLevel("LoseScene");
+            PhotonNetwork.LoadLevel("VictoryScene");
         }
 
         //SceneManager.LoadScene("MainMenu");

@@ -37,7 +37,7 @@ public class Player : MonoBehaviour
     /// The actual player
     /// </summary>
     public GameObject player;
-    private Transform tr;
+
     /// <summary>
     /// Where the player can attack an enemy
     /// </summary>
@@ -87,11 +87,6 @@ public class Player : MonoBehaviour
 
     private GameObject[] otherPlayers;
 
-    public float arrowPower;// the power of the weapon
-
-    //public GameObject bulletObject;
-    //public Transform firePos;
-
     /// <summary>
     /// Detects if the chat is selected
     /// </summary>
@@ -113,8 +108,8 @@ public class Player : MonoBehaviour
     /// </summary>
     private void Start()
     {
-        tr = this.gameObject.GetComponent<Transform>();
 
+        
     }
     /// <summary>
     /// When player spawns, turn on their camera and set their username.
@@ -173,14 +168,7 @@ public class Player : MonoBehaviour
             }
             if (Input.GetMouseButtonDown(0) && sr.sprite.name == "skinSelection_1")
             {
-                float force = moveDirection.x < 0 ? -arrowPower : arrowPower;
-                float _offset = moveDirection.x < 0 ? -0.1f : 0.1f;
-                Vector3 offset = new Vector3(_offset, 0, 0);
-                GameObject arrowObj = PhotonNetwork.Instantiate("PhotonArrow", tr.position + offset, Quaternion.identity);
-                Rigidbody2D arb = arrowObj.GetComponent<Rigidbody2D>();
-                SpriteRenderer _spr = arrowObj.GetComponent<SpriteRenderer>();
-                _spr.flipX = _offset < 0;
-                arb.AddForce(new Vector2(force, 0));
+                //code to do
             }
         }
         Move();
@@ -218,6 +206,7 @@ public class Player : MonoBehaviour
 
         if (moveDirection.x < 0)
         {
+
             //sr.flipX = true;//when go to leftside, flip x of renderer
             photonView.RPC("FlipFalse", RpcTarget.AllBuffered);
             //FlipFalse();
@@ -261,22 +250,7 @@ public class Player : MonoBehaviour
 
     }
 
-    /*
-    private void Shoot()
-    {
-        if (sr.flipX = false)
-        {
-            GameObject obj = PhotonNetwork.Instantiate(bulletObject.name, new Vector2(firePos.position.x, firePos.position.y), Quaternion.identity, 0);
-        }
-
-        if (sr.flipX = true)
-        {
-            GameObject obj = PhotonNetwork.Instantiate(bulletObject.name, new Vector2(firePos.position.x, firePos.position.y), Quaternion.identity, 0);
-            obj.GetComponent<PhotonView>().RPC("ChangeDir_left", RpcTarget.AllBuffered);
-        }
-    }
-    */
-    /// <summary>
+     /// <summary>
     /// Handles the players animation and which way it is facing.
     /// </summary>
     [PunRPC]

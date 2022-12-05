@@ -3,73 +3,75 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 
-/// <summary>
-/// Enemy health handler
-/// </summary>
-public class BOSSHealth : MonoBehaviour
-{
-    // Start is called before the first frame update
+
+
     /// <summary>
-    /// Set the initial health value to 100
+    /// Enemy health handler
     /// </summary>
-    [SerializeField] private int health = 100;
-    public GameObject dropItem;
-    // Update is called once per frame
-    void Update()
+    public class BOSSHealth : MonoBehaviour
     {
-        // Testing Onlys
-        if (Input.GetKeyDown(KeyCode.O))
+        // Start is called before the first frame update
+        /// <summary>
+        /// Set the initial health value to 100
+        /// </summary>
+        [SerializeField] private int health = 100;
+        public GameObject dropItem;
+        // Update is called once per frame
+        void Update()
         {
-            Damage(10);
-            // healthBar.SetSize();
+            // Testing Onlys
+            if (Input.GetKeyDown(KeyCode.O))
+            {
+                Damage(10);
+                // healthBar.SetSize();
+
+            }
 
         }
 
-    }
-
-    /// <summary>
-    /// Damage visualization
-    /// </summary>
-    private IEnumerator VisualIndicator(Color color)
-    {
-        GetComponent<SpriteRenderer>().color = color;
-        yield return new WaitForSeconds(.15f);
-        GetComponent<SpriteRenderer>().color = Color.white;
-    }
-
-    /// <summary>
-    /// Calculate the damage
-    /// </summary>
-    /// <includesource>
-    /// ArgumentOutOfRangeException
-    /// </includesource>
-    public void Damage(int amount)
-    {
-        // the damage is negative number will cause an error
-        if (amount < 0)
+        /// <summary>
+        /// Damage visualization
+        /// </summary>
+        private IEnumerator VisualIndicator(Color color)
         {
-            throw new System.ArgumentOutOfRangeException("Cannot have a negative damage");
+            GetComponent<SpriteRenderer>().color = color;
+            yield return new WaitForSeconds(.15f);
+            GetComponent<SpriteRenderer>().color = Color.white;
         }
 
-        this.health -= amount;
-
-        StartCoroutine(VisualIndicator(Color.red));
-
-        // If amount of health is less than 0 then the player will be destoried
-        if (health <= 0)
+        /// <summary>
+        /// Calculate the damage
+        /// </summary>
+        /// <includesource>
+        /// ArgumentOutOfRangeException
+        /// </includesource>
+        public void Damage(int amount)
         {
-            Die();
+            // the damage is negative number will cause an error
+            if (amount < 0)
+            {
+                throw new System.ArgumentOutOfRangeException("Cannot have a negative damage");
+            }
+
+            health -= amount;
+
+            StartCoroutine(VisualIndicator(Color.red));
+
+            // If amount of health is less than 0 then the player will be destoried
+            if (health <= 0)
+            {
+                Die();
+            }
+        }
+
+        /// <summary>
+        /// Destory the enemy when the health is less then 0
+        /// </summary>
+        private void Die()
+        {
+            Debug.Log("Defeat BOSS!");
+            // PhotonNetwork.Instantiate(dropItem.name, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+            PhotonNetwork.Instantiate(dropItem.name, new Vector3(transform.position.x, transform.position.y), Quaternion.identity);
+            Destroy(gameObject);
         }
     }
-
-    /// <summary>
-    /// Destory the enemy when the health is less then 0
-    /// </summary>
-    private void Die()
-    {
-        Debug.Log("Defeat BOSS!");
-        // PhotonNetwork.Instantiate(dropItem.name, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
-        PhotonNetwork.Instantiate(dropItem.name, new Vector3(this.transform.position.x, this.transform.position.y), Quaternion.identity);
-        Destroy(gameObject);
-    }
-}
