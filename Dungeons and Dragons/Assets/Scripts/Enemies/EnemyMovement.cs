@@ -16,6 +16,8 @@ public class EnemyMovement : MonoBehaviour
     /// the speed of the enemy
     public float speed;
 
+    private GameObject[] otherPlayers;
+
     /// the chasing distance detector 
     //public float distancBetween;
 
@@ -53,9 +55,23 @@ public class EnemyMovement : MonoBehaviour
     [PunRPC]
     private void findPlayer()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
-        this.transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+        // player = GameObject.FindGameObjectWithTag("Player");
+        // this.transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
         //checkFlipping(transform.position);
+        otherPlayers = GameObject.FindGameObjectsWithTag("Player");
+
+        for (int i = 0; i < otherPlayers.Length; i++)
+        {
+            float tempx = otherPlayers[i].transform.position.x-transform.position.x;
+            float tempy = otherPlayers[i].transform.position.y-transform.position.y;
+            if (!(tempx>5.2 || tempx < -5.2 || tempy < -5.2 || tempy > 5.2)) 
+            {
+                Debug.Log("x" + tempx);
+                Debug.Log("y" + tempy);
+                this.transform.position = Vector2.MoveTowards(transform.position, otherPlayers[i].transform.position, speed * Time.deltaTime);
+            }
+
+        }
     }
 
     /// <summary>
