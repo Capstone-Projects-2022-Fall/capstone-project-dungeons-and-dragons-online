@@ -42,8 +42,7 @@ public class GameManager : MonoBehaviour
 
     public void FixedUpdate()
     {
-		//print("Current players" + ri.PlayerCount);
-		//checkWinning();
+
 		Debug.Log(PhotonNetwork.CountOfPlayers.ToString());
 		if (Input.GetKeyDown(KeyCode.J))
 		{
