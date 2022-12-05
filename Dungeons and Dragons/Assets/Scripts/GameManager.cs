@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     private void Awake(){
 		GameCanvas.SetActive(true);
-		Debug.Log((int)PhotonNetwork.CurrentRoom.CustomProperties["Seed"]);
+		//Debug.Log((int)PhotonNetwork.CurrentRoom.CustomProperties["Seed"]);
 		Random.InitState((int)PhotonNetwork.CurrentRoom.CustomProperties["Seed"]);
 		
 	}
@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
     public void FixedUpdate()
     {
 
-		Debug.Log(PhotonNetwork.CountOfPlayers.ToString());
+		//Debug.Log(PhotonNetwork.CountOfPlayers.ToString());
 		if (Input.GetKeyDown(KeyCode.J))
 		{
 			StartCoroutine(checkPlayer());

@@ -50,7 +50,7 @@ public class Health : MonoBehaviour
             }*/
             if (Input.GetKeyDown(KeyCode.H) && sr.sprite.name == "skinSelection_2")
             {
-                Heal(10);
+                Heal(5);
             }
         }
     }
