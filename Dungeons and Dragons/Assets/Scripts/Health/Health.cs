@@ -122,20 +122,6 @@ public class Health : MonoBehaviour
     }
 
     /// <summary>
-    ///increase the maximum health
-    /// </summary>
-    public void HPincrease(int amount){
-        MAX_HEALTH += amount;
-    }
-
-    /// <summary>
-    /// return the HP
-    /// </summary>
-    public int getHP(){
-        return MAX_HEALTH;
-    }
-
-    /// <summary>
     /// Destory the player when the health is less then 0
     /// </summary>
     private void Die()
