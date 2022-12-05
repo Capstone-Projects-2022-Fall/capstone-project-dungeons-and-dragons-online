@@ -70,6 +70,10 @@ public class GameManager : MonoBehaviour
 
 	}
 
+	public void backtomenu()
+    {
+		PhotonNetwork.LoadLevel("LoseScene");
+    }
 	/*public void checkWinning()
     {
 		if(ri.PlayerCount == 0)
