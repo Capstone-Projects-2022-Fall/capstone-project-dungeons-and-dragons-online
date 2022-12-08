@@ -12,26 +12,28 @@ Check out the QA_Acceptance_Testing_Document.xlsx to see the full document. You 
 
 ## GitHub Release
 
-####  New features
-- Players can now enter a randomly generated dungeon and the PVP arena
-- Both the dungeon and the pvp arena have music
-- ESC key will open the pause menu
-
 #####  All features
+- Players can enter a dungeon that is randomly generated everytime
+- All areas have music
+- Players can communicate via a text chat
 - Players can join games using room codes
 - Users can join ongoing games
 - The host can leave a game and a new player will be given the host role
-- The dungeon randomly generates
-- Players can attack with a basic sword slash
+- Players can chose a class that will determine what unique abilities they have
+- Warrior can attack with a basic sword slash
+- Healer can heal themselves
+- Archer can shoot arrows at targets
 - Users can lose their health and die
+- Last person standing in the combat arena wins
+- Players can work together to fight a boss enemy
+- Enemies randomly spawn throught the dungeon
+- Players can enable an AI mode which follows the closest player
 
 ####  Known bugs/limitations
-- Issues with blank prefabs in randomly generated dungeons prevalent
-- Photon still giving issues with custom character synchronization
-- Chat box needs to be implemented into the three scenes and removed from player prefab to deal with rotation
-- Item and Enemy spawning in dungeon must be implemented and PVP Win Condition needs to be set
+- Game lags if dungeon is too large
+- Photon still giving issues with custom character synchronization when loading a new level
 - Players cannot currently leave the dungeon or PVP arena once they enter, they need to restart the game to go to the main hub again
-- Pause menu only works on main hub map
+- Players may have trouble joining a game in which a dungeon has began to be traversed
 
 ####  How to build and run the project
 - Step 1: Download the project
